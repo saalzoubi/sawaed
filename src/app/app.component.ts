@@ -23,14 +23,11 @@ export class AppComponent implements OnInit{
     this.languageService.initLanguage();
 
 
-    this.titleService.setTitle( 'Saleem Alzoubi' );
+    this.titleService.setTitle( 'Sawaed Al Elm' );
 
     this.metaService.addTags([
-      {name: 'keywords', content: 'Technical Manager,solutions architect, development team lead, fullstack developer, java developer, development, senior developer'},
-      {name: 'description', content: 'I am a seasoned Technical Manager with over 10 years of experience in the field. My certifications include PMP, Scrum Master, OCP, and OCA, highlighting my expertise in project management and technical leadership. ' +
-          'My technical skill set encompasses a broad range of areas, including server implementation, backend and frontend development, mobile applications, and database management. This comprehensive knowledge allows me to oversee all aspects of a project, from database design to frontend and mobile application development.' +
-          ' I have managed projects involving up to 15 team members and multiple stakeholders, excelling in project management tasks and delivering insightful reports to directors and stakeholders. My responsibilities also include overseeing team performance, reviewing code, advising on clean coding practices, and optimizing implementation and database structures for enhanced performance, security, and maintainability.' +
-          ' Additionally, I contribute to defining business requirements for product owners, ensuring that any gaps are addressed to provide valuable insights to end users.'},
+      {name: 'keywords', content: 'Software Development, Hardware Development, Cloud Computing, Software Engineering, Computer Engineering, Mobile Apps, Sawaed, Technologies, Elm'},
+      {name: 'description', content: 'At Sawaed Al Elm, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in software development, hardware integration, and mobile application design, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you\'re looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together.'},
     ]);
 
 
