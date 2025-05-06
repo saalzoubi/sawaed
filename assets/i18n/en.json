@@ -1,0 +1,49 @@
+{
+  "Header.Item1": "About Us",
+  "Header.Item2": "Services",
+  "Header.Item3": "Contact",
+
+  "Banner.name": "Sawaed Al Elm Technologies",
+  "Banner.jobTitle": "Step to future",
+  "Banner.Description": "At <span class='underline'>Sawaed Al Elm</span>, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application design</span>, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together.",
+
+  "AboutMe.Title": "About Us",
+  "AboutMe.Paragraphs": [
+    "At <span class='underline'>Sawaed Al Elm</span>, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application design</span>, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together."
+  ],
+
+  "OtherProjects.Title": "Our Services",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Software Development & Mobile Applications",
+      "Description": "We build robust server-side systems, intuitive front-end interfaces, and seamless mobile applications tailored to your business needs, using the latest technologies and best practices.",
+      "imgs": ["assets/images/services/software-1.png"]
+    },
+    {
+      "Title": "Hardware Development",
+      "Description": "From concept to creation, we design and develop custom hardware solutions to power smart devices, embedded systems, and innovative electronics.",
+      "imgs": ["assets/images/services/hardware-1.png"]
+    },
+    {
+      "Title": "Cloud Computing Solutions",
+      "Description": "Leverage the power of the cloud with our scalable infrastructure, DevOps practices, and secure deployment models to accelerate innovation and reduce IT costs.",
+      "imgs": ["assets/images/services/cloud-1.png"]
+    },
+    {
+      "Title": "Web & App Hosting",
+      "Description": "Reliable and secure hosting services for your websites and applications with high availability, regular backups, and 24/7 technical support.",
+      "imgs": ["assets/images/services/hosting-1.png"]
+    },
+    {
+      "Title": "Training & Capacity Building",
+      "Description": "We offer expert-led training programs in software, hardware, and modern tech skills to empower individuals and teams with practical, industry-relevant knowledge.",
+      "imgs": ["assets/images/services/training-1.png"]
+    }
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "Have a project in mind or a question for us? We'd love to hear from you.",
+  "Contact.Btn": "Contact Us"
+
+}
