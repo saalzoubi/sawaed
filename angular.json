@@ -136,6 +136,9 @@
                             "devServerTarget": "saleem-alzoubi-portfolio:serve:production"
                         }
                     }
+                },
+                "deploy": {
+                  "builder": "angular-cli-ghpages:deploy"
                 }
             }
         }
