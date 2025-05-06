@@ -1,0 +1,281 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "CV_Jose_Hernandez_Spanish.pdf",
+
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.name": "Saleem Alzoubi",
+  "Banner.jobTitle": "Software Architect | Technical Manager | Software Developer",
+  "Banner.Description": "I am <span class='underline'>Certified PMP and Scrum Master</span> with more than 10 years of experience in software development and team leadership. Proven track record as a Technical Manager, Technical Team Lead and Scrum Master, specializing in Java, Angular, and Flutter. Adept at managing technical projects, leading cross-functional teams, and delivering high-quality software solutions.",
+  "Banner.ActionBtn": "Contact me",
+  "Banner.scanPdf": "<span class='underline'>Scan PDF Resume</span>",
+
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "I am a seasoned Technical Manager with over 10 years of experience in the field. My certifications include PMP, Scrum Master, OCP, and OCA, highlighting my expertise in project management and technical leadership.",
+    "My technical skill set encompasses a broad range of areas, including server implementation, backend and frontend development, mobile applications, and database management. This comprehensive knowledge allows me to oversee all aspects of a project, from database design to frontend and mobile application development.",
+    "I have managed projects involving up to 15 team members and multiple stakeholders, excelling in project management tasks and delivering insightful reports to directors and stakeholders. My responsibilities also include overseeing team performance, reviewing code, advising on clean coding practices, and optimizing implementation and database structures for enhanced performance, security, and maintainability.",
+    "Additionally, I contribute to defining business requirements for product owners, ensuring that any gaps are addressed to provide valuable insights to end users.",
+    "Some of the technical skills I have trained and worked with include (but are not limited to):"
+  ],
+
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "Tamkeen Technologies",
+      "Title": "Technical Manager",
+      "Date": "May 2023 - Current",
+      "logo": "tamkeen-logo.svg",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Technical Leadership & System Integration:</span> Led a team of developers skilled in Spring Boot, Java, Angular, and Flutter to build and deliver the Musaned project. This involved complex integrations with key national entities, such as the Ministry of Interior, Ministry of Human Resources and Social Development, the National Information Center, stc pay, and various banking systems. The integration ensured seamless interoperability, secure data exchanges, and smooth collaboration between platforms.",
+
+        "<span class='underline'>▹ Agile Methodologies & Scrum Implementation:</span> Spearheaded the adoption of Scrum methodologies to drive iterative development and improve collaboration within the team. Facilitated Scrum ceremonies, including sprint planning, stand-ups, reviews, and retrospectives, fostering a transparent and productive working environment. This approach accelerated delivery and ensured flexibility in responding to changing requirements.",
+
+        "<span class='underline'>▹ Complex Problem-Solving & Risk Mitigation:</span> Anticipated technical challenges and proactively resolved them to maintain project momentum. Acted as the primary problem-solver for the team, addressing major bugs, resolving production issues, and removing impediments, ensuring minimal disruption and continuous progress.",
+
+        "<span class='underline'>▹ Mentorship & Quality Assurance:</span> Provided continuous mentorship to team members, promoting a culture of learning and innovation. Conducted regular code reviews, enforced adherence to clean coding practices, and facilitated rigorous testing processes to ensure the highest quality deliverables. Maintained a strong focus on software quality and optimization, offering guidance on system design and technical strategies for long-term success.",
+
+        "<span class='underline'>▹ Sprint Management & Delivery Excellence:</span> Managed the end-to-end sprint process, ensuring clear objectives were set and achieved for each sprint cycle. Led the team to meet project milestones through disciplined sprint execution and careful task management. Conducted sprint reviews and demos, presenting outcomes and progress to stakeholders, keeping them aligned with the project vision.",
+
+        "<span class='underline'>▹ Client Collaboration & Stakeholder Engagement:</span> Engaged with clients throughout the project lifecycle to gather and refine requirements, address feedback, and ensure client expectations were met or exceeded. Conducted regular demos and provided transparent updates to stakeholders, ensuring they had a clear understanding of the project’s direction and progress.",
+
+        "<span class='underline'>▹ Reporting & Performance Tracking:</span> Delivered regular, detailed reports to upper management, offering insights into project achievements, potential risks, and areas for improvement. This ensured leadership had a comprehensive view of project status, helping them make informed decisions and plan strategically."
+        ]
+    },
+    {
+      "Tab": "ELM",
+      "Title": "Technical Manager",
+      "Date": "August 2021 - May 2023",
+      "logo": "elm-logo.svg",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Technical Leadership & Backend Development:</span> Led a full-stack development team in creating three backend systems for the Ministry of Hajj and Umrah, utilizing Spring Boot and Java. These systems formed the backbone of the ministry’s core operations, supporting critical functions for applicant management, company interactions, and operational oversight.",
+        "<span class='underline'>▹ Frontend & Backend Integration:</span> Collaborated closely with frontend developers to ensure seamless integration of the backend services with the ministry's Angular-based portals. This included the Ministry Portal, Applicant Portal, and Company Portal, ensuring that both backend logic and frontend user experiences aligned perfectly.",
+        "<span class='underline'>▹ Mobile Application Development & Delivery:</span> Led the development of a mobile application using Flutter, providing users with a responsive, mobile-friendly interface for accessing the Ministry of Hajj and Umrah's services. This enabled enhanced accessibility for applicants and stakeholders interacting with the portals via mobile devices.",
+        "<span class='underline'>▹ Scrum Master & Agile Facilitation:</span> Took on the role of Scrum Master, facilitating Agile ceremonies such as sprint planning, daily stand-ups, and retrospectives. Ensured that the team adhered to Agile principles, driving iterative development and fostering a collaborative, transparent environment where continuous improvement was a priority.",
+        "<span class='underline'>▹ Project Management & Resource Allocation:</span> Managed project scope, timelines, and resources, ensuring the project was delivered on time and within budget. Coordinated with various departments and ensured that each phase of the project was executed efficiently, meeting all deadlines and stakeholder expectations.",
+        "<span class='underline'>▹ Client Collaboration & Requirement Gathering:</span> Worked directly with the Ministry of Hajj and Umrah to gather detailed requirements, provide regular progress updates, and address any feedback or changes. Ensured that client satisfaction remained a top priority through open communication and a clear understanding of project goals.",
+        "<span class='underline'>▹ Stakeholder Engagement & Reporting:</span> Regularly engaged with ministry officials and other key stakeholders to present project demos, progress reports, and key metrics, ensuring transparency and fostering trust throughout the project lifecycle."
+      ]
+    },
+    {
+      "Tab": "Yas Holding - Second Step",
+      "Title": "Technical Lead & Scrum master",
+      "Date": "May 2019 - August 2021",
+      "logo": "yas-holding.svg",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Technical Leadership & Full-Stack Development:</span> Led a full-stack development team in building a comprehensive system for the UAE Ministry of Education. Utilized Java Spring Boot for the backend and Angular for the frontend, ensuring a robust and scalable solution that met the ministry’s educational system needs.",
+        "<span class='underline'>▹ Mobile Application Development & User Experience:</span> Orchestrated the development of a mobile application using Flutter to complement the web-based system. The app provided a seamless user experience across devices, allowing users to access key functionalities on-the-go, enhancing accessibility and convenience for students and educators.",
+        "<span class='underline'>▹ Scrum Master & Agile Leadership:</span> Served as the Scrum Master, championing Agile methodologies and facilitating key Agile ceremonies such as sprint planning, daily stand-ups, reviews, and retrospectives. Ensured the team adhered to Agile principles, improving collaboration and productivity through iterative development cycles.",
+        "<span class='underline'>▹ Project Management & Timely Delivery:</span> Managed the overall project scope, timelines, and resource allocation, ensuring that deliverables were completed on time and within budget. Effectively balanced project milestones with client expectations, maintaining high-quality standards throughout development.",
+        "<span class='underline'>▹ Client Collaboration & Requirement Gathering:</span> Built a strong relationship with the UAE Ministry of Education by actively collaborating with stakeholders to gather and refine requirements. Provided regular updates on project progress, and swiftly addressed feedback, ensuring continuous client satisfaction and alignment with project objectives.",
+        "<span class='underline'>▹ Successful Project Completion:</span> Delivered the comprehensive system for the UAE Ministry of Education, meeting all client requirements. The system was successfully deployed, achieving project goals and contributing to the digital transformation of the ministry’s educational services."
+      ]
+    },
+    {
+      "Tab": "Progresssoft Corporation",
+      "Title": "Technical Lead & Scrum master",
+      "Date": "March 2017 - December 2018",
+      "logo": "progresssoft-logo.svg",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Technical Leadership & System Development:</span> Led a development team in the creation and implementation of financial solutions, including electronic checks, financial transfers, electronic payments, and electronic wallets. Utilized Java Spring Boot for the backend and Angular for the frontend, delivering high-performance systems to streamline financial processes for clients.",
+        "<span class='underline'>▹ Agile Leadership as Scrum Master:</span> Acted as Scrum Master, implementing and fostering Agile methodologies. Facilitated Scrum ceremonies such as sprint planning, daily stand-ups, and retrospectives, ensuring that the team followed Agile principles for iterative development and efficient project delivery.",
+        "<span class='underline'>▹ Project Management & Timely Delivery:</span> Managed project scope, timelines, and resources effectively, ensuring that all deliverables were completed on schedule and within the allocated budget. Balanced competing project priorities while maintaining high-quality outputs.",
+        "<span class='underline'>▹ Client Collaboration & Stakeholder Engagement:</span> Established strong partnerships with clients, actively gathering and refining requirements, and providing regular project updates. Addressed client feedback to ensure their needs were met, which enhanced satisfaction and trust throughout the project lifecycle.",
+        "<span class='underline'>▹ Problem-Solving & Risk Mitigation:</span> Proactively identified and resolved technical challenges, ensuring that project progress was uninterrupted. Implemented strategies to prevent delays and addressed any risks or impediments that arose during development.",
+        "<span class='underline'>▹ Code Review & Quality Assurance:</span> Implemented code review processes using SonarQube, ensuring that the team adhered to coding best practices and maintained a high standard of code quality. Promoted clean code, security, and performance optimization as key deliverables."
+        ]
+    },
+    {
+      "Tab": "Scientific Containment",
+      "Title": "FullStack Developer",
+      "Date": "February 2015 - March 2017",
+      "logo": "scientificcontainment.png",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Java Development & Backend Systems:</span> Developed and maintained Java-based applications for key national projects such as the Jordanian Parliamentary Elections program, School Student Tracking system, and Patient Tracking system. Ensured that backend systems were scalable, secure, and aligned with the project’s technical requirements.",
+        "<span class='underline'>▹ Android Development & Mobile Solutions:</span> Designed and implemented Android applications for the Jordanian Parliamentary Elections program, School Student Tracking system, and Patient Tracking system. Focused on delivering seamless user experiences, ensuring smooth functionality across mobile devices.",
+        "<span class='underline'>▹ Project Management & Delivery:</span> Managed the development lifecycle of multiple projects, coordinating with various stakeholders to ensure timely delivery. Balanced competing project demands and ensured that all deliverables met client requirements and high-quality standards.",
+        "<span class='underline'>▹ Client Collaboration & Requirement Gathering:</span> Worked closely with clients to understand their needs, gathering detailed requirements to guide development. Provided regular updates and addressed feedback, ensuring a high level of client satisfaction throughout the project lifecycle.",
+        "<span class='underline'>▹ Quality Assurance & Testing:</span> Conducted thorough testing and debugging for all applications, ensuring that they were reliable, functional, and free of critical issues. Focused on delivering high-quality solutions that met both functional and performance requirements."
+      ]
+    }
+  ],
+
+  "FeatureProjects.Title": "My Projects",
+  "FeatureProjects.Label": "Highlighted Project",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "Musaned",
+      "Description": "Electronic platform that aims to provide a comprehensive system to integrate and organize Labor Recruitment process from the offering Countries, digitally authenticating the Contract between the Employer and the Laborer and organizing the contractual relationship between the Privet Recruitment Offices and the External Privet Recruitment Offices. Guided by the Ministry of Human Resources and Social Development, eTawtheeq aims to facilitate the Labor Recruitment Process and protect the legal rights of the binding parties by applying a comprehensive process that starts with the recruitment and selection process of a suitable Candidate by the Employer and ends with the Candidate arrival to the Kingdom, which will be documented and authenticated through signed Contracts of all involved parties. eTawtheeq also aims to increase the awareness of the Users through informative Content about the System",
+      "imgs": [
+        "assets/images/projects/musaned/musaned-1.png",
+        "assets/images/projects/musaned/musaned-2.png",
+        "assets/images/projects/musaned/musaned-3.png",
+        "assets/images/projects/musaned/musaned-4.png",
+        "assets/images/projects/musaned/musaned-5.png",
+        "assets/images/projects/musaned/musaned-6.png",
+        "assets/images/projects/musaned/musaned-7.png",
+        "assets/images/projects/musaned/musaned-8.png",
+        "assets/images/projects/musaned/musaned-9.png",
+        "assets/images/projects/musaned/musaned-10.png",
+        "assets/images/projects/musaned/musaned-11.png"
+      ],
+      "Technologies": ["Microservices","Springboot", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Apache Tomcat", "OAuth2", "JWT"]
+    },
+    {
+      "Title": "Hajj Project for the Ministry of Hajj and Umrah",
+      "Description": "The <b>Hajj Project</b> is a comprehensive system developed for the <b>Ministry of Hajj and Umrah</b>, consisting of three portals and three mobile apps to streamline the management of pilgrims.<br><br>- The <b>Ministry Portal</b> allows the Ministry to manage companies and import pilgrim data from multiple sources, including Excel, CSV, and real-time integration with the <b>Nusk platform</b>. The portal features a heat map for real-time pilgrim location tracking, company management, a reporting system, and a dashboard displaying insights by nationality, location, age, gender, and more.<br><br>- The <b>Company Portal</b>, available on both web and mobile platforms, enables companies to manage their users and pilgrims, providing streamlined administrative control.<br><br>- The <b>Pilgrim Portal</b> includes two mobile apps: one for <b>pilgrims</b>, offering features such as emergency hospital locators, group communication, and Hajj step tracking, and another for <b>pilgrim group leaders</b> to track and communicate with their group members in real-time. The web portal supports both leaders and pilgrims with similar functionalities.",
+      "imgs": [
+        "assets/images/projects/hajj/hajj-1.png",
+        "assets/images/projects/hajj/hajj-2.png",
+        "assets/images/projects/hajj/hajj-3.png",
+        "assets/images/projects/hajj/hajj-4.png",
+        "assets/images/projects/hajj/hajj-5.png",
+        "assets/images/projects/hajj/hajj-6.png"
+      ],
+      "Technologies": ["Microservices","Springboot", "Angular", "SQL", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Firebase", "Kubernetes", "Apache Kafka", "Apache Tomcat","OAuth2", "JWT"]
+    },
+    {
+      "Title": "Mauritania Government Project for the Ministry of Interior",
+      "Description": "The project was developed for the Ministry of Interior in Mauritania to manage ministries and departments across all cities. It includes features for adding and updating ministries and departments, with support for managing their locations, logos, users, and working/holiday schedules. The system also allows visitors to sign in using their ID numbers and book appointments with ministries or departments. Additionally, it handles appointment management and payment processing for bookings that require payments.",
+      "imgs": [
+        "assets/images/projects/muritania/muritania-1.png",
+        "assets/images/projects/muritania/muritania-2.png",
+        "assets/images/projects/muritania/muritania-3.png",
+        "assets/images/projects/muritania/muritania-4.png",
+        "assets/images/projects/muritania/muritania-5.png",
+        "assets/images/projects/muritania/muritania-6.png",
+        "assets/images/projects/muritania/muritania-7.png",
+        "assets/images/projects/muritania/muritania-8.png"
+      ],
+      "Technologies": ["Microservices","Springboot", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Apache Tomcat","OAuth2", "JWT"]
+    },
+    {
+      "Title": "AlManhal for the Ministry of Education in the UAE",
+      "Description": "The project for the Ministry of Education in the UAE is a comprehensive system designed to manage schools, departments, financial details, students, classrooms, exams, courses, quizzes, and marks. It also handles high school results and generates certificates using custom Word templates, exporting them to PDF. Additionally, the system includes a reporting module that allows data export in various file formats and extensions, providing a streamlined solution for the ministry’s educational management needs.",
+      "imgs": [
+        "/assets/images/projects/manhal/manhal-1.png"
+      ],
+      "Technologies": ["Java", "Springboot", "SQL", "Jasper Reports", "Angular", "Google Web Toolkit(GWT)"]
+    },
+    {
+      "Title": "Electronic Check Clearing (ECC) Suite  - Banks",
+      "Description": "The Electronic Check Clearing (ECC) Suite revolutionizes the traditional process of handling paper checks by transforming it into a fully digital, secure, and end-to-end solution across the entire check life cycle. This system drastically reduces operational costs and time associated with check issuance and clearing. It supports nationwide implementation models, including distributed, application service provider, or hybrid models, tailored to the country’s payment landscape and efficiency needs. The PS-ECC provides intelligent business tools for administrators to monitor transactions and optimize system performance. Its extensive reporting features allow for detailed tracking and auditing through various analytical and end-of-day reports. With advanced security, seamless integrations, scalability, and a modern cloud-enabled infrastructure, PS-ECC ensures a safe and efficient clearing environment for financial institutions.",
+      "imgs": [
+        "/assets/images/projects/manhal/manhal-1.png"
+      ],
+      "Technologies": ["Microservices","Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Angular", "Android", "Swift", "SQL", "Jasper Reports"]
+    },
+    {
+      "Title": "Mandate Management System - Banks",
+      "Description": "The Mandate Management System (MMS) is an advanced, centralized solution designed for regulatory bodies to automate and streamline mandate management processes, all secured with a digital signature. The system enables users to generate direct debit transactions in real-time, covering mandate initiation, amendment, cancellation, deferment, continuation, transfer, enquiry, and payment verification. It integrates seamlessly with Automated Clearing House (ACH) systems, supporting ISO 20022 (MX) and other messaging formats. The system handles both unilateral mandates, which can be terminated by one party, and bilateral mandates, requiring mutual approval. It also facilitates debtor and creditor relations, allowing them to manage mandates according to rules set by the regulatory body.",
+      "imgs": [
+        "assets/images/agrourbana/agrourbana1.png",
+        "assets/images/agrourbana/agrourbana2.png",
+        "assets/images/agrourbana/agrourbana3.png",
+        "assets/images/agrourbana/agrourbana4.png",
+        "assets/images/agrourbana/agrourbana5.png"
+      ],
+      "Technologies": ["Microservices","Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Angular", "Android", "Swift", "SQL"]
+    },
+
+    {
+      "Title": "Jordanian Parliamentary Elections",
+      "Description": "The Jordanian Parliamentary Elections Website was developed to assist candidates in tracking their election progress. The platform provides real-time updates on the percentage of votes each candidate has received from different schools and identifies voters who have yet to cast their votes. It also features a comprehensive dashboard that displays this data visually. Additionally, the system allows designated personnel at each school to input voting data, ensuring accurate and timely updates.",
+      "imgs": [
+        "assets/images/proyex/proyex1.png",
+        "assets/images/proyex/proyex2.png",
+        "assets/images/proyex/proyex3.png",
+        "assets/images/proyex/proyex4.png",
+        "assets/images/proyex/proyex5.png",
+        "assets/images/proyex/proyex6.png",
+        "assets/images/proyex/proyex7.png",
+        "assets/images/proyex/proyex8.png",
+        "assets/images/proyex/proyex9.png",
+        "assets/images/proyex/proyex10.png",
+        "assets/images/proyex/proyex11.png",
+        "assets/images/proyex/proyex12.png"
+      ],
+      "Technologies": ["Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "HTML", "CSS", "Bootstrap", "JQuery", "MongoDB","Jasper Reports"]
+    },
+    {
+      "Title": "SafeRoute",
+      "Description": "The SafeRoute is Student Bus Monitoring System Mobile App was developed to ensure the safety and monitoring of students during their daily commute. The app enables schools and parents to track the real-time location of school buses, ensuring that students are on board and following the correct routes. Parents receive notifications when their children are picked up or dropped off, while schools can monitor bus routes, track delays, and ensure compliance with safety standards. With secure access and user-friendly features, this system enhances communication between parents, drivers, and school administrators, ensuring the safety and efficiency of student transportation.",
+      "imgs": [
+        "assets/images/proyex/proyex1.png",
+        "assets/images/proyex/proyex2.png",
+        "assets/images/proyex/proyex3.png",
+        "assets/images/proyex/proyex4.png",
+        "assets/images/proyex/proyex5.png",
+        "assets/images/proyex/proyex6.png",
+        "assets/images/proyex/proyex7.png",
+        "assets/images/proyex/proyex8.png",
+        "assets/images/proyex/proyex9.png",
+        "assets/images/proyex/proyex10.png",
+        "assets/images/proyex/proyex11.png",
+        "assets/images/proyex/proyex12.png"
+      ],
+      "Technologies": ["Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers","Flutter", "Angular", "SCSS", "Firebase", "MySQL"]
+    },
+    {
+      "Title": "Patient Tracking System",
+      "Description": "The Patient Tracking System is a comprehensive platform available as both a website and mobile app, designed to manage patients' medical appointments and track their treatment journey. The system allows patients to book, reschedule, and cancel appointments seamlessly. It also provides real-time updates on upcoming treatments, medical procedures, and consultations. Additionally, patients can access their medical reports, treatment history, and receive reminders for upcoming visits. Healthcare providers can use the platform to manage patient records, track treatment progress, and communicate important updates. This system enhances the overall patient experience, ensuring smoother medical journeys with real-time communication and organized healthcare management.",
+      "imgs": [
+        "assets/images/proyex/proyex1.png",
+        "assets/images/proyex/proyex2.png",
+        "assets/images/proyex/proyex3.png",
+        "assets/images/proyex/proyex4.png",
+        "assets/images/proyex/proyex5.png",
+        "assets/images/proyex/proyex6.png",
+        "assets/images/proyex/proyex7.png",
+        "assets/images/proyex/proyex8.png",
+        "assets/images/proyex/proyex9.png",
+        "assets/images/proyex/proyex10.png",
+        "assets/images/proyex/proyex11.png",
+        "assets/images/proyex/proyex12.png"
+      ],
+      "Technologies": ["Springboot","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers","Java","Android", "HTML", "CSS", "Bootstrap", "JQuery", "Jasper Reports", "MySQL"]
+    },
+    {
+      "Title": "Ramthacom Mobile Application",
+      "Description": "The Ramthacom is Social Media Mobile Application was developed to allow users across Jordan to register using their mobile numbers and engage with content through posts, including text, images, and videos. Users can react to posts with various emotions such as like, dislike, hate, and sad. The app also offers a dedicated section for football enthusiasts to watch videos of team training sessions, goals, and match summaries, as well as live match streaming. Additional features include account management settings, where users can change their mobile number, email, name, personal image, password, delete their account, or log out.",
+      "imgs": [
+        "assets/images/tusuperplan/tusuperplan1.png",
+        "assets/images/tusuperplan/tusuperplan2.png",
+        "assets/images/tusuperplan/tusuperplan3.png",
+        "assets/images/tusuperplan/tusuperplan4.png",
+        "assets/images/tusuperplan/tusuperplan5.png"
+      ],
+      "Technologies": ["Android", "Firebase","SqlLite"]
+    }
+  ],
+
+  "OtherProjects.Title": "More Projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "SafeRoute: Student Bus Monitoring System",
+      "Description": "Tttttt",
+      "imgs": ["assets/images/hands-game.png"],
+      "ghLink": "https://github.com/andresjosehr/hands-game",
+      "demoLink": "https://projects.andresjosehr.com/hands-game",
+      "Technologies": ["Angular", "CSS GRID", "SASS", "Angular animations"]
+    }
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
+  "Contact.Btn": "Contact Me"
+}
