@@ -12,7 +12,6 @@
     justify-content: space-between; // pushes logo to the right
     height: 100vh;
     padding: 0 5%;
-
     flex-wrap: wrap; // to support mobile stacking
 
     .section-box-banner {
@@ -81,6 +80,7 @@
 .rotate {
   animation: spinY 2s linear infinite;
   transform-style: preserve-3d;
+  will-change: transform;
 }
 
 @keyframes spinY {
@@ -89,28 +89,6 @@
   }
   100% {
     transform: rotateY(360deg);
-  }
-}
-
-.video-background-section {
-  position: relative;
-  overflow: hidden;
-
-  video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    object-fit: cover;
-  }
-
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
   }
 }
 
@@ -138,5 +116,44 @@
     .logo-container img {
       max-width: 200px;
     }
+  }
+}
+
+
+.animated-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 5%;
+  position: relative;
+  z-index: 2;
+
+  .line {
+    height: 10px;
+    width: 0;
+    border-radius: 2px;
+
+    animation: expandLine 2s ease-in-out infinite alternate;;
+  }
+
+  .red {
+    background-color: #3b004c;
+    animation-delay: 0s;
+  }
+
+  .blue {
+    background-color: #7c0ea1;
+    animation-delay: 0.2s;
+  }
+
+  .green {
+    background-color: #b35dcd;
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes expandLine {
+  to {
+    width: 100%;
   }
 }
