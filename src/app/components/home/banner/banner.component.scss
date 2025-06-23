@@ -96,28 +96,41 @@
 @media (max-width: 768px) {
   .banner .container {
     flex-direction: column;
+    align-items: center;
 
-    .section-box-banner,
     .logo-container {
+      order: -1; // moves logo above section-box-banner
+      flex: 1 1 100%;
+      justify-content: center;
+      margin-top: 40px;
+
+      img {
+        max-width: 200px;
+      }
+    }
+
+    .section-box-banner {
       flex: 1 1 100%;
       justify-content: center;
       text-align: center;
       margin-top: 20px;
-    }
 
-    .section-box-banner h2 {
-      font-size: 40px;
-    }
+      h2 {
+        font-size: 40px;
+      }
 
-    .section-box-banner h5 {
-      font-size: 20px;
-    }
+      h5 {
+        font-size: 20px;
+      }
 
-    .logo-container img {
-      max-width: 200px;
+      .animated-lines {
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
+
 
 
 .animated-lines {
