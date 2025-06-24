@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1750720175745,
+  "timestamp": 1750770522256,
   "index": "/sawaed/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/sawaed/favicon.ico",
         "/sawaed/index.html",
-        "/sawaed/main.b9a4857d2fdcbd1c.js",
+        "/sawaed/main.e8a62de68aea10bc.js",
         "/sawaed/manifest.webmanifest",
         "/sawaed/polyfills.f0501f27b840d1d7.js",
         "/sawaed/runtime.4899bbbf33da58ed.js",
@@ -271,8 +271,8 @@
     "/sawaed/assets/fonts/SFMono/SFMono-SemiboldItalic.woff": "4bb2ddc7da8064698328e123bd3ec673f674a90d",
     "/sawaed/assets/fonts/SFMono/SFMono-SemiboldItalic.woff2": "3621c6894388833626fd4cf132087a3f46a54a21",
     "/sawaed/assets/fonts/SFMono/stylesheet.css": "b6c8e6eb227dc3d0ae6b70b6a67930b190533453",
-    "/sawaed/assets/i18n/ar.json": "5c8016cda4cf6b1e1e1371b3b9d3c24aef39bd47",
-    "/sawaed/assets/i18n/en.json": "bf798be20a442295e7bc1f2d31bcd88da0a9d1a5",
+    "/sawaed/assets/i18n/ar.json": "6ee3ff2bfe77aa82fedb7d81180f82b6bc3dce6e",
+    "/sawaed/assets/i18n/en.json": "267e990c78dbde62b67a0ac67fa5fe9c9637af33",
     "/sawaed/assets/icons/folder.svg": "9b70ce8877c8a727520999b7f6f4756cae8f13b1",
     "/sawaed/assets/images/agrourbana/agrourbana1.png": "b7be14ee55d169023b4549cd286a723777299bdf",
     "/sawaed/assets/images/agrourbana/agrourbana2.png": "cfa3b1d8f1150283231f0b823e2f297c6c41e675",
@@ -362,8 +362,8 @@
     "/sawaed/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/sawaed/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/sawaed/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/sawaed/index.html": "4e183f74bb16cac038ab392c4278e62a0407affd",
-    "/sawaed/main.b9a4857d2fdcbd1c.js": "0f5e66010fa2d86a7ab875f9f85a7e8e44a2c17d",
+    "/sawaed/index.html": "1b24769f9bcceefbf1a309a510ae1bb4dd7be468",
+    "/sawaed/main.e8a62de68aea10bc.js": "21ebcd53176095f0101b07dfc2666b48fb663deb",
     "/sawaed/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/sawaed/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/sawaed/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",
