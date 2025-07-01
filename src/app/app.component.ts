@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
     this.titleService.setTitle( 'Sawaed Al Elm' );
 
     this.metaService.addTags([
-      {name: 'keywords', content: 'Software Development, Hardware Development, Cloud Computing, Software Engineering, Computer Engineering, Mobile Apps, Sawaed, Technologies, Elm'},
+      {name: 'keywords', content: 'Sawaed Al Elm, Software Development, Hardware Development, Cloud Computing, Software Engineering, Computer Engineering,development,technologies, Mobile Apps, Sawaed, Technologies, Elm,سواعد العلم , علم, سواعد, علم للتقنيات, سواعد للتقنيات, اندرويد, ايفون هندسة البرمجيات, هندسة الحاسوب, تطوير البرمجيات, تكنولوجيا, تطبيقات, برمجة'},
       {name: 'description', content: 'At Sawaed Al Elm, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in software development, hardware integration, and mobile application design, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you\'re looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together.'},
     ]);
 
