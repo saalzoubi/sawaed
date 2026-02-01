@@ -15,6 +15,11 @@
   "OtherProjects.Title": "Our Services",
   "OtherProjects.Projects": [
     {
+      "Title": "NFC Card System",
+      "Description": "Smart NFC-enabled cards that allow users to instantly access your published media, social profiles, contact information, and images with a simple tap or QR code scan. Perfect for seamless digital networking and information sharing.",
+      "imgs": ["assets/images/services/nfcmanagmentsystem.png"]
+    },
+    {
       "Title": "Software Development & Mobile Applications",
       "Description": "We build robust server-side systems, intuitive front-end interfaces, and seamless mobile applications tailored to your business needs, using the latest technologies and best practices.",
       "imgs": ["assets/images/services/software-1.png"]
