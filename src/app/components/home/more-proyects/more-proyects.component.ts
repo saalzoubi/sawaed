@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Router, NavigationEnd} from '@angular/router';
-import {TranslateService} from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-more-proyects',
@@ -10,31 +9,13 @@ import {TranslateService} from '@ngx-translate/core';
 export class MoreProyectsComponent implements OnInit {
   projects: any[] = [];
 
-  constructor(
-    private router: Router,
-    private translateService: TranslateService
-  ) {
-  }
+  constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
     this.loadData();
     this.translateService.onLangChange.subscribe(() => {
       this.loadData();
     });
-  }
-
-  redirect(route: string, event): void {
-    const id = event.target.id;
-    if (id === 'demoLink' || id === 'ghLink') {
-      return;
-    }
-    window.open(route, '_blank');
   }
 
   loadData(): void {
@@ -42,5 +23,4 @@ export class MoreProyectsComponent implements OnInit {
       this.projects = data;
     });
   }
-
 }

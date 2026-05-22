@@ -1,104 +1,58 @@
 @import "./../../../../variables.scss";
 
 .about {
-
-  .about-description {
-    margin-top: 30px;
-    max-width: 480px;
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
   }
 
-  .about-img-container {
-    width: 324px;
-    margin: auto;
-    position: relative;
+  .about-text {
+    p {
+      color: $LightSlate;
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 18px;
 
-    &:after {
-      content: '';
-      border: 2px solid $Green;
-      z-index: 0;
-      display: block;
-      position: absolute;
-      width: 400px;
-      height: 500px;
-      border-radius: 3px;
-      bottom: 30px;
-      left: 23px;
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .about-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-frame {
+    position: relative;
+    padding: 24px;
+    border-radius: 14px;
+    background: rgba(13, 31, 60, 0.6);
+    border: 1px solid rgba(27, 206, 223, 0.18);
+    backdrop-filter: blur(8px);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: rgba(27, 206, 223, 0.45);
+      box-shadow: 0 0 35px rgba(27, 206, 223, 0.12);
     }
 
     img {
-      z-index: 2;
-      position: relative;
-    }
-  }
-
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    overflow: hidden;
-    padding: 0;
-    margin: 20px 0 0;
-    list-style: none;
-  }
-
-  .skill-element {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-size: 13px;
-    font-family: $CodeFont;
-    color: $Slate;
-
-    span {
-      padding-bottom: 5px;
-    }
-
-    &:before {
-      content: '▹';
-      position: absolute;
-      left: 0;
-      color: $Green;
-      font-size: 14px;
-      line-height: 12px;
-    }
-  }
-}
-
-/* Media Queries */
-@media (min-width: 992px) and (max-width: 1300px) {
-  .about-img-container {
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .about {
-
-    .about-img-container {
       width: 100%;
+      max-width: 360px;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+  }
+}
 
-      img {
-        width: 70%;
-        height: 70%;
-      }
-
-      &:after {
-        display: none;
-      }
-
-      &.small-image {
-        img {
-          width: 200px;
-          height: 200px;
-        }
-
-        &:after {
-          width: 200px;
-          height: 200px;
-          bottom: 190px;
-          left: 74px;
-        }
-      }
+@media (max-width: 768px) {
+  .about {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
   }
 }

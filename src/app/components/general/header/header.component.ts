@@ -39,18 +39,11 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this.languageFormControl.valueChanges.subscribe(val => {
-
-      if (!val){
-        val = 'en';
-      }
-      console.log(`languageFormControl valueChanges '${val}' `);
+      if (!val) { val = 'en'; }
       this.languageService.switchLang(val);
     });
-    console.log(`this.languageService.language '${this.languageService.language}' `);
     this.languageFormControl.setValue(this.languageService.language);
-
   }
   // tslint:disable-next-line:typedef
   scroll(el) {

@@ -1,29 +1,15 @@
-<section class="section" id="contact">
-  <div class="container contact">
+<section class="section contact-section" id="contact">
+  <div class="container">
     <div class="section-box">
-      <div class="mb-4" data-aos="fade-up" data-aos-duration="1000">
-        <h3 class="contact-pre-title big-subtitle">
-          {{ "Contact.Pretitle" | translate }}
-        </h3>
-        <h4 class="e-font contact-title big-title">
-          {{ "Contact.Title" | translate }}
-        </h4>
-      </div>
-      <p data-aos="fade-up" data-aos-duration="1000">
-        {{ "Contact.Content" | translate }}
-      </p>
-      <div class="mt-5">
-        <a
-          href="mailto:info@sawaedelm.com"
-          target="_blank"
-          class="main-btn"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {{ "Contact.Btn" | translate }}
+      <div class="contact-inner" data-aos="fade-up" data-aos-duration="800">
+        <p class="contact-pre">{{ "Contact.Pretitle" | translate }}</p>
+        <h2 class="contact-heading">{{ "Contact.Title" | translate }}</h2>
+        <p class="contact-text">{{ "Contact.Content" | translate }}</p>
+        <a href="mailto:info@sawaedelm.com" target="_blank" class="btn-contact">
+          <i class="fas fa-envelope"></i>
+          <span>{{ "Contact.Btn" | translate }}</span>
         </a>
       </div>
-
     </div>
   </div>
 </section>

@@ -1,78 +1,82 @@
 @import "./../../../../variables.scss";
 
-.contact{
+.contact-section {
+  .section-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+  }
 
-    margin: 0 auto;
-    max-width: 1000px;
+  .contact-inner {
     text-align: center;
-    max-width: 600px;
+    max-width: 580px;
     margin: 0 auto;
-    height: 100vh;
-    display: table;
+  }
 
-    .container{
-        display: table-cell;
-        vertical-align: middle;
+  .contact-pre {
+    font-family: $CodeFont;
+    font-size: 14px;
+    color: $Green;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .contact-heading {
+    font-size: clamp(42px, 7vw, 76px);
+    font-weight: 700;
+    color: $LightestSlate;
+    font-family: $MainFont;
+    margin-bottom: 22px;
+    line-height: 1.1;
+  }
+
+  .contact-text {
+    font-size: 17px;
+    color: $Slate;
+    line-height: 1.8;
+    margin-bottom: 44px;
+  }
+
+  .btn-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 38px;
+    background: transparent;
+    color: $Green;
+    border: 1.5px solid $Green;
+    border-radius: 6px;
+    font-family: $CodeFont;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: $Green;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+      z-index: 0;
     }
 
-    .contact-title{
-
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        white-space: nowrap;
-        font-size: 60px;
-        font-weight: 600;
-        color: $LightestSlate;
-        margin: auto;
-        width: fit-content;
-    }
-    .contact-pre-title{
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: 10px 0 40px;
-        width: 100%;
-        white-space: nowrap;
-        font-size: 32px;
-        display: block;
-        color: $Green;
-        font-size: 16px;
-        font-family: $CodeFont;
-        font-weight: normal;
-        margin-bottom: 20px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center;
+    i, span {
+      position: relative;
+      z-index: 1;
     }
 
-}
+    i { font-size: 15px; }
 
-@media (max-width: 768px){
-    
-    .contact{
-        height: 100vh;
-        padding: 0 !important;
-        margin: 0 auto !important;
-        display: table;
+    &:hover {
+      color: $Navy;
 
-        .container{
-            display: table-cell;
-            vertical-align: middle;
-        }
+      &::before { transform: scaleX(1); }
     }
+  }
 }

@@ -1,26 +1,36 @@
-<section class="section banner">
+<section class="banner">
 
+  <div class="banner-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
+  <div class="container">
+    <div class="banner-inner" [@bannerTrigger]>
 
-  <div  class="container">
-    <div class="section-box-banner">
-      <div class="content">
-        <div  class="logo-container">
-          <img src="assets/images/logo.png"  class="rotate" />
-        </div>
-        <div class="banner-title">
-          <h2>{{ "Banner.name" | translate }}</h2>
-          <h5>{{ "Banner.jobTitle" | translate }}</h5>
-        </div>
-        <div class="animated-lines">
-          <span class="line red"></span>
-          <span class="line blue"></span>
-          <span class="line green"></span>
+      <div class="banner-text">
+        <h1 class="banner-headline">{{ "Banner.name" | translate }}</h1>
+        <p class="banner-tagline">{{ "Banner.jobTitle" | translate }}</p>
+        <div class="banner-cta">
+          <a (click)="scrollTo('contact')" class="btn-glow">{{ "Contact.Btn" | translate }}</a>
+          <a (click)="scrollTo('about')" class="btn-ghost">{{ "Header.Item1" | translate }}</a>
         </div>
       </div>
+
+      <div class="banner-logo-wrap">
+        <div class="logo-ring ring-1"></div>
+        <div class="logo-ring ring-2"></div>
+        <img src="assets/images/logo.png" class="logo-float" alt="Sawaed Al Elm" />
+      </div>
+
     </div>
+  </div>
 
-
+  <div class="scroll-hint">
+    <div class="scroll-mouse">
+      <span class="scroll-wheel"></span>
+    </div>
   </div>
 
 </section>
