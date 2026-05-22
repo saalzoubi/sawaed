@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1769964334223,
+  "timestamp": 1779488091212,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.2c2cd595ff298e1e.js",
+        "/main.55270f8e94236fea.js",
         "/manifest.webmanifest",
         "/polyfills.f0501f27b840d1d7.js",
         "/runtime.4899bbbf33da58ed.js",
         "/scripts.68ed26d13e2edc19.js",
-        "/styles.bc12691c25169de2.css"
+        "/styles.f6560522eac7e925.css"
       ],
       "patterns": []
     },
@@ -292,8 +292,8 @@
     "/assets/fonts/Tajawal/Tajawal-Light.ttf": "1875a702b74328d0315f3081bbdb4a4f41be183e",
     "/assets/fonts/Tajawal/Tajawal-Medium.ttf": "e3207b83aa9221d91ba732d5057c24d70eeb3efe",
     "/assets/fonts/Tajawal/Tajawal-Regular.ttf": "1139e55d7b8909acda1b9f3f90e30f7774e93fef",
-    "/assets/i18n/ar.json": "485d877d8e7a7f85a6dd80cf5badce65f7d9d6a2",
-    "/assets/i18n/en.json": "270b9aca471c72d0659bf154a62f8b5ba6d8deb4",
+    "/assets/i18n/ar.json": "d6c78dbf4dccf540e2bf0e728b53389bfc9ae239",
+    "/assets/i18n/en.json": "4922a5b383240635a4b470a73c48cb4d686df34b",
     "/assets/icons/folder.svg": "9b70ce8877c8a727520999b7f6f4756cae8f13b1",
     "/assets/images/agrourbana/agrourbana1.png": "b7be14ee55d169023b4549cd286a723777299bdf",
     "/assets/images/agrourbana/agrourbana2.png": "cfa3b1d8f1150283231f0b823e2f297c6c41e675",
@@ -384,14 +384,14 @@
     "/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/index.html": "152957ee086e678475a1680d9009d7e470461571",
-    "/main.2c2cd595ff298e1e.js": "9c7b41f02096cb508a2e683beb40a03c5f5ea018",
+    "/index.html": "779aec75d8c455905938c9484003b8b5cb34bde1",
+    "/main.55270f8e94236fea.js": "5484610a65add719244b2cea1a8627ad9f34a35f",
     "/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",
     "/runtime.4899bbbf33da58ed.js": "880a29f9869423d0c39cab4aeaebdc374935fab5",
     "/scripts.68ed26d13e2edc19.js": "cffb6dcf1e317b2859024c20248dd0c50ce6b885",
-    "/styles.bc12691c25169de2.css": "4c0cfca1aa0891ac3233fa33841594d06c3e64fd"
+    "/styles.f6560522eac7e925.css": "8404bcaba8fe7de480461efe83b2f023c9d87769"
   },
   "navigationUrls": [
     {

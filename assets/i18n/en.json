@@ -16,33 +16,33 @@
   "OtherProjects.Projects": [
     {
       "Title": "NFC Card System",
-      "Description": "Smart NFC-enabled cards that allow users to instantly access your published media, social profiles, contact information, and images with a simple tap or QR code scan. Perfect for seamless digital networking and information sharing.",
-      "imgs": ["assets/images/services/nfcmanagmentsystem.png"]
+      "Description": "Smart NFC-enabled cards that allow users to instantly access your published media, social profiles, contact information, and images with a simple tap or QR code scan.",
+      "icon": "fas fa-id-card"
     },
     {
-      "Title": "Software Development & Mobile Applications",
-      "Description": "We build robust server-side systems, intuitive front-end interfaces, and seamless mobile applications tailored to your business needs, using the latest technologies and best practices.",
-      "imgs": ["assets/images/services/software-1.png"]
+      "Title": "Software & Mobile Apps",
+      "Description": "We build robust server-side systems, intuitive front-end interfaces, and seamless mobile applications tailored to your business needs using the latest technologies.",
+      "icon": "fas fa-code"
     },
     {
       "Title": "Hardware Development",
       "Description": "From concept to creation, we design and develop custom hardware solutions to power smart devices, embedded systems, and innovative electronics.",
-      "imgs": ["assets/images/services/hardware-1.png"]
+      "icon": "fas fa-microchip"
     },
     {
-      "Title": "Cloud Computing Solutions",
+      "Title": "Cloud Computing",
       "Description": "Leverage the power of the cloud with our scalable infrastructure, DevOps practices, and secure deployment models to accelerate innovation and reduce IT costs.",
-      "imgs": ["assets/images/services/cloud-1.png"]
+      "icon": "fas fa-cloud"
     },
     {
       "Title": "Web & App Hosting",
       "Description": "Reliable and secure hosting services for your websites and applications with high availability, regular backups, and 24/7 technical support.",
-      "imgs": ["assets/images/services/hosting-1.png"]
+      "icon": "fas fa-server"
     },
     {
       "Title": "Training & Capacity Building",
-      "Description": "We offer expert-led training programs in software, hardware, and modern tech skills to empower individuals and teams with practical, industry-relevant knowledge.",
-      "imgs": ["assets/images/services/training-1.png"]
+      "Description": "Expert-led training programs in software, hardware, and modern tech skills to empower individuals and teams with practical, industry-relevant knowledge.",
+      "icon": "fas fa-graduation-cap"
     }
   ],
 
