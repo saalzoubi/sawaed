@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import {trigger, style, query, transition, stagger, animate } from '@angular/animations';
 import { UntypedFormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
+import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 
 
 @Component({
@@ -35,7 +36,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private router: Router,
-    public languageService: LanguageService
+    public languageService: LanguageService,
+    private analytics: AnalyticsService
   ) { }
 
   ngOnInit(): void {
@@ -47,6 +49,7 @@ export class HeaderComponent implements OnInit {
   }
   // tslint:disable-next-line:typedef
   scroll(el) {
+    this.analytics.trackNavClick(el);
     if (document.getElementById(el)) {
       document.getElementById(el).scrollIntoView({behavior: 'smooth'});
     } else{

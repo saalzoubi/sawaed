@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContactComponent } from './contact/contact.component';
 import { MoreProyectsComponent } from './more-proyects/more-proyects.component';
+import { ProductComponent } from './product/product.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function HttpLoaderFactory(http: HttpClient){
@@ -19,6 +20,7 @@ export function HttpLoaderFactory(http: HttpClient){
     BannerComponent,
     AboutComponent,
     MoreProyectsComponent,
+    ProductComponent,
     ContactComponent,
   ],
   imports: [

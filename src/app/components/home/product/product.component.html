@@ -1,0 +1,37 @@
+<section class="section product-section" id="product">
+  <div class="container">
+    <div class="section-box">
+
+      <div data-aos="fade-up">
+        <h3 class="section-title">
+          <span class="n-section-title">03.</span> {{ "CoreProduct.Title" | translate }}
+        </h3>
+      </div>
+
+      <div class="product-intro" data-aos="fade-up" data-aos-duration="800">
+        <div class="product-badge">{{ "CoreProduct.Badge" | translate }}</div>
+        <h2 class="product-name">{{ "CoreProduct.Name" | translate }}</h2>
+        <p class="product-tagline">{{ "CoreProduct.Tagline" | translate }}</p>
+        <div class="product-pills">
+          <span class="pill" *ngFor="let pill of 'CoreProduct.Pills' | translate">{{ pill }}</span>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div
+          *ngFor="let feature of features; let i = index"
+          class="feature-card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          [attr.data-aos-delay]="(i % 4) * 80">
+          <div class="feature-icon">
+            <i [class]="feature.icon"></i>
+          </div>
+          <h5 class="feature-title">{{ feature.Title }}</h5>
+          <p class="feature-desc">{{ feature.Description }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
