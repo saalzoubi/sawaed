@@ -2,6 +2,7 @@
   "Header.Item1": "About Us",
   "Header.Item2": "Services",
   "Header.Item3": "Contact",
+  "Header.Item4": "Product",
 
   "Banner.name": "Sawaed Al Elm Technologies",
   "Banner.jobTitle": "Together, We Build the Future",
@@ -43,6 +44,54 @@
       "Title": "Training & Capacity Building",
       "Description": "Expert-led training programs in software, hardware, and modern tech skills to empower individuals and teams with practical, industry-relevant knowledge.",
       "icon": "fas fa-graduation-cap"
+    }
+  ],
+
+  "CoreProduct.Title": "Our Core Product",
+  "CoreProduct.Badge": "School Mobile Platform",
+  "CoreProduct.Name": "Sawaed Elm",
+  "CoreProduct.Tagline": "The all-in-one mobile platform connecting students, parents, teachers, administrators, and drivers — on Android, iOS, and Web. One app. Every role. Every school.",
+  "CoreProduct.Pills": ["Android", "iOS", "Web", "Arabic · RTL", "English", "French"],
+  "CoreProduct.Features": [
+    {
+      "icon": "fas fa-book-open",
+      "Title": "Academic Management",
+      "Description": "Assignments, exams & weekly plans — teachers create, students submit, parents stay informed. Automated reminders and grade tracking built in."
+    },
+    {
+      "icon": "fas fa-rss",
+      "Title": "Smart Social Feed",
+      "Description": "Posts, reels & polls in a safe, school-only space. Privacy by design — zero content exposure outside the platform."
+    },
+    {
+      "icon": "fas fa-comments",
+      "Title": "Direct Messaging",
+      "Description": "Secure one-to-one chat for every school role. Smart reminders auto-follow unread messages so nothing falls through the cracks."
+    },
+    {
+      "icon": "fas fa-bell",
+      "Title": "Real-Time Notifications",
+      "Description": "Targeted push alerts for every event — absences, submissions, payments, bus arrivals. Smart scheduling, zero notification fatigue."
+    },
+    {
+      "icon": "fas fa-user-check",
+      "Title": "Attendance & Leave",
+      "Description": "One-tap digital attendance with automatic holiday integration. Parents are notified the instant their child is marked absent or late."
+    },
+    {
+      "icon": "fas fa-credit-card",
+      "Title": "Finance & Payments",
+      "Description": "Structured instalment plans, automatic reminders, and real-time payment status for every family. No spreadsheets. No missed fees."
+    },
+    {
+      "icon": "fas fa-bus",
+      "Title": "Transportation Tracking",
+      "Description": "Live journey management for drivers, real-time drop-off confirmations for parents, and emergency alerts for the whole school community."
+    },
+    {
+      "icon": "fas fa-robot",
+      "Title": "Sawaed AI Tutor",
+      "Description": "A built-in AI study companion personalised to each student's name, grade, and language — available 24/7. Powered by permanently free AI models."
     }
   ],
 
