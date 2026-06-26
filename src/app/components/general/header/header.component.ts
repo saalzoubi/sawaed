@@ -68,5 +68,10 @@ export class HeaderComponent implements OnInit {
 
     }
 
+    toggleLanguage(): void {
+      const newLang = this.languageFormControl.value === 'en' ? 'ar' : 'en';
+      this.changeLanguage(newLang);
+    }
+
 
 }
