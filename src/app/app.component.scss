@@ -5,8 +5,19 @@
   width: 100vw;
   height: 100vh;
   z-index: -2;
-  background: url('../assets/images/intro_gif.gif') no-repeat center center;
-  background-size: cover;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
 }
 
 .bg-video::after {
