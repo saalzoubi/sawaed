@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: $Navy;
+  background-color: transparent;
   color: $Slate;
   line-height: 1.5;
   font-family: $MainFont;
@@ -19,7 +19,7 @@ body {
 }
 
 .section {
-  background: $Navy;
+  background: rgba(6, 14, 30, 0.9);
 }
 
 .code-font {
