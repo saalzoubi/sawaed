@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1782941658818,
+  "timestamp": 1782942257120,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.2aa9e3b60be3ec06.js",
+        "/main.d5dec1191cedaf53.js",
         "/manifest.webmanifest",
         "/polyfills.f0501f27b840d1d7.js",
         "/runtime.4899bbbf33da58ed.js",
@@ -126,7 +126,7 @@
         "/assets/images/globaljobs/capture4.png",
         "/assets/images/globaljobs/capture5.png",
         "/assets/images/globaljobs/capture6.png",
-        "/assets/images/intro_gif.gif",
+        "/assets/images/introduction_2.mp4",
         "/assets/images/logo-with-name.png",
         "/assets/images/logo.png",
         "/assets/images/projects/hajj/hajj-1.png",
@@ -204,7 +204,6 @@
         "/fa-solid-900.cd7322bf5a6e6fcf.svg",
         "/fa-solid-900.d5b0a3566b352ee9.ttf",
         "/fa-solid-900.e67670b0779338ff.woff",
-        "/intro_gif.414b231d44fe3f84.gif",
         "/owl.video.play.e3b436436832b027.png"
       ],
       "patterns": []
@@ -308,7 +307,7 @@
     "/assets/images/globaljobs/capture4.png": "8b29e2f12ccb2364a2f7c4df999323b939d65564",
     "/assets/images/globaljobs/capture5.png": "4790226718d75052544cbf04d60a11b316749aa4",
     "/assets/images/globaljobs/capture6.png": "302410d9467309356f66576ac4b1f7294e422f6d",
-    "/assets/images/intro_gif.gif": "34883194c2110c1d694fc7d984addf4c7092aa66",
+    "/assets/images/introduction_2.mp4": "0cb07517b9d4ae5d92d19da61be19accd891d066",
     "/assets/images/logo-with-name.png": "2b66bf8111d339859cb69a17ed528b765183b6ac",
     "/assets/images/logo.png": "1d53c72c6caa3a1e42325982e87d55c95b743728",
     "/assets/images/projects/hajj/hajj-1.png": "6f3bcdcb11713e60506e6ee27f22a80b5ff746ee",
@@ -387,9 +386,8 @@
     "/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/index.html": "85712dd097b924c2c7b153b18f96adc6250c3250",
-    "/intro_gif.414b231d44fe3f84.gif": "34883194c2110c1d694fc7d984addf4c7092aa66",
-    "/main.2aa9e3b60be3ec06.js": "44bdea4595f52a720f6837b53382776fb2f70270",
+    "/index.html": "c0d457b7646d1cb8df43599671c7c7c6a2e04c9f",
+    "/main.d5dec1191cedaf53.js": "8b019cc2380f425fe199be2d5a002158347841e8",
     "/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",
