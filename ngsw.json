@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1782942257120,
+  "timestamp": 1786295703911,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.d5dec1191cedaf53.js",
+        "/main.6f5a3b4647dc0a1b.js",
         "/manifest.webmanifest",
         "/polyfills.f0501f27b840d1d7.js",
         "/runtime.4899bbbf33da58ed.js",
         "/scripts.68ed26d13e2edc19.js",
-        "/styles.a1eb3f381f711e65.css"
+        "/styles.7811e567243b8406.css"
       ],
       "patterns": []
     },
@@ -187,8 +187,6 @@
         "/assets/images/tusuperplan/tusuperplan3.png",
         "/assets/images/tusuperplan/tusuperplan4.png",
         "/assets/images/tusuperplan/tusuperplan5.png",
-        "/assets/images/welcome2.mp4",
-        "/assets/images/welcome2.webm",
         "/fa-brands-400.0e53fe4feaaacc48.woff",
         "/fa-brands-400.7edea186e9687169.woff2",
         "/fa-brands-400.9c02eaf6eede2776.ttf",
@@ -293,8 +291,8 @@
     "/assets/fonts/Tajawal/Tajawal-Light.ttf": "1875a702b74328d0315f3081bbdb4a4f41be183e",
     "/assets/fonts/Tajawal/Tajawal-Medium.ttf": "e3207b83aa9221d91ba732d5057c24d70eeb3efe",
     "/assets/fonts/Tajawal/Tajawal-Regular.ttf": "1139e55d7b8909acda1b9f3f90e30f7774e93fef",
-    "/assets/i18n/ar.json": "d98ceb8984886a3c35637c3f20107d02c3d08f26",
-    "/assets/i18n/en.json": "689466ae9e4f773ee27515208d15013daf76a1bb",
+    "/assets/i18n/ar.json": "2e60b76ff4dc65781bab4f45a9765cbecd06e5d8",
+    "/assets/i18n/en.json": "e16f53beaa74748f791788ddc9c8851b2c94008c",
     "/assets/icons/folder.svg": "9b70ce8877c8a727520999b7f6f4756cae8f13b1",
     "/assets/images/agrourbana/agrourbana1.png": "b7be14ee55d169023b4549cd286a723777299bdf",
     "/assets/images/agrourbana/agrourbana2.png": "cfa3b1d8f1150283231f0b823e2f297c6c41e675",
@@ -368,8 +366,6 @@
     "/assets/images/tusuperplan/tusuperplan3.png": "82d996670066e99fa80eb1e021ee150f8703a1b1",
     "/assets/images/tusuperplan/tusuperplan4.png": "ac309b4a6d42d0178f7954c0a9107222782e9cf0",
     "/assets/images/tusuperplan/tusuperplan5.png": "8d10ffc008d923cb62385e61c57c728cd5393471",
-    "/assets/images/welcome2.mp4": "ce848bf338b0f1c53f8ff2d7a348126fa2414a1d",
-    "/assets/images/welcome2.webm": "bc3a8f44a687bc4ae2676c8cbd5c64807b3687d7",
     "/fa-brands-400.0e53fe4feaaacc48.woff": "1e1f02bfa89e179fe2dd1383273b8812aa873418",
     "/fa-brands-400.7edea186e9687169.woff2": "0613c7ebba55ee47ef302c0f7766324692f899a7",
     "/fa-brands-400.9c02eaf6eede2776.ttf": "8ab907083fecaaa2a9ec93b27f884ad74573705c",
@@ -386,14 +382,14 @@
     "/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/index.html": "c0d457b7646d1cb8df43599671c7c7c6a2e04c9f",
-    "/main.d5dec1191cedaf53.js": "8b019cc2380f425fe199be2d5a002158347841e8",
+    "/index.html": "2f20aa52562d18a4fd74e2ace0dc19c92180dc38",
+    "/main.6f5a3b4647dc0a1b.js": "a7f5afae5c52c59d410f4c2560de99f3cff2b57b",
     "/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",
     "/runtime.4899bbbf33da58ed.js": "880a29f9869423d0c39cab4aeaebdc374935fab5",
     "/scripts.68ed26d13e2edc19.js": "cffb6dcf1e317b2859024c20248dd0c50ce6b885",
-    "/styles.a1eb3f381f711e65.css": "4a7e523753e3f52bcebcd32c447568e56df6352e"
+    "/styles.7811e567243b8406.css": "ee472de0f63eb7f7e7057ca093ab135046048b71"
   },
   "navigationUrls": [
     {
