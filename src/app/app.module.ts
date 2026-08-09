@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
 import { GeneralModule } from './components/general/general.module';
+import { SchoolModule } from './components/school/school.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
     HomeModule,
     GeneralModule,
+    SchoolModule,
 
     // AnimateOnScrollModule.forRoot(),
     BrowserModule,

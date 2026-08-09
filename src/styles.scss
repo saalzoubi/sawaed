@@ -158,11 +158,11 @@ a {
   direction: rtl;
 }
 
-[dir="ltr"] * {
+[dir="ltr"] body {
   direction: ltr;
 }
 
-[dir="rtl"] * {
+[dir="rtl"] body {
   direction: rtl;
 }
 

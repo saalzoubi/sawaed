@@ -51,7 +51,6 @@ export class LanguageService {
       lang = 'en';
     }
     this.translateService.use(lang);
-    this.location.go(lang);
     this.language = lang;
     document.dir = lang === 'ar' ? 'rtl' : 'ltr';
   }
