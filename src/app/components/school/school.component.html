@@ -36,6 +36,7 @@
               <ol class="school-highlight-list">
                 <li>{{ "School.Intro.Highlight1" | translate }}</li>
                 <li>{{ "School.Intro.Highlight2" | translate }}</li>
+                <li>{{ "School.Intro.Highlight3" | translate }}</li>
               </ol>
               <p class="school-highlight-note">{{ "School.Intro.HighlightNote" | translate }}</p>
             </div>
@@ -45,14 +46,96 @@
     </div>
   </section>
 
-  <!-- Feature 1: Social Network -->
-  <section class="section school-feature" id="social">
+  <!-- Feature 1: School Branding -->
+  <section class="section school-feature" id="branding">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.Branding.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">02.</span> {{ "School.Branding.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Branding.Lead" | translate }}
+        </p>
+
+        <div class="school-store-badges" data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-store-badge">
+            <i class="fab fa-apple"></i>
+            <span class="school-store-badge-text">
+              <small>{{ "School.Branding.DownloadAppStore" | translate }}</small>
+              <strong>App Store</strong>
+            </span>
+          </span>
+          <span class="school-store-badge">
+            <i class="fab fa-google-play"></i>
+            <span class="school-store-badge-text">
+              <small>{{ "School.Branding.DownloadGooglePlay" | translate }}</small>
+              <strong>Google Play</strong>
+            </span>
+          </span>
+        </div>
+
+        <div class="school-slides mt-4">
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.AppStore.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.AppStore.Item1" | translate }}</li>
+                <li>{{ "School.Branding.AppStore.Item2" | translate }}</li>
+                <li>{{ "School.Branding.AppStore.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Verified.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Verified.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Verified.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Verified.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Marketing.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Marketing.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Marketing.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Marketing.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Data.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Data.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Data.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Data.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Branding.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: Social Network -->
+  <section class="section school-feature school-feature-alt" id="social">
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.Social.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">02.</span> {{ "School.Social.Title" | translate }}
+            <span class="n-section-title">03.</span> {{ "School.Social.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -119,14 +202,14 @@
     </div>
   </section>
 
-  <!-- Feature 2: Sawaed AI -->
-  <section class="section school-feature school-feature-alt" id="ai">
+  <!-- Feature 3: Sawaed AI -->
+  <section class="section school-feature" id="ai">
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.AI.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">03.</span> {{ "School.AI.Title" | translate }}
+            <span class="n-section-title">04.</span> {{ "School.AI.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -194,13 +277,83 @@
     </div>
   </section>
 
+  <!-- Feature 4: Feature Flags -->
+  <section class="section school-feature school-feature-alt" id="feature-flags">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.FeatureFlags.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">05.</span> {{ "School.FeatureFlags.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.FeatureFlags.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.HowItWorks.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.HowItWorks.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item3" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item4" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Modules.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Modules.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item3" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item4" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item5" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Benefits.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Benefits.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Benefits.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Benefits.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Control.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Control.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Control.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Control.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.FeatureFlags.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Complete Feature Catalog -->
   <section class="section school-catalog" id="features">
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">04.</span> {{ "School.CatalogTitle" | translate }}
+            <span class="n-section-title">06.</span> {{ "School.CatalogTitle" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -232,7 +385,7 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">05.</span> {{ "School.ProblemsTitle" | translate }}
+            <span class="n-section-title">07.</span> {{ "School.ProblemsTitle" | translate }}
           </h3>
         </div>
 
@@ -262,7 +415,7 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">06.</span> {{ "School.BenefitsTitle" | translate }}
+            <span class="n-section-title">08.</span> {{ "School.BenefitsTitle" | translate }}
           </h3>
         </div>
 
@@ -289,7 +442,7 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">07.</span> {{ "School.ComparisonTitle" | translate }}
+            <span class="n-section-title">09.</span> {{ "School.ComparisonTitle" | translate }}
           </h3>
         </div>
 

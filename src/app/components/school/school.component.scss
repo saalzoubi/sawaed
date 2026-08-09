@@ -207,6 +207,61 @@
   }
 }
 
+/* Store Badges */
+.school-store-badges {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.school-store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: $LightNavy;
+  border: 1px solid rgba(26, 51, 86, 0.8);
+  border-top: 2px solid rgba(27, 206, 223, 0.4);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &:hover {
+    transform: translateY(-3px);
+    border-top-color: $Green;
+    box-shadow: 0 12px 30px -10px rgba(2, 12, 27, 0.8), 0 0 20px rgba(27, 206, 223, 0.08);
+  }
+
+  i {
+    font-size: 28px;
+    color: $LightestSlate;
+  }
+
+  .school-store-badge-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+
+    small {
+      font-size: 11px;
+      color: $Slate;
+      font-family: $CodeFont;
+    }
+
+    strong {
+      font-size: 17px;
+      color: $LightestSlate;
+      font-weight: 600;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .school-store-badge {
+    border-top: 2px solid rgba(27, 206, 223, 0.4);
+  }
+}
+
 /* Horizontal Slides */
 .school-slides {
   display: flex;
