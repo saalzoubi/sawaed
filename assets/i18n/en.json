@@ -97,20 +97,44 @@
 
   "School.Hero.Tag": "Smart School Platform",
   "School.Hero.Title": "Sawaed Elm — One App for Your Whole School",
-  "School.Hero.Subtitle": "Connects students, parents, teachers, and administrators — learning, communication, attendance, fees, transport, and school life, all in one place. Secured and available in Arabic and English.",
+  "School.Hero.Subtitle": "Connects students, parents, teachers, and administrators — learning, communication, attendance, fees, transport, and school life, all in one place. Secured and available in Arabic, English, and French — with support for any language the school requests.",
   "School.Hero.CTA": "Explore Features",
   "School.Hero.CTA2": "Request a Demo",
 
   "School.Intro.Title": "One Platform, Every Part of School Life",
-  "School.Intro.Description": "Sawaed Elm brings every part of school life into a single, easy-to-use mobile and web experience: learning, communication, attendance, fees, transport, and school life — all in one place, secured and available in Arabic and English.",
+  "School.Intro.Description": "Sawaed Elm brings every part of school life into a single, easy-to-use mobile and web experience: learning, communication, attendance, fees, transport, and school life — all in one place, secured and available in Arabic, English, and French — with support for any language the school requests.",
   "School.Intro.HighlightTitle": "What No One Else Offers",
-  "School.Intro.Highlight1": "A private, school-only social network — the engagement of Instagram and WhatsApp Status, built safely inside your school.",
+  "School.Intro.Highlight1": "A private, school-only social network — the engagement of Instagram, TikTok, Facebook, and WhatsApp, all combined in one safe educational space inside your school. No strangers, no ads, no unethical or illegal content — just a protected environment where children benefit from social media without the risks.",
   "School.Intro.Highlight2": "Sawaed AI — a personal AI assistant that actually knows each student's real school data and answers accordingly.",
   "School.Intro.HighlightNote": "These are not add-ons. They are why families open the app every day.",
+  "School.Intro.Highlight3": "Your school's own branded app on the App Store and Google Play — verified, trusted, and yours.",
 
-  "School.Social.Badge": "Feature 1",
+  "School.Branding.Badge": "Feature 1",
+  "School.Branding.Title": "Your School's Own App — Branded, Verified, and Yours",
+  "School.Branding.Lead": "Sawaed Elm gives your school its own dedicated app, published on the App Store and Google Play under your school's name. Parents and students download it just like any other app — searching for your school by name. This is not a shared platform hidden behind someone else's brand. It is your school's app, with your logo, your colors, and your identity.",
+  "School.Branding.DownloadAppStore": "Download on the",
+  "School.Branding.DownloadGooglePlay": "Get it on",
+  "School.Branding.AppStore.Title": "Published on App Store & Google Play",
+  "School.Branding.AppStore.Item1": "Your school's app is listed on both the Apple App Store and Google Play Store under your school's name.",
+  "School.Branding.AppStore.Item2": "Parents and students find it by searching for your school — just like any popular app.",
+  "School.Branding.AppStore.Item3": "Your school's logo, name, and branding appear on the store listing, not ours.",
+  "School.Branding.Verified.Title": "Tested & Verified by Apple and Google",
+  "School.Branding.Verified.Item1": "The app passes Apple's strict App Store review process — confirming it is safe, functional, and free of harmful code.",
+  "School.Branding.Verified.Item2": "Google Play's security review verifies the app is free of malware, backdoors, and illegal access — your data stays yours.",
+  "School.Branding.Verified.Item3": "Both platforms enforce data privacy standards, so your school community's information is protected by world-class security.",
+  "School.Branding.Marketing.Title": "Powerful Marketing for Your School",
+  "School.Branding.Marketing.Item1": "Having your own app on the App Store and Google Play is a statement — it tells families your school is modern, forward-thinking, and invested in technology.",
+  "School.Branding.Marketing.Item2": "Parents share the app with friends and relatives — every download is free advertising for your school.",
+  "School.Branding.Marketing.Item3": "Your school stands out from competitors who still rely on WhatsApp groups, Facebook pages, and paper notices.",
+  "School.Branding.Data.Title": "Your School Owns Its Data",
+  "School.Branding.Data.Item1": "All school data — students, parents, staff, grades, payments — belongs to your school, not to us.",
+  "School.Branding.Data.Item2": "No hidden access, no secret backdoors. Only authorized school administrators can access the data, with full audit logs.",
+  "School.Branding.Data.Item3": "You can export or request your data at any time. Your school is always in control.",
+  "School.Branding.Result": "A verified, branded app on the world's two largest app stores is more than a tool — it is a trust signal, a marketing asset, and a competitive advantage that no traditional school software can match.",
+
+  "School.Social.Badge": "Feature 2",
   "School.Social.Title": "The School Social Network",
-  "School.Social.Lead": "Today's students and parents live on social media. Sawaed Elm gives them that same experience — the feed, the stories, the reels, the reactions — but in a safe, private, school-only space with no strangers, no ads, and no outside content.",
+  "School.Social.Lead": "Today's students and parents live on social media — Instagram, TikTok, Facebook, WhatsApp, and more. Sawaed Elm combines the best of all of them into one safe, school-only space: the feed, the stories, the reels, the reactions — but with no strangers, no ads, no unwanted content, and no exposure to anything illegal or unethical. A protected educational environment where children enjoy the benefits of social media without the risks.",
   "School.Social.Feed.Title": "A Living School Feed",
   "School.Social.Feed.Item1": "A dynamic feed of posts from teachers, staff, and the school — photos, videos, and text.",
   "School.Social.Feed.Item2": "Reactions — students and parents react to celebrate achievements, events, and announcements.",
@@ -132,7 +156,7 @@
   "School.Social.Safety.Item3": "Rich media, delivered fast. Photos and videos stream quickly and securely worldwide through a global CDN.",
   "School.Social.Result": "Parents and students check the app the way they check social media — daily, willingly, and often. That engagement is something no traditional school system can match.",
 
-  "School.AI.Badge": "Feature 2",
+  "School.AI.Badge": "Feature 3",
   "School.AI.Title": "Sawaed AI, the Assistant That Knows the Student",
   "School.AI.Lead": "Every school app now claims to have AI. They all do the same thing: a generic chatbot that answers general questions. Sawaed AI is fundamentally different. It is connected to the school's real data, so it answers about this student — securely, personally, and instantly.",
   "School.AI.Questions.Title": "It Answers Real Questions About the Real Student",
@@ -154,10 +178,34 @@
   "School.AI.Privacy.Item1": "Sawaed AI only ever sees what the user is allowed to see — a parent gets their own children's data, never another family's.",
   "School.AI.Privacy.Item2": "Every request is scoped to the school and the signed-in user's permissions.",
   "School.AI.Privacy.Item3": "Answers are role-aware: a parent, a student, and a teacher each get responses suited to them.",
-  "School.AI.Availability.Title": "Always Available, in Two Languages",
+  "School.AI.Availability.Title": "Always Available, in Multiple Languages",
   "School.AI.Availability.Item1": "Available 24/7 — no waiting for office hours.",
-  "School.AI.Availability.Item2": "Fully bilingual Arabic and English.",
+  "School.AI.Availability.Item2": "Fully trilingual Arabic, English, and French — and any language the school requests.",
   "School.AI.Result": "The front office stops fielding the same phone calls. Parents get instant, accurate, personal answers. It's the difference between a chatbot and a real assistant — and no competitor offers it.",
+
+  "School.FeatureFlags.Badge": "Feature 4",
+  "School.FeatureFlags.Title": "Feature Flags — Your School, Your Modules",
+  "School.FeatureFlags.Lead": "Not every school needs every module. Some schools want transport tracking but not the social feed. Others want everything except finance. With Feature Flags, the school's administrators can enable or disable any module — instantly, without code changes or waiting for a developer. The app adapts to what your school actually uses.",
+  "School.FeatureFlags.HowItWorks.Title": "How It Works",
+  "School.FeatureFlags.HowItWorks.Item1": "Each module — social feed, messaging, attendance, finance, transport, AI, and more — can be toggled on or off from the admin dashboard.",
+  "School.FeatureFlags.HowItWorks.Item2": "Disabled modules disappear from the app entirely — students and parents only see what the school has enabled.",
+  "School.FeatureFlags.HowItWorks.Item3": "Changes take effect immediately — no app update, no downtime, no developer involved.",
+  "School.FeatureFlags.HowItWorks.Item4": "Modules can be re-enabled at any time, so a school can start lean and expand as needs grow.",
+  "School.FeatureFlags.Modules.Title": "Toggleable Modules",
+  "School.FeatureFlags.Modules.Item1": "Social feed, stories & reels — enable or disable the school social network.",
+  "School.FeatureFlags.Modules.Item2": "Sawaed AI — turn the AI assistant on or off per school.",
+  "School.FeatureFlags.Modules.Item3": "Finance & payments — disable if the school handles fees outside the platform.",
+  "School.FeatureFlags.Modules.Item4": "Transportation tracking — disable if the school has no bus service.",
+  "School.FeatureFlags.Modules.Item5": "Attendance, messaging, academics, and more — each independently controlled.",
+  "School.FeatureFlags.Benefits.Title": "Why Schools Love It",
+  "School.FeatureFlags.Benefits.Item1": "Pay only for what you use — disabled modules don't clutter the app or the bill.",
+  "School.FeatureFlags.Benefits.Item2": "A clean, focused experience — families see only the features their school chose for them.",
+  "School.FeatureFlags.Benefits.Item3": "Start small and grow — enable new modules when the school is ready, with zero migration.",
+  "School.FeatureFlags.Control.Title": "Full Administrative Control",
+  "School.FeatureFlags.Control.Item1": "Only authorized administrators can toggle modules — changes are logged in the audit trail.",
+  "School.FeatureFlags.Control.Item2": "Module visibility is enforced at the API level — no backdoor access to disabled features.",
+  "School.FeatureFlags.Control.Item3": "Schools can request custom modules — if a school needs something we don't have yet, we build it and flag it on.",
+  "School.FeatureFlags.Result": "The school gets exactly the platform it wants — no more, no less. Every module is a conscious choice, not a forced bundle. That is what it means to own your school's app.",
 
   "School.SlidesHint": "← swipe to explore more →",
 
@@ -257,7 +305,7 @@
       "title": "Built-in Foundations",
       "items": [
         "iOS, Android, and Web from one codebase.",
-        "Full Arabic & English, with right-to-left support done properly.",
+        "Full Arabic, English, and French, with right-to-left support done properly — and any language the school requests.",
         "Dark mode across the entire app.",
         "White-label branding — ship as your school's own branded app.",
         "Bank-grade security — token-based sign-in, permission-scoped data, and time-limited secure media links.",
@@ -275,7 +323,7 @@
       "solution": "One app gives every parent a live, honest view of their own child — and Sawaed AI answers their questions instantly."
     },
     {
-      "problem": "Communication is scattered across WhatsApp groups, paper slips, and phone calls — messages get lost, and there's no privacy.",
+      "problem": "Communication is scattered across WhatsApp groups, Facebook pages, paper slips, and phone calls — messages get lost, and there's no privacy.",
       "solution": "One secure, school-only channel: targeted posts, private messaging, and push notifications that actually reach people."
     },
     {
@@ -304,7 +352,7 @@
     },
     {
       "problem": "Language barriers exclude part of the community.",
-      "solution": "Fully bilingual Arabic and English, everywhere."
+      "solution": "Fully trilingual Arabic, English, and French — and any language the school requests, everywhere."
     },
     {
       "problem": "Public social media is unsafe for a school community — strangers, ads, and no control.",
@@ -372,9 +420,24 @@
       "sawaed": "Fast, secure photos & video via global CDN"
     },
     {
+      "aspect": "Branding",
+      "typical": "Generic app under vendor's name",
+      "sawaed": "Your school's own branded app on App Store & Google Play"
+    },
+    {
+      "aspect": "Data ownership",
+      "typical": "Vendor owns and controls your data",
+      "sawaed": "Your school owns its data — no backdoors, full audit trail"
+    },
+    {
+      "aspect": "Module control",
+      "typical": "All-or-nothing bundle",
+      "sawaed": "Feature Flags — enable or disable any module per school"
+    },
+    {
       "aspect": "Languages",
       "typical": "Often English-only",
-      "sawaed": "Full Arabic & English"
+      "sawaed": "Full Arabic, English & French — plus any language on request"
     }
   ],
 
