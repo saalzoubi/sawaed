@@ -1,0 +1,491 @@
+<main class="school-page">
+
+  <!-- Hero -->
+  <section class="section school-hero">
+    <div class="container">
+      <div class="school-hero-inner">
+        <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-hero-tag">{{ "School.Hero.Tag" | translate }}</span>
+          <h1 class="school-hero-title">{{ "School.Hero.Title" | translate }}</h1>
+          <p class="school-hero-subtitle">{{ "School.Hero.Subtitle" | translate }}</p>
+          <div class="school-hero-actions">
+            <a (click)="scroll('features')" class="main-btn">{{ "School.Hero.CTA" | translate }}</a>
+            <a (click)="scroll('contact-school')" class="main-btn main-btn-outline">{{ "School.Hero.CTA2" | translate }}</a>
+          </div>
+        </div>
+        <div class="school-hero-logo" *ngIf="logoPath" data-aos="fade-left" data-aos-duration="1000">
+          <img [src]="logoPath" [alt]="schoolNameKey ? (schoolNameKey | translate) : ''" />
+          <h2 class="school-hero-school-name" *ngIf="schoolNameKey">{{ schoolNameKey | translate }}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section school-intro" id="overview">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">01.</span> {{ "School.Intro.Title" | translate }}
+          </h3>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 col-md-8">
+            <p class="school-intro-text" data-aos="fade-up" data-aos-duration="1000">
+              {{ "School.Intro.Description" | translate }}
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="school-highlight-box" data-aos="fade-up" data-aos-duration="1000">
+              <h5 class="school-highlight-title">{{ "School.Intro.HighlightTitle" | translate }}</h5>
+              <ol class="school-highlight-list">
+                <li>{{ "School.Intro.Highlight1" | translate }}</li>
+                <li>{{ "School.Intro.Highlight2" | translate }}</li>
+                <li>{{ "School.Intro.Highlight3" | translate }}</li>
+              </ol>
+              <p class="school-highlight-note">{{ "School.Intro.HighlightNote" | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 1: School Branding -->
+  <section class="section school-feature" id="branding">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.Branding.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">02.</span> {{ "School.Branding.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Branding.Lead" | translate }}
+        </p>
+
+        <div class="school-store-badges" data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-store-badge">
+            <i class="fab fa-apple"></i>
+            <span class="school-store-badge-text">
+              <small>{{ "School.Branding.DownloadAppStore" | translate }}</small>
+              <strong>App Store</strong>
+            </span>
+          </span>
+          <span class="school-store-badge">
+            <i class="fab fa-google-play"></i>
+            <span class="school-store-badge-text">
+              <small>{{ "School.Branding.DownloadGooglePlay" | translate }}</small>
+              <strong>Google Play</strong>
+            </span>
+          </span>
+        </div>
+
+        <div class="school-slides mt-4">
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.AppStore.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.AppStore.Item1" | translate }}</li>
+                <li>{{ "School.Branding.AppStore.Item2" | translate }}</li>
+                <li>{{ "School.Branding.AppStore.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Verified.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Verified.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Verified.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Verified.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Marketing.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Marketing.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Marketing.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Marketing.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Branding.Data.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Branding.Data.Item1" | translate }}</li>
+                <li>{{ "School.Branding.Data.Item2" | translate }}</li>
+                <li>{{ "School.Branding.Data.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Branding.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: Social Network -->
+  <section class="section school-feature school-feature-alt" id="social">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.Social.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">03.</span> {{ "School.Social.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Social.Lead" | translate }}
+        </p>
+
+        <div class="school-slides mt-4">
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Social.Feed.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Social.Feed.Item1" | translate }}</li>
+                <li>{{ "School.Social.Feed.Item2" | translate }}</li>
+                <li>{{ "School.Social.Feed.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Social.Stories.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Social.Stories.Item1" | translate }}</li>
+                <li>{{ "School.Social.Stories.Item2" | translate }}</li>
+                <li>{{ "School.Social.Stories.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Social.Engagement.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Social.Engagement.Item1" | translate }}</li>
+                <li>{{ "School.Social.Engagement.Item2" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Social.Targeting.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Social.Targeting.Item1" | translate }}</li>
+                <li>{{ "School.Social.Targeting.Item2" | translate }}</li>
+                <li>{{ "School.Social.Targeting.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.Social.Safety.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.Social.Safety.Item1" | translate }}</li>
+                <li>{{ "School.Social.Safety.Item2" | translate }}</li>
+                <li>{{ "School.Social.Safety.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.Social.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: Sawaed AI -->
+  <section class="section school-feature" id="ai">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.AI.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">04.</span> {{ "School.AI.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.AI.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-7">
+            <h5 class="school-subtitle" data-aos="fade-up" data-aos-duration="1000">
+              {{ "School.AI.Questions.Title" | translate }}
+            </h5>
+            <ul class="school-questions-list" data-aos="fade-up" data-aos-duration="1000">
+              <li>{{ "School.AI.Questions.Q1" | translate }}</li>
+              <li>{{ "School.AI.Questions.Q2" | translate }}</li>
+              <li>{{ "School.AI.Questions.Q3" | translate }}</li>
+              <li>{{ "School.AI.Questions.Q4" | translate }}</li>
+              <li>{{ "School.AI.Questions.Q5" | translate }}</li>
+            </ul>
+            <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+              {{ "School.AI.Questions.Note" | translate }}
+            </p>
+          </div>
+          <div class="col-12 col-md-5">
+            <h5 class="school-subtitle" data-aos="fade-up" data-aos-duration="1000">
+              {{ "School.AI.Data.Title" | translate }}
+            </h5>
+            <ul class="school-data-list" data-aos="fade-up" data-aos-duration="1000">
+              <li>{{ "School.AI.Data.Item1" | translate }}</li>
+              <li>{{ "School.AI.Data.Item2" | translate }}</li>
+              <li>{{ "School.AI.Data.Item3" | translate }}</li>
+              <li>{{ "School.AI.Data.Item4" | translate }}</li>
+              <li>{{ "School.AI.Data.Item5" | translate }}</li>
+              <li>{{ "School.AI.Data.Item6" | translate }}</li>
+              <li>{{ "School.AI.Data.Item7" | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.AI.Privacy.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.AI.Privacy.Item1" | translate }}</li>
+                <li>{{ "School.AI.Privacy.Item2" | translate }}</li>
+                <li>{{ "School.AI.Privacy.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.AI.Availability.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.AI.Availability.Item1" | translate }}</li>
+                <li>{{ "School.AI.Availability.Item2" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.AI.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: Feature Flags -->
+  <section class="section school-feature school-feature-alt" id="feature-flags">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "School.FeatureFlags.Badge" | translate }}</span>
+          <h3 class="section-title">
+            <span class="n-section-title">05.</span> {{ "School.FeatureFlags.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.FeatureFlags.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.HowItWorks.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.HowItWorks.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item3" | translate }}</li>
+                <li>{{ "School.FeatureFlags.HowItWorks.Item4" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Modules.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Modules.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item3" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item4" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Modules.Item5" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Benefits.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Benefits.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Benefits.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Benefits.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "School.FeatureFlags.Control.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "School.FeatureFlags.Control.Item1" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Control.Item2" | translate }}</li>
+                <li>{{ "School.FeatureFlags.Control.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.FeatureFlags.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Feature Catalog -->
+  <section class="section school-catalog" id="features">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">06.</span> {{ "School.CatalogTitle" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "School.CatalogLead" | translate }}
+        </p>
+
+        <div class="school-slides mt-4">
+          <div *ngFor="let cat of catalog; let i = index"
+               class="school-slide-item school-catalog-col"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="school-card school-catalog-card">
+              <span class="school-catalog-icon">{{ cat.icon }}</span>
+              <h5 class="school-card-title">{{ cat.title }}</h5>
+              <ul class="school-card-list">
+                <li *ngFor="let item of cat.items">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems Solved -->
+  <section class="section school-problems" id="problems">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">07.</span> {{ "School.ProblemsTitle" | translate }}
+          </h3>
+        </div>
+
+        <div class="school-table-wrap" data-aos="fade-up" data-aos-duration="1000">
+          <table class="school-table">
+            <thead>
+              <tr>
+                <th>{{ "School.ProblemsHeader1" | translate }}</th>
+                <th>{{ "School.ProblemsHeader2" | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of problems">
+                <td class="school-table-problem">{{ row.problem }}</td>
+                <td class="school-table-solution">{{ row.solution }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section school-benefits" id="benefits">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">08.</span> {{ "School.BenefitsTitle" | translate }}
+          </h3>
+        </div>
+
+        <div class="school-slides mt-4">
+          <div *ngFor="let b of benefits; let i = index"
+               class="school-slide-item school-benefit-col"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="school-benefit">
+              <span class="school-benefit-icon">{{ b.icon }}</span>
+              <h5 class="school-benefit-title">{{ b.title }}</h5>
+              <p class="school-benefit-text">{{ b.text }}</p>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Wins -->
+  <section class="section school-comparison" id="why">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">09.</span> {{ "School.ComparisonTitle" | translate }}
+          </h3>
+        </div>
+
+        <div class="school-table-wrap" data-aos="fade-up" data-aos-duration="1000">
+          <table class="school-table school-table-3">
+            <thead>
+              <tr>
+                <th>{{ "School.ComparisonHeader1" | translate }}</th>
+                <th>{{ "School.ComparisonHeader2" | translate }}</th>
+                <th class="school-table-sawaed">{{ "School.ComparisonHeader3" | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of comparison">
+                <td class="school-table-label">{{ row.aspect }}</td>
+                <td class="school-table-typical">{{ row.typical }}</td>
+                <td class="school-table-sawaed">{{ row.sawaed }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section school-cta" id="contact-school">
+    <div class="container">
+      <div class="section-box school-cta-box" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="school-cta-title">{{ "School.CTA.Title" | translate }}</h3>
+        <p class="school-cta-text">{{ "School.CTA.Text" | translate }}</p>
+        <div class="school-cta-actions">
+          <a href="mailto:info@sawaedelm.com" target="_blank" class="main-btn">{{ "School.CTA.Btn" | translate }}</a>
+          <a (click)="goHome()" class="main-btn main-btn-outline">{{ "School.CTA.Back" | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
