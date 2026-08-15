@@ -1,21 +1,34 @@
 <main class="school-page">
 
-  <!-- Hero -->
+  <!--School Hero -->
   <section class="section school-hero">
     <div class="container">
       <div class="school-hero-inner">
         <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
-          <span class="school-hero-tag">{{ "School.Hero.Tag" | translate }}</span>
           <h1 class="school-hero-title">{{ "School.Hero.Title" | translate }}</h1>
           <p class="school-hero-subtitle">{{ "School.Hero.Subtitle" | translate }}</p>
-          <div class="school-hero-actions">
-            <a (click)="scroll('features')" class="main-btn">{{ "School.Hero.CTA" | translate }}</a>
-            <a (click)="scroll('contact-school')" class="main-btn main-btn-outline">{{ "School.Hero.CTA2" | translate }}</a>
-          </div>
+
         </div>
         <div class="school-hero-logo" *ngIf="logoPath" data-aos="fade-left" data-aos-duration="1000">
           <img [src]="logoPath" [alt]="schoolNameKey ? (schoolNameKey | translate) : ''" />
           <h2 class="school-hero-school-name" *ngIf="schoolNameKey">{{ schoolNameKey | translate }}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Sawaed Hero -->
+  <section class="section school-hero">
+    <div class="container">
+      <div class="school-hero-inner">
+        <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="school-hero-title">{{ "Sawaed.Hero.Title" | translate }}</h1>
+          <p class="school-hero-subtitle">{{ "Sawaed.Hero.Subtitle" | translate }}</p>
+
+        </div>
+        <div class="school-hero-logo" data-aos="fade-left" data-aos-duration="1000">
+          <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
+          <h2 class="school-hero-school-name">{{ companyNameKey | translate }}</h2>
         </div>
       </div>
     </div>
