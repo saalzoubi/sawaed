@@ -516,36 +516,4 @@
     </div>
   </section>
 
-  <!-- Why It Wins -->
-  <section class="section school-comparison" id="why">
-    <div class="container">
-      <div class="section-box">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <h3 class="section-title">
-            {{ "School.ComparisonTitle" | translate }}
-          </h3>
-        </div>
-
-        <div class="school-table-wrap" data-aos="fade-up" data-aos-duration="1000">
-          <table class="school-table school-table-3">
-            <thead>
-              <tr>
-                <th>{{ "School.ComparisonHeader1" | translate }}</th>
-                <th>{{ "School.ComparisonHeader2" | translate }}</th>
-                <th class="school-table-sawaed">{{ "School.ComparisonHeader3" | translate }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let row of comparison">
-                <td class="school-table-label">{{ row.aspect }}</td>
-                <td class="school-table-typical">{{ row.typical }}</td>
-                <td class="school-table-sawaed">{{ row.sawaed }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>

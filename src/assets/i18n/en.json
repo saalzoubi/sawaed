@@ -359,16 +359,6 @@
       "solution": "Live GPS tracking and per-child pickup/drop-off confirmation."
     },
     {
-      "title": "Costly Separate Tools",
-      "problem": "Schools pay for 4+ separate tools (LMS, messaging, payments, transport) that don't talk to each other.",
-      "solution": "One unified platform replaces the stack — one login, one source of truth."
-    },
-    {
-      "title": "Language Barriers",
-      "problem": "Language barriers exclude part of the community.",
-      "solution": "Fully trilingual Arabic, English, and French — and any language the school requests, everywhere."
-    },
-    {
       "title": "Unsafe Social Media",
       "problem": "Public social media is unsafe for a school community — strangers, ads, and no control.",
       "solution": "A closed, moderated, school-only network with no outside exposure."
