@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1786907628245,
+  "timestamp": 1786908482275,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -294,7 +294,7 @@
     "/assets/fonts/Tajawal/Tajawal-Medium.ttf": "e3207b83aa9221d91ba732d5057c24d70eeb3efe",
     "/assets/fonts/Tajawal/Tajawal-Regular.ttf": "1139e55d7b8909acda1b9f3f90e30f7774e93fef",
     "/assets/i18n/ar.json": "feaa229e291c57c0a95447fa338363e8a0be6f4c",
-    "/assets/i18n/en.json": "d4aafa84a35d584f573e2bb1b0889fa9a06e7412",
+    "/assets/i18n/en.json": "c7f811e9a1a31f79e94d2bf313ffd9007b0eafac",
     "/assets/icons/folder.svg": "9b70ce8877c8a727520999b7f6f4756cae8f13b1",
     "/assets/images/agrourbana/agrourbana1.png": "b7be14ee55d169023b4549cd286a723777299bdf",
     "/assets/images/agrourbana/agrourbana2.png": "cfa3b1d8f1150283231f0b823e2f297c6c41e675",

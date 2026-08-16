@@ -1,468 +1,484 @@
 {
   "Header.Item1": "About Us",
-  "Header.Item2": "Services",
-  "Header.Item3": "Contact",
-  "Header.Item4": "Product",
+  "Header.Item2": "Our Services",
+  "Header.Item3": "Contact Us",
+  "Header.Item4": "Our Products",
 
-  "Banner.name": "Sawaed Al Elm Technologies",
+  "Banner.name": "Sawaed Al-Ilm Technologies",
   "Banner.jobTitle": "Together, We Build the Future",
-  "Banner.Description": "At <span class='underline'>Sawaed Al Elm</span>, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application design</span>, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together.",
+  "Banner.Description": "At <span class='underline'>Sawaed Al-Ilm</span>, we are passionate about turning ideas into advanced digital solutions. We specialize in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application development</span>, empowering businesses to thrive in today's technology-driven environment.\n\nOur team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that improve efficiency and drive success. Whether you are looking for robust enterprise software, smart hardware systems, or seamless mobile experiences, Sawaed Al-Ilm is your trusted technology partner. Let's build the future together.",
 
   "AboutMe.Title": "About Us",
   "AboutMe.Paragraphs": [
-    "At <span class='underline'>Sawaed Al Elm</span>, we are passionate about transforming ideas into cutting-edge digital solutions. Specializing in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application design</span>, we empower businesses to thrive in the modern technological landscape. Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner. Let’s build the future together."
+    "At <span class='underline'>Sawaed Al-Ilm</span>, we are passionate about turning ideas into advanced digital solutions. We specialize in <span class='underline'>software development</span>, <span class='underline'>hardware integration</span>, and <span class='underline'>mobile application development</span>, empowering businesses to thrive in today's technology-driven environment.\n\nOur team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that improve efficiency and drive success. Whether you are looking for robust enterprise software, smart hardware systems, or seamless mobile experiences, Sawaed Al-Ilm is your trusted technology partner.",
+    "Let's build the future together."
   ],
 
   "OtherProjects.Title": "Our Services",
   "OtherProjects.Projects": [
     {
       "Title": "NFC Card System",
-      "Description": "Smart NFC-enabled cards that allow users to instantly access your published media, social profiles, contact information, and images with a simple tap or QR code scan.",
+      "Description": "Smart NFC-enabled cards that give users instant access to your published media, social profiles, contact information, and photos with a simple tap or QR code scan.",
       "icon": "fas fa-id-card"
     },
     {
-      "Title": "Software & Mobile Apps",
-      "Description": "We build robust server-side systems, intuitive front-end interfaces, and seamless mobile applications tailored to your business needs using the latest technologies.",
+      "Title": "Software & Mobile App Development",
+      "Description": "We build robust backend systems, user-friendly frontends, and seamless mobile applications tailored to your business needs.",
       "icon": "fas fa-code"
     },
     {
       "Title": "Hardware Development",
-      "Description": "From concept to creation, we design and develop custom hardware solutions to power smart devices, embedded systems, and innovative electronics.",
+      "Description": "From concept to implementation, we design and develop custom hardware solutions for smart devices, embedded systems, and innovative electronics.",
       "icon": "fas fa-microchip"
     },
     {
-      "Title": "Cloud Computing",
-      "Description": "Leverage the power of the cloud with our scalable infrastructure, DevOps practices, and secure deployment models to accelerate innovation and reduce IT costs.",
+      "Title": "Cloud Computing Solutions",
+      "Description": "Leverage the power of the cloud through scalable infrastructure, DevOps practices, and secure deployment models that accelerate innovation and reduce costs.",
       "icon": "fas fa-cloud"
     },
     {
-      "Title": "Web & App Hosting",
-      "Description": "Reliable and secure hosting services for your websites and applications with high availability, regular backups, and 24/7 technical support.",
+      "Title": "Website & Application Hosting",
+      "Description": "Reliable and secure hosting services for your websites and applications, with high availability, regular backups, and 24/7 technical support.",
       "icon": "fas fa-server"
     },
     {
       "Title": "Training & Capacity Building",
-      "Description": "Expert-led training programs in software, hardware, and modern tech skills to empower individuals and teams with practical, industry-relevant knowledge.",
+      "Description": "Expert-led training programs in software, hardware, and modern technical skills, empowering individuals and teams with practical knowledge.",
       "icon": "fas fa-graduation-cap"
     }
   ],
 
   "CoreProduct.Title": "Our Core Product",
-  "CoreProduct.Badge": "School Mobile Platform",
-  "CoreProduct.Name": "Sawaed Elm",
-  "CoreProduct.Tagline": "The all-in-one mobile platform connecting students, parents, teachers, administrators, and drivers — on Android, iOS, and Web. One app. Every role. Every school.",
+  "CoreProduct.Badge": "Mobile Education Platform",
+  "CoreProduct.Name": "Sawaed Al-Ilm",
+  "CoreProduct.Tagline": "The complete platform connecting students, parents, teachers, administrators, and drivers — on Android, iOS, and the web. One app. Every role. Every school.",
   "CoreProduct.Pills": ["Android", "iOS", "Web", "Arabic · RTL", "English", "French"],
   "CoreProduct.Features": [
     {
       "icon": "fas fa-book-open",
       "Title": "Academic Management",
-      "Description": "Assignments, exams & weekly plans — teachers create, students submit, parents stay informed. Automated reminders and grade tracking built in."
+      "Description": "Assignments, exams, and weekly plans — created by teachers, submitted by students, and followed by parents. Automatic reminders and integrated grade tracking."
     },
     {
       "icon": "fas fa-rss",
       "Title": "Smart Social Feed",
-      "Description": "Posts, reels & polls in a safe, school-only space. Privacy by design — zero content exposure outside the platform."
+      "Description": "Posts, videos, and polls in a safe, school-only environment. Privacy by design — content stays within the platform."
     },
     {
       "icon": "fas fa-comments",
       "Title": "Direct Messaging",
-      "Description": "Secure one-to-one chat for every school role. Smart reminders auto-follow unread messages so nothing falls through the cracks."
+      "Description": "Secure private conversations across all school roles. Smart reminders help ensure no important message is missed."
     },
     {
       "icon": "fas fa-bell",
-      "Title": "Real-Time Notifications",
-      "Description": "Targeted push alerts for every event — absences, submissions, payments, bus arrivals. Smart scheduling, zero notification fatigue."
+      "Title": "Instant Notifications",
+      "Description": "Real-time alerts for every important event — attendance, assignments, payments, bus arrivals, and more. Smart scheduling without notification overload."
     },
     {
       "icon": "fas fa-user-check",
-      "Title": "Attendance & Leave",
-      "Description": "One-tap digital attendance with automatic holiday integration. Parents are notified the instant their child is marked absent or late."
+      "Title": "Attendance, Absence & Leave",
+      "Description": "One-tap attendance with integrated leave management. Parents are notified immediately when a student is absent or late."
     },
     {
       "icon": "fas fa-credit-card",
-      "Title": "Finance & Payments",
-      "Description": "Structured instalment plans, automatic reminders, and real-time payment status for every family. No spreadsheets. No missed fees."
+      "Title": "Fees & Payments",
+      "Description": "Organized installment plans, automatic reminders, and real-time payment status for every family. No spreadsheets. No missed fees."
     },
     {
       "icon": "fas fa-bus",
       "Title": "Transportation Tracking",
-      "Description": "Live journey management for drivers, real-time drop-off confirmations for parents, and emergency alerts for the whole school community."
+      "Description": "Live trip management for drivers, real-time drop-off confirmations for parents, and emergency alerts for the school community."
     },
     {
       "icon": "fas fa-robot",
-      "Title": "Sawaed AI Tutor",
-      "Description": "A built-in AI study companion personalised to each student's name, grade, and language — available 24/7. Powered by permanently free AI models."
+      "Title": "Sawaed AI Assistant",
+      "Description": "An intelligent educational companion personalized to each student by name, grade, and language — available 24/7. Powered by AI models."
     }
   ],
 
-  "School.Hero.Tag": "Smart School Platform",
-  "School.Hero.Title": "Ramtha International Academy",
-  "School.Hero.Subtitle": "A distinguished academic institution with a modern educational vision, offering quality education that keeps pace with development and international standards.\nRamtha International Academy strives to build an aware generation, capable of creativity and excellence, through a safe educational environment, advanced curricula, and a professional academic staff.",
-  "School.Hero.CTA": "Explore Features",
+  "School.Hero.Title": "Al-Ramtha International Academy",
+  "School.Hero.Subtitle": "A distinguished educational institution with a modern educational vision, delivering high-quality education aligned with international standards.\nAl-Ramtha International Academy is committed to building a generation that is aware, creative, and capable of excellence through a safe learning environment, modern curricula, and a professional academic team.",
+  "School.Hero.CTA": "Explore the Features",
   "School.Hero.CTA2": "Request a Demo",
 
-  "Sawaed.Hero.Title": "Sawaed Al Elm Technologies",
-  "Sawaed.Hero.Subtitle": "A company specialized in software development, hardware integration, and mobile app design. We transform ideas into advanced digital solutions that empower businesses to thrive in the modern technology landscape.",
+  "Sawaed.Hero.Title": "Sawaed Al-Ilm Technologies",
+  "Sawaed.Hero.Subtitle": "A company specializing in software development, hardware integration, and mobile application development. We turn ideas into advanced digital solutions that empower businesses to thrive in today's technology-driven environment.",
 
-  "School.Intro.Title": "Merging Powers — Two Visions, One Platform",
-  "School.Intro.Description": "When a school's deep educational expertise meets Sawaed Al Elm's advanced technology, something powerful happens. Together, we bring every part of school life into a single, seamless experience: learning, communication, attendance, fees, transport, and school life — all in one place, secured and available in Arabic, English, and French — with support for any language the school requests. This is not just a product — it is the merging of two powers into one unified platform.",
-  "School.Intro.HighlightTitle": "What No One Else Offers",
-  "School.Intro.Highlight1": "A private, school-only social network — the engagement of Instagram, TikTok, Facebook, and WhatsApp, all combined in one safe educational space inside your school. No strangers, no ads, no unethical or illegal content — just a protected environment where children benefit from social media without the risks.",
-  "School.Intro.Highlight2": "Sawaed AI — a personal AI assistant that actually knows each student's real school data and answers accordingly.",
-  "School.Intro.HighlightNote": "These are not add-ons. They are why families open the app every day.",
-  "School.Intro.Highlight3": "Your school's own branded app on the App Store and Google Play — verified, trusted, and yours.",
+  "School.Intro.Title": "Together, We Build a Complete School Experience",
+  "School.Intro.Description": "When the school's deep educational expertise comes together with Sawaed's technology and innovation expertise, we can build a more connected and effective school experience. We bring education, communication, attendance, absence, fees, transportation, activities, and school life together in one platform designed for students, parents, teachers, and administrators. A secure, flexible, multilingual platform supporting Arabic, English, and French, with the ability to add any language the school needs. This is more than a digital tool — it is a partnership that combines the school's expertise with Sawaed's technology to build a complete digital future for the school.",
+  "School.Intro.HighlightTitle": "What Others Don't Offer",
+  "School.Intro.Highlight1": "A private school social network — bringing the engagement of Instagram, TikTok, Facebook, and WhatsApp together in one safe educational space inside your school. No strangers, no ads, and no inappropriate or illegal content — a protected environment where children can enjoy the benefits of social interaction without the usual risks.",
+  "School.Intro.Highlight2": "Sawaed AI — personal AI that understands and analyzes real student data, answers based on it, and provides guidance to students and parents.",
+  "School.Intro.HighlightNote": "These are not just add-ons; they are the reasons families choose to engage with the platform.",
+  "School.Intro.Highlight3": "Your school's own app on the App Store and Google Play — trusted, secure, and branded for your school.",
 
-  "School.Branding.Badge": "Feature 1",
-  "School.Branding.SchoolName.Ramtha": "Ramtha International Academy",
-  "School.Branding.SchoolName.Assf": "Academy And Schools Of Scientific Fortune",
-  "School.Branding.Title": "Your School's Own App — Branded, Verified, and Yours",
-  "School.Branding.Lead": "Sawaed Elm gives your school its own dedicated app, published on the App Store and Google Play under your school's name. Parents and students download it just like any other app — searching for your school by name. This is not a shared platform hidden behind someone else's brand. It is your school's app, with your logo, your colors, and your identity.",
-  "School.Branding.DownloadAppStore": "Download on the",
-  "School.Branding.DownloadGooglePlay": "Get it on",
-  "School.Branding.AppStore.Title": "Published on App Store & Google Play",
-  "School.Branding.AppStore.Item1": "Your school's app is listed on both the Apple App Store and Google Play Store under your school's name.",
-  "School.Branding.AppStore.Item2": "Parents and students find it by searching for your school — just like any popular app.",
-  "School.Branding.AppStore.Item3": "Your school's logo, name, and branding appear on the store listing, not ours.",
-  "School.Branding.Verified.Title": "Tested & Verified by Apple and Google",
-  "School.Branding.Verified.Item1": "The app passes Apple's strict App Store review process — confirming it is safe, functional, and free of harmful code.",
-  "School.Branding.Verified.Item2": "Google Play's security review verifies the app is free of malware, backdoors, and illegal access — your data stays yours.",
-  "School.Branding.Verified.Item3": "Both platforms enforce data privacy standards, so your school community's information is protected by world-class security.",
-  "School.Branding.Marketing.Title": "Powerful Marketing for Your School",
-  "School.Branding.Marketing.Item1": "Having your own app on the App Store and Google Play is a statement — it tells families your school is modern, forward-thinking, and invested in technology.",
-  "School.Branding.Marketing.Item2": "Parents share the app with friends and relatives — every download is free advertising for your school.",
-  "School.Branding.Marketing.Item3": "Your school stands out from competitors who still rely on WhatsApp groups, Facebook pages, and paper notices.",
-  "School.Branding.Data.Title": "Your School Owns Its Data",
-  "School.Branding.Data.Item1": "All school data — students, parents, staff, grades, payments — belongs to your school, not to us.",
-  "School.Branding.Data.Item2": "No hidden access, no secret backdoors. Only authorized school administrators can access the data, with full audit logs.",
-  "School.Branding.Data.Item3": "You can export or request your data at any time. Your school is always in control.",
-  "School.Branding.Result": "A verified, branded app on the world's two largest app stores is more than a tool — it is a trust signal, a marketing asset, and a competitive advantage that no traditional school software can match.",
+  "School.Branding.Badge": "Feature One",
+  "School.Branding.SchoolName.Ramtha": "Al-Ramtha International Academy",
+  "School.Branding.SchoolName.Assf": "Al-Tharwa Al-Elmiyah Academy & Schools",
+  "School.Branding.Title": "Your School's Own App — Your Identity, Your Name, Your App Stores",
+  "School.Branding.Lead": "Sawaed gives your school a digital application carrying its name, logo, and visual identity, available to parents and students through the App Store, Google Play, and the web. Users search for their school's name, find its app, and get a digital experience designed specifically for the school community.",
+  "School.Branding.DownloadAppStore": "Available on",
+  "School.Branding.DownloadGooglePlay": "Available on",
+  "School.Branding.AppStore.Title": "An Official Presence on App Stores",
+  "School.Branding.AppStore.Item1": "An application carrying the school's name and identity, available through the Apple App Store and Google Play.",
+  "School.Branding.AppStore.Item2": "Parents and students can easily find the application by searching for the school's name.",
+  "School.Branding.AppStore.Item3": "The school's identity, logo, and name are an integral part of the app experience, strengthening its digital presence.",
+  "School.Branding.Verified.Title": "A Trusted and Secure Experience",
+  "School.Branding.Verified.Item1": "The application goes through the publishing and review requirements of the app stores before being made available to users.",
+  "School.Branding.Verified.Item2": "The platform is designed with a strong focus on protecting student, parent, and school staff data.",
+  "School.Branding.Verified.Item3": "Data access and management permissions are designed around user roles and the school's needs.",
+  "School.Branding.Marketing.Title": "A Digital Identity That Strengthens Your School's Presence",
+  "School.Branding.Marketing.Item1": "Having an app carrying the school's name and identity reflects its commitment to innovation and digital transformation.",
+  "School.Branding.Marketing.Item2": "The app becomes the primary digital access point for families to interact with the school and its services.",
+  "School.Branding.Marketing.Item3": "It gives the school a distinctive digital presence and helps create a more professional and connected experience for its community.",
+  "School.Branding.Data.Title": "Your School's Data, Under Your Management",
+  "School.Branding.Data.Item1": "The school's and community's data remain within the school's management and authorization framework, according to the applicable policies and agreements.",
+  "School.Branding.Data.Item2": "Data access is governed by roles and permissions, with important administrative activities traceable when needed.",
+  "School.Branding.Data.Item3": "The platform provides tools to manage and access data, giving the school greater visibility and control over its information.",
+  "School.Branding.Result": "More than an app — it is a digital presence carrying your school's name and identity, giving students and parents a modern school experience while strengthening the school's image and helping it stand out in the digital education landscape.",
 
-  "School.Social.Badge": "Feature 2",
-  "School.Social.Title": "The School Social Network",
-  "School.Social.Lead": "Today's students and parents live on social media — Instagram, TikTok, Facebook, WhatsApp, and more. Sawaed Elm combines the best of all of them into one safe, school-only space: the feed, the stories, the reels, the reactions — but with no strangers, no ads, no unwanted content, and no exposure to anything illegal or unethical. A protected educational environment where children enjoy the benefits of social media without the risks.",
-  "School.Social.Feed.Title": "A Living School Feed",
-  "School.Social.Feed.Item1": "A dynamic feed of posts from teachers, staff, and the school — photos, videos, and text.",
-  "School.Social.Feed.Item2": "Reactions — students and parents react to celebrate achievements, events, and announcements.",
-  "School.Social.Feed.Item3": "Comments — real conversation around school moments, in a moderated, school-only space.",
+  "School.Social.Badge": "Feature Two",
+  "School.Social.Title": "The School's Digital Community",
+  "School.Social.Lead": "Students, parents, and teachers are increasingly used to engaging with digital content every day. Sawaed brings a modern social experience into the heart of the school community through a feed of posts, stories, reels, and interactions — within a digital space dedicated to the school and managed and supervised by it.",
+  "School.Social.Feed.Title": "A Vibrant School Feed",
+  "School.Social.Feed.Item1": "An interactive feed featuring posts from the school, teachers, and staff, including photos, videos, and text content.",
+  "School.Social.Feed.Item2": "Social interactions that encourage students and parents to participate and celebrate achievements, events, and memorable moments.",
+  "School.Social.Feed.Item3": "Comments and discussions that allow the school community to engage with content in a dedicated and supervised environment.",
   "School.Social.Stories.Title": "Stories & Reels",
-  "School.Social.Stories.Item1": "Statuses (Stories) — short, auto-expiring updates, exactly like the stories families use every day.",
-  "School.Social.Stories.Item2": "Reels — short-form school videos for events, sports days, performances, and celebrations.",
-  "School.Social.Stories.Item3": "Seen-by / Viewers — authors can see who has viewed a post or reel.",
-  "School.Social.Engagement.Title": "Polls & Engagement",
-  "School.Social.Engagement.Item1": "Polls — ask the community a question and get instant results: trip preferences, event dates, feedback.",
-  "School.Social.Engagement.Item2": "Everything drives two-way engagement instead of one-way announcements.",
-  "School.Social.Targeting.Title": "Smart, Safe Audience Targeting",
-  "School.Social.Targeting.Item1": "Whole school, staff only, or students & parents.",
-  "School.Social.Targeting.Item2": "A specific grade or even a single class/section.",
-  "School.Social.Targeting.Item3": "A Grade 3 teacher's message reaches Grade 3 families — and no one else.",
-  "School.Social.Safety.Title": "Safe by Design",
-  "School.Social.Safety.Item1": "School-only. No outsiders, no public internet exposure — a closed community.",
-  "School.Social.Safety.Item2": "Moderated. Staff control what's posted and can remove content; students can be blocked from posting when needed.",
-  "School.Social.Safety.Item3": "Rich media, delivered fast. Photos and videos stream quickly and securely worldwide through a global CDN.",
-  "School.Social.Result": "Parents and students check the app the way they check social media — daily, willingly, and often. That engagement is something no traditional school system can match.",
+  "School.Social.Stories.Item1": "Short stories for sharing news, daily moments, and quick updates from the school.",
+  "School.Social.Stories.Item2": "School reels showcasing events, activities, sports, celebrations, and achievements in an engaging format.",
+  "School.Social.Stories.Item3": "Visibility into content engagement and reach across the school community.",
+  "School.Social.Engagement.Title": "Engagement Beyond Announcements",
+  "School.Social.Engagement.Item1": "Interactive polls that help the school understand community opinions and make better decisions, such as trip preferences, event choices, and schedules.",
+  "School.Social.Engagement.Item2": "Turn communication from one-way announcements into ongoing dialogue and interaction between the school, students, and parents.",
+  "School.Social.Targeting.Title": "Content That Reaches the Right People",
+  "School.Social.Targeting.Item1": "Target content to the entire school or specific groups such as teachers, students, or parents.",
+  "School.Social.Targeting.Item2": "Target content to a specific grade, section, or group as needed.",
+  "School.Social.Targeting.Item3": "The right content reaches the right audience, such as class teacher updates shown only to the relevant students and families.",
+  "School.Social.Safety.Title": "A Private Community Managed by the School",
+  "School.Social.Safety.Item1": "A digital space dedicated to the school community, with control over who can access and interact with content.",
+  "School.Social.Safety.Item2": "Moderation and management tools help the school control content, comments, and permissions according to its policies.",
+  "School.Social.Safety.Item3": "Support for photos, videos, and rich media in a fast experience designed for everyday use.",
+  "School.Social.Result": "Instead of being just another page in a world of competing content, the school gets its own digital social space where students, parents, and teachers can follow and engage with school news, events, and activities continuously.",
 
-  "School.AI.Badge": "Feature 3",
-  "School.AI.Title": "Sawaed AI, the Assistant That Knows the Student",
-  "School.AI.Lead": "Every school app now claims to have AI. They all do the same thing: a generic chatbot that answers general questions. Sawaed AI is fundamentally different. It is connected to the school's real data, so it answers about this student — securely, personally, and instantly.",
-  "School.AI.Questions.Title": "It Answers Real Questions About the Real Student",
+  "School.AI.Badge": "Feature Three",
+  "School.AI.Title": "Sawaed AI — An Intelligent Assistant That Understands You and Your School",
+  "School.AI.Lead": "Sawaed AI is not just a chatbot that answers general questions. It is an intelligent assistant connected to school data, user context, and permissions. It understands who it is talking to, provides personalized answers, analyzes behavioral signals and interests, and helps users complete actions directly through conversation.",
+  "School.AI.Questions.Title": "Ask About Your Child and Get a Real Answer",
   "School.AI.Questions.Q1": "\"How many days has my son been absent this term?\"",
-  "School.AI.Questions.Q2": "\"What homework does my daughter have this week?\"",
-  "School.AI.Questions.Q3": "\"How is my child doing academically overall?\"",
-  "School.AI.Questions.Q4": "\"What school fees are still unpaid, and when are they due?\"",
-  "School.AI.Questions.Q5": "\"What events or exams are coming up for my child?\"",
-  "School.AI.Questions.Note": "…and Sawaed AI looks up the actual answer from the school's system and replies — no digging through menus, no calling the office.",
-  "School.AI.Data.Title": "Powered by Real, Permission-Aware Data",
-  "School.AI.Data.Item1": "The parent's linked children — it knows exactly who is being asked about.",
-  "School.AI.Data.Item2": "Attendance — days attended, absences, sick days, leave.",
-  "School.AI.Data.Item3": "Assignments & homework — what's due, for the right class.",
-  "School.AI.Data.Item4": "Academic summary — the student's overall picture in one answer.",
-  "School.AI.Data.Item5": "Fees & installments — amounts, due dates, what's paid and outstanding.",
-  "School.AI.Data.Item6": "Upcoming events & exams — relevant to that specific student.",
-  "School.AI.Data.Item7": "App help guide — \"how do I…?\" questions answered from within the app.",
-  "School.AI.Privacy.Title": "Private and Permission-Respecting",
-  "School.AI.Privacy.Item1": "Sawaed AI only ever sees what the user is allowed to see — a parent gets their own children's data, never another family's.",
-  "School.AI.Privacy.Item2": "Every request is scoped to the school and the signed-in user's permissions.",
-  "School.AI.Privacy.Item3": "Answers are role-aware: a parent, a student, and a teacher each get responses suited to them.",
-  "School.AI.Availability.Title": "Always Available, in Multiple Languages",
-  "School.AI.Availability.Item1": "Available 24/7 — no waiting for office hours.",
-  "School.AI.Availability.Item2": "Fully trilingual Arabic, English, and French — and any language the school requests.",
-  "School.AI.Result": "The front office stops fielding the same phone calls. Parents get instant, accurate, personal answers. It's the difference between a chatbot and a real assistant — and no competitor offers it.",
+  "School.AI.Questions.Q2": "\"What assignments does my daughter have this week?\"",
+  "School.AI.Questions.Q3": "\"How is my child's overall academic performance?\"",
+  "School.AI.Questions.Q4": "\"What fees are due for my son and when are they due?\"",
+  "School.AI.Questions.Q5": "\"What upcoming events and exams are relevant to my child?\"",
+  "School.AI.Questions.Note": "Sawaed AI understands the context of the question and retrieves relevant information from the school's systems to provide a direct, personalized answer — without navigating through multiple pages or contacting the school office.",
+  "School.AI.Data.Title": "Understands the User, Their Data, and Their Permissions",
+  "School.AI.Data.Item1": "Understands the user in the conversation and their role in the school, whether parent, student, teacher, or administrator.",
+  "School.AI.Data.Item2": "Understands the students linked to a parent so it can accurately identify which child the question refers to.",
+  "School.AI.Data.Item3": "Uses attendance, absence, assignments, subjects, grades, fees, events, and other information the user is authorized to access.",
+  "School.AI.Data.Item4": "Provides answers based on the user's context and permissions rather than generic information unrelated to their situation.",
+  "School.AI.Behavior.Title": "Understands Student Interests and Tendencies",
+  "School.AI.Behavior.Item1": "Analyzes available signals from the student's activity on the platform, such as the content they watch and interact with and the activities they show interest in.",
+  "School.AI.Behavior.Item2": "Helps identify recurring interests and patterns in student behavior, such as interest in scientific, sports, or other areas.",
+  "School.AI.Behavior.Item3": "Provides students and parents with indicators and guidance that can help them understand the student's interests and explore fields and pathways that may align with those tendencies.",
+  "School.AI.Behavior.Note": "These indicators support decision-making; they do not replace the role of parents, teachers, or educational counselors in choosing the most appropriate path for the student.",
+  "School.AI.Personalization.Title": "An Experience That Adapts to Every User",
+  "School.AI.Personalization.Item1": "Adapts the conversation style to a student's age and educational stage, using explanations and language appropriate to their level of understanding.",
+  "School.AI.Personalization.Item2": "Provides parents with clear, direct answers focused on their children and the information that matters to them.",
+  "School.AI.Personalization.Item3": "Interacts with teachers and administrators according to their roles, permissions, and needs within the school.",
+  "School.AI.Personalization.Note": "The same intelligence, with an experience designed for every user.",
+  "School.AI.Agent.Title": "From Answers to Action",
+  "School.AI.Agent.Item1": "Sawaed AI does not stop at answering; it can execute actions permitted by the user's permissions through conversation.",
+  "School.AI.Agent.Item2": "A user can request an action such as submitting a leave request, and Sawaed AI understands the request and presents the details for confirmation before executing it.",
+  "School.AI.Agent.Item3": "After the user confirms, the request is created and sent to the appropriate party for approval according to the school's workflow.",
+  "School.AI.Agent.Note": "Ask → Understand → Confirm → Execute.",
+  "School.AI.Guide.Title": "A Smart Guide to Using the App",
+  "School.AI.Guide.Item1": "Ask Sawaed AI: \"How do I create a new assignment?\" and it will explain the steps inside the app.",
+  "School.AI.Guide.Item2": "Ask: \"How do I block a user?\" and it will guide you to the correct location and steps to perform the action.",
+  "School.AI.Guide.Item3": "Helps users discover and use platform features without searching manuals or contacting support.",
+  "School.AI.Guide.Note": "Instead of learning how to use the system, just talk to it.",
+  "School.AI.Privacy.Title": "Intelligence That Respects Privacy and Permissions",
+  "School.AI.Privacy.Item1": "Sawaed AI operates according to user permissions and only reveals information the user is authorized to access.",
+  "School.AI.Privacy.Item2": "Every query and action is processed within the context of the school, the signed-in user, and their permissions.",
+  "School.AI.Privacy.Item3": "Available information and actions vary according to the user's role, whether parent, student, teacher, or administrator.",
+  "School.AI.Availability.Title": "Your Assistant Whenever You Need It",
+  "School.AI.Availability.Item1": "Available around the clock to answer questions and help users navigate and use the platform.",
+  "School.AI.Availability.Item2": "Supports Arabic, English, and French, with the ability to add other languages according to the school's needs.",
+  "School.AI.Result": "Sawaed AI transforms the app from a platform users need to learn into a platform they can simply talk to. It understands the user and their context, answers questions using real school data, helps identify student interests, guides users through the right steps, and can execute permitted actions after user confirmation.",
 
-  "School.FeatureFlags.Badge": "Feature 4",
-  "School.FeatureFlags.Title": "Feature Flags — Your School, Your Modules",
-  "School.FeatureFlags.Lead": "Not every school needs every module. Some schools want transport tracking but not the social feed. Others want everything except finance. With Feature Flags, the school's administrators can enable or disable any module — instantly, without code changes or waiting for a developer. The app adapts to what your school actually uses.",
+  "School.FeatureFlags.Badge": "Feature Four",
+  "School.FeatureFlags.Title": "A Flexible Platform That Adapts to Your School",
+  "School.FeatureFlags.Lead": "Not every school needs the same services or modules. Sawaed gives school management the ability to choose the features that fit its needs and enable or disable them from the administration panel. Start with what you need today and add more when you are ready, without rebuilding the app or changing the user experience.",
   "School.FeatureFlags.HowItWorks.Title": "How It Works",
-  "School.FeatureFlags.HowItWorks.Item1": "Each module — social feed, messaging, attendance, finance, transport, AI, and more — can be toggled on or off from the admin dashboard.",
-  "School.FeatureFlags.HowItWorks.Item2": "Disabled modules disappear from the app entirely — students and parents only see what the school has enabled.",
-  "School.FeatureFlags.HowItWorks.Item3": "Changes take effect immediately — no app update, no downtime, no developer involved.",
-  "School.FeatureFlags.HowItWorks.Item4": "Modules can be re-enabled at any time, so a school can start lean and expand as needs grow.",
-  "School.FeatureFlags.Modules.Title": "Toggleable Modules",
-  "School.FeatureFlags.Modules.Item1": "Social feed, stories & reels — enable or disable the school social network.",
-  "School.FeatureFlags.Modules.Item2": "Sawaed AI — turn the AI assistant on or off per school.",
-  "School.FeatureFlags.Modules.Item3": "Finance & payments — disable if the school handles fees outside the platform.",
-  "School.FeatureFlags.Modules.Item4": "Transportation tracking — disable if the school has no bus service.",
-  "School.FeatureFlags.Modules.Item5": "Attendance, messaging, academics, and more — each independently controlled.",
-  "School.FeatureFlags.Benefits.Title": "Why Schools Love It",
-  "School.FeatureFlags.Benefits.Item1": "Pay only for what you use — disabled modules don't clutter the app or the bill.",
-  "School.FeatureFlags.Benefits.Item2": "A clean, focused experience — families see only the features their school chose for them.",
-  "School.FeatureFlags.Benefits.Item3": "Start small and grow — enable new modules when the school is ready, with zero migration.",
-  "School.FeatureFlags.Control.Title": "Full Administrative Control",
-  "School.FeatureFlags.Control.Item1": "Only authorized administrators can toggle modules — changes are logged in the audit trail.",
-  "School.FeatureFlags.Control.Item2": "Module visibility is enforced at the API level — no backdoor access to disabled features.",
-  "School.FeatureFlags.Control.Item3": "Schools can request custom modules — if a school needs something we don't have yet, we build it and flag it on.",
-  "School.FeatureFlags.Result": "The school gets exactly the platform it wants — no more, no less. Every module is a conscious choice, not a forced bundle. That is what it means to own your school's app.",
+  "School.FeatureFlags.HowItWorks.Item1": "School management can control key modules such as the social community, messaging, attendance, finance, transportation, Sawaed AI, and more.",
+  "School.FeatureFlags.HowItWorks.Item2": "When a module is disabled, it disappears from the experience of users associated with the school, so each user sees only what has been enabled for them.",
+  "School.FeatureFlags.HowItWorks.Item3": "Changes can be applied directly from the administration panel without requiring a new app release.",
+  "School.FeatureFlags.HowItWorks.Item4": "Modules can be re-enabled at any time, allowing the school to expand gradually as its needs evolve.",
+  "School.FeatureFlags.Modules.Title": "Customizable Services",
+  "School.FeatureFlags.Modules.Item1": "Social community, stories, and reels — enable the school's social experience when ready.",
+  "School.FeatureFlags.Modules.Item2": "Sawaed AI — enable the intelligent assistant according to the school's needs.",
+  "School.FeatureFlags.Modules.Item3": "Finance and payments — enable fee and payment management when needed.",
+  "School.FeatureFlags.Modules.Item4": "Transportation — enable bus, journey, and tracking management for schools that provide transportation services.",
+  "School.FeatureFlags.Modules.Item5": "Attendance, messaging, academics, and more — each module can be managed according to the school's needs.",
+  "School.FeatureFlags.Benefits.Title": "Why This Flexibility Matters",
+  "School.FeatureFlags.Benefits.Item1": "A clearer experience — users see only the services available to them, without being overwhelmed by features they do not need.",
+  "School.FeatureFlags.Benefits.Item2": "Start with what you need today — then add new services gradually as the school's needs evolve.",
+  "School.FeatureFlags.Benefits.Item3": "Greater platform flexibility — the school can change enabled services without changing or redistributing the application.",
+  "School.FeatureFlags.Control.Title": "Administrative Control and Clear Permissions",
+  "School.FeatureFlags.Control.Item1": "Module management is limited to authorized administrators according to their assigned permissions.",
+  "School.FeatureFlags.Control.Item2": "Module status is enforced across the platform and services, so disabled modules are not available to unauthorized users.",
+  "School.FeatureFlags.Control.Item3": "New modules and services can be developed in the future to meet the school's specific needs.",
+  "School.FeatureFlags.Result": "The school does not need to change the way it works to fit the platform; the platform adapts to the school. Choose the services you need today and add more when you are ready — building the school's digital experience the way it works best for you.",
 
-  "School.SlidesHint": "← swipe to explore more →",
+  "School.SlidesHint": "← Swipe to explore more →",
 
-  "School.CatalogTitle": "The Complete Feature Catalog",
-  "School.CatalogLead": "Alongside the two flagship features, Sawaed Elm is a full school operating system — built for five roles: Students, Parents, Teachers, Administrators, and Drivers — each with a home screen made for them.",
+  "School.CatalogTitle": "Everything Your School Needs, in One Platform",
+  "School.CatalogLead": "Beyond the main features, Sawaed provides a complete school ecosystem serving every member of the school community — students, parents, teachers, administrators, and drivers — with a tailored experience for every role, bringing education, communication, administration, and daily services together in one platform.",
   "School.Catalog": [
     {
       "icon": "📚",
       "title": "Learning & Academics",
       "items": [
-        "Courses in Arabic, English, and French, organized by grade and section.",
-        "Teaching assignments — assign staff to each course; reassigning moves access instantly.",
-        "Assignments & homework — teachers create, publish, and target homework to the class.",
-        "Submissions & grading — students submit in-app; teachers grade and return results.",
-        "Exams — schedule exams with date, time, and total marks; parents and students see what's coming.",
-        "Grades — enter grades and give every student and parent a private view of their results.",
-        "Weekly plans — teachers publish the week's lesson plan.",
-        "Timetables & class sessions — the daily schedule, per class and per student.",
-        "Academic structure — grades, classes, sections, and subjects."
+        "Manage and organize subjects by grade and section.",
+        "Manage teaching scopes and assign teachers to subjects and classes.",
+        "Create, distribute, track, and grade assignments.",
+        "Students submit assignments and receive results through the platform.",
+        "Schedule exams, dates, times, and grades.",
+        "Manage grades and provide private results to students and parents.",
+        "Publish weekly and academic lesson plans for students and parents.",
+        "Manage daily schedules and class timetables.",
+        "Manage the academic structure of grades, classes, sections, and subjects."
       ]
     },
     {
       "icon": "📝",
       "title": "Attendance & Leave",
       "items": [
-        "Fast daily attendance — teachers mark a whole class in seconds.",
-        "Real-time parent alerts — the moment a child is marked absent, the family knows.",
-        "Student attendance summary — days present, absent, sick, and on leave.",
-        "Attendance reports — per-student and school-wide reports.",
-        "Digital leave requests — parents request leave in-app; staff approve or decline with one tap.",
-        "Staff attendance — the school tracks employee attendance the same clean way."
+        "Record attendance and absence quickly and easily.",
+        "Instant parent notifications when a student's absence is recorded.",
+        "Comprehensive attendance, absence, and leave summaries.",
+        "Attendance reports at both student and school level.",
+        "Submit, review, and approve leave requests digitally.",
+        "Manage and track school staff attendance."
       ]
     },
     {
       "icon": "💬",
-      "title": "Communication",
+      "title": "Communication & Notifications",
       "items": [
-        "Family–school messaging — secure, private conversations with read receipts and unread counts.",
-        "Inbox — every conversation in one organized place.",
-        "Push notifications — instant alerts for absences, grades, messages, fees, events, and announcements.",
-        "Notification preferences — each user controls exactly what they're notified about."
+        "Direct, private messaging between the school, parents, and teachers.",
+        "An organized inbox that brings all conversations together in one place.",
+        "Instant notifications for important events such as absences, grades, messages, fees, and activities.",
+        "Notification preferences tailored to each user."
       ]
     },
     {
       "icon": "💳",
-      "title": "Finance & Payments",
+      "title": "Fees & Payments",
       "items": [
-        "Flexible fee plans — split total fees into installments, applied per year, grade, or section.",
-        "Pay monthly, yearly, or several months at once — one payment can cover multiple installments.",
-        "Automatic installment status — Paid, Partially Paid, Remaining, or Overdue, calculated in real time.",
-        "Record real-world payments in seconds — auto-generated invoices with reference numbers.",
-        "Approval workflow — payments start as pending and only count once an authorized manager approves.",
-        "School-defined payment methods — cash, bank transfer, or any method the school configures.",
-        "Family payment view — total fees, paid, remaining, and overdue at a glance.",
-        "Management payment dashboard — expected vs. collected, filterable by year, grade, section, and status.",
-        "Full financial audit trail — every payment and status change is recorded and never deleted."
+        "Create flexible fee plans by academic year, grade, and section.",
+        "Allow monthly, annual, or multi-month payments in a single transaction.",
+        "Track each installment's status, including paid, remaining, and overdue amounts.",
+        "Manage invoices and payments with clear reference numbers.",
+        "Approval workflows for payments based on school permissions.",
+        "Support the payment methods selected by the school.",
+        "Give parents a clear view of total fees, paid amounts, remaining balances, and overdue amounts.",
+        "Financial dashboard with filtering and reporting by year, grade, section, and status.",
+        "Audit trail for financial operations and important changes."
       ]
     },
     {
       "icon": "🚌",
-      "title": "Transportation & Safety",
+      "title": "School Transportation",
       "items": [
-        "Live bus tracking — parents watch the bus move on the map in real time.",
-        "Per-student pickup & drop-off status — confirmed picked up / dropped off / no-show for each child.",
-        "Driver journey view — drivers run the route, mark each student, and start/complete the trip.",
-        "Urgent notifications — a driver can alert the school and families instantly.",
-        "Route & bus management — buses, routes, and dispatch managed centrally."
+        "Live tracking of buses and journeys.",
+        "Track each student's boarding and drop-off status.",
+        "A dedicated driver interface for managing journeys and tracking students.",
+        "Send important notifications and alerts during journeys.",
+        "Manage buses, routes, and journeys from one place."
       ]
     },
     {
       "icon": "🗓️",
       "title": "School Life",
       "items": [
-        "Shared calendar & events — a single school calendar everyone can see and add to.",
-        "Holidays & weekend configuration — the official school year, reflected everywhere.",
-        "Registration — onboard new students and families into the platform.",
-        "Profiles & directories — student, teacher, and colleague profiles; a staff directory.",
-        "Self-service profile — users update their photo, bio, and phone; sensitive changes go through approval."
+        "A unified school calendar for events, activities, and important dates.",
+        "Manage holidays, weekends, and the academic year.",
+        "Register new students and families on the platform.",
+        "Organized profiles and directory for members of the school community.",
+        "Allow users to manage their personal information according to approved permissions."
       ]
     },
     {
       "icon": "🛠️",
       "title": "Administration & Control",
       "items": [
-        "User management — manage students, parents, and employees from one place.",
-        "Roles & permissions — fine-grained control with custom roles; every sensitive action is gated at the API.",
-        "Course & teaching-scope management — create and assign staff to trilingual courses; every change is audited.",
-        "Parent–child links — connect each parent to exactly the right children.",
-        "Approval workflows — name-change, birth-date-change, and payment approvals.",
-        "Analytics & reports — school statistics, dashboards, and exportable reports.",
-        "Audit & history — a full record of who did what, for accountability and trust.",
-        "Moderation — remove content and block misuse to keep the community safe."
+        "Manage students, parents, teachers, and staff from one place.",
+        "A flexible roles and permissions system defining what each user can access.",
+        "Manage subjects, teaching scopes, and teacher assignments.",
+        "Link parents to their children and manage their relationships.",
+        "Manage approval workflows for sensitive changes and requests.",
+        "Dashboards and reports for monitoring school performance.",
+        "A clear audit trail for important operations and changes.",
+        "Content moderation and management tools for the school community."
       ]
     },
     {
       "icon": "🌍",
-      "title": "Built-in Foundations",
+      "title": "Flexible & Global Experience",
       "items": [
-        "iOS, Android, and Web from one codebase.",
-        "Full Arabic, English, and French, with right-to-left support done properly — and any language the school requests.",
-        "Dark mode across the entire app.",
-        "White-label branding — ship as your school's own branded app.",
-        "Bank-grade security — token-based sign-in, permission-scoped data, and time-limited secure media links.",
-        "Global content delivery — photos and video load fast anywhere in the world."
+        "A unified experience across iOS, Android, and the web.",
+        "Arabic, English, and French support, with the ability to add other languages according to the school's needs.",
+        "Full Arabic and right-to-left support.",
+        "An application carrying the school's name, logo, and brand identity.",
+        "A design focused on privacy, permissions, and protection of user data.",
+        "A fast, reliable experience for accessing photos, videos, and content from anywhere."
       ]
     }
   ],
 
-  "School.ProblemsTitle": "The Real Problems Sawaed Elm Solves",
-  "School.ProblemsHeader1": "The Real-Life Problem",
-  "School.ProblemsHeader2": "How Sawaed Elm Solves It",
+  "School.ProblemsTitle": "The Real Problems Sawaed Solves",
+  "School.ProblemsHeader1": "The Problem in Reality",
+  "School.ProblemsHeader2": "How Sawaed Solves It",
   "School.Problems": [
     {
-      "title": "Blind Spot on Student Progress",
-      "problem": "Parents are in the dark about attendance, grades, homework, and fees until a problem is already big.",
-      "solution": "One app gives every parent a live, honest view of their own child — and Sawaed AI answers their questions instantly."
+      "title": "Student Visibility",
+      "problem": "Parents often lack a clear, direct view of their children's attendance, grades, assignments, and fees, which can allow issues to grow before they are discovered and addressed.",
+      "solution": "One app gives every parent a clear, direct, and comprehensive view of their children's school experience — from grades, attendance, assignments, and school fees to activities, transportation, student engagement, and participation in school life. Everything parents need to stay informed and reassured."
     },
     {
-      "title": "Scattered Communication",
-      "problem": "Communication is scattered across WhatsApp groups, Facebook pages, paper slips, and phone calls — messages get lost, and there's no privacy.",
-      "solution": "One secure, school-only channel: targeted posts, private messaging, and push notifications that actually reach people."
+      "title": "More Organized Communication",
+      "problem": "Communication is often spread across WhatsApp groups, Facebook pages, paper notices, and phone calls, making some messages easy to miss and information harder to access at the right time.",
+      "solution": "One secure communication channel dedicated to the school, enabling targeted announcements and content, private messaging, and instant notifications to ensure information reaches the right people at the right time."
     },
     {
-      "title": "Drowning in Calls",
-      "problem": "The front office drowns in repetitive calls — \"was my son absent?\", \"what fees are due?\", \"when is the exam?\"",
-      "solution": "Self-service answers plus a data-aware AI assistant handle these 24/7, freeing staff for real work."
+      "title": "Instant Answers, More Time for the School Team",
+      "problem": "School staff receive many repetitive questions from parents every day, such as: Has my child boarded the bus? Where is the school trip right now? What fees are due? When is the exam? This consumes staff time and increases pressure on the school team.",
+      "solution": "Self-service features allow parents to access the information they need directly, supported by Sawaed AI, which understands school data and answers questions instantly, around the clock."
     },
     {
-      "title": "Low Engagement",
-      "problem": "Low parent engagement — traditional school apps get opened only when there's a problem.",
-      "solution": "A safe, school-only social feed with stories and reels makes families want to open the app every day."
+      "title": "Stronger Engagement with the School Community",
+      "problem": "When schools rely on public social media platforms, their content becomes part of a personal feed filled with unrelated content, making school posts harder to discover and reducing their visibility and impact.",
+      "solution": "A private digital school community bringing parents, students, and teachers together in one place. Important news and announcements arrive directly through notifications, users can follow the calendar and upcoming events and activities, and a dedicated social feed shows school content only — strengthening engagement and making the app part of daily school life."
     },
     {
-      "title": "Slow Paper Attendance",
-      "problem": "Attendance is paper-based and slow, and parents find out about absences far too late.",
-      "solution": "Digital attendance in seconds, with instant absence alerts to parents."
+      "title": "Faster Attendance and Real-Time Visibility",
+      "problem": "Traditional attendance processes can take time, and attendance information may reach parents late, reducing the speed of follow-up.",
+      "solution": "Fast digital attendance with instant parent notifications about their children's attendance and absence, keeping families informed at the right time."
     },
     {
-      "title": "Chaotic Fee Collection",
-      "problem": "Fee collection is chaotic — lost invoices, awkward reminders, unclear balances, and no record of who approved what.",
-      "solution": "Clear digital fee plans, one payment covering several months, an approval step before money counts, auto-generated invoices, transparent balances, and a permanent audit trail."
+      "title": "Clearer Fee Management",
+      "problem": "Managing school fees can require significant effort, especially with multiple invoices, payments, due dates, and approvals, making balances and payment status harder to track.",
+      "solution": "Integrated digital fee management that lets the school create clear fee plans, issue invoices automatically, track payments, balances, and due dates, support multi-month payments in one transaction, and maintain a clear approval workflow and audit trail for every operation."
     },
     {
-      "title": "Bus Safety Anxiety",
-      "problem": "Bus safety causes daily anxiety — parents don't know where the bus is or whether their child got on.",
-      "solution": "Live GPS tracking and per-child pickup/drop-off confirmation."
+      "title": "Safer, More Reassuring Transportation",
+      "problem": "Parents want reassurance about their children's school journeys and need visibility into the trip status and bus location, especially during travel to and from school.",
+      "solution": "A smart transportation system that provides live bus tracking, records and confirms each student's boarding and drop-off, and sends notifications that help parents follow the journey and stay reassured about their children."
     },
     {
-      "title": "Unsafe Social Media",
-      "problem": "Public social media is unsafe for a school community — strangers, ads, and no control.",
-      "solution": "A closed, moderated, school-only network with no outside exposure."
+      "title": "A More Private School Community",
+      "problem": "Public social media platforms are designed for broad audiences and diverse content, and do not provide the dedicated environment, privacy, and full control a school community of students, parents, and staff needs.",
+      "solution": "A private digital community dedicated to the school, bringing students, parents, and staff together in a private and organized environment with permissions and full control over content and interactions, away from external content, advertising, and interactions."
     }
   ],
 
-  "School.CommonProblems.Title": "Common Problems Schools Face",
-  "School.CommonProblems.Description": "The real problems schools suffer from today — and how Sawaed Elm solves them",
-  "School.CommonProblems.HowWeSolve": "How do we solve it?",
-  "School.CommonProblems.ProblemLabel": "The Problem",
-  "School.CommonProblems.SolutionLabel": "The Solution",
+  "School.CommonProblems.Title": "Common Challenges Schools Face",
+  "School.CommonProblems.Description": "The real challenges schools face today — and how Sawaed solves them",
+  "School.CommonProblems.HowWeSolve": "How We Solve Them",
+  "School.CommonProblems.ProblemLabel": "Problem",
+  "School.CommonProblems.SolutionLabel": "Solution",
   "School.CommonProblems.Close": "Close",
 
-  "School.BenefitsTitle": "The Benefits — for Everyone in the School",
+  "School.BenefitsTitle": "Value for Everyone in the School Community",
   "School.Benefits": [
     {
       "icon": "👨‍👩‍👧",
       "title": "Parents",
-      "text": "Peace of mind and transparency: real answers about their child in seconds, in their own language, without calling the office."
+      "text": "Greater clarity and peace of mind: quick access to their children's information, services, and answers in their preferred language — without having to call the school every time."
     },
     {
       "icon": "🎓",
       "title": "Students",
-      "text": "A school life that feels modern — a feed, reels, and an AI assistant — plus clear visibility of homework, grades, and schedule."
+      "text": "A modern digital school experience that brings together learning, social engagement, and Sawaed AI, with clear access to assignments, grades, schedules, and events."
     },
     {
       "icon": "🧑‍🏫",
       "title": "Teachers",
-      "text": "Save hours every week: attendance in seconds, homework and grading in-app, and fewer interruptions from repetitive parent questions."
+      "text": "Tools that help them focus on teaching: faster attendance, assignment and grading management, communication with parents, and easy access to the information they need."
     },
     {
       "icon": "🧑‍💼",
       "title": "Administrators",
-      "text": "Control and insight: analytics, reports, roles, approvals, and an audit trail — the whole school in one dashboard."
+      "text": "Better visibility and control through user management, permissions, fees, approvals, reports, and audit trails — all within one platform."
     },
     {
       "icon": "🚌",
       "title": "Drivers",
-      "text": "A purpose-built route screen with per-student check-off and a direct line to the school."
+      "text": "A dedicated experience for managing journeys, tracking students, recording boarding and drop-off, and staying directly connected with the school when needed."
     },
     {
       "icon": "🏫",
-      "title": "School Leaders",
-      "text": "A stronger brand, higher family satisfaction and retention, lower software costs, and a genuine competitive edge."
+      "title": "School Leadership",
+      "text": "A stronger digital presence, a better family experience, a more engaged school community, and unified visibility that helps leadership improve services and make better-informed decisions."
     }
   ],
 
-  "School.ComparisonTitle": "Why It Wins",
+  "School.ComparisonTitle": "Why Sawaed Stands Out",
   "School.ComparisonHeader1": "",
   "School.ComparisonHeader2": "Typical School App",
-  "School.ComparisonHeader3": "Sawaed Elm",
+  "School.ComparisonHeader3": "Sawaed Al-Ilm",
   "School.Comparison": [
     {
-      "aspect": "Daily engagement",
-      "typical": "Login only when needed",
-      "sawaed": "Social feed, stories & reels keep families coming back daily"
+      "aspect": "Daily Engagement",
+      "typical": "Users log in only when needed",
+      "sawaed": "A social feed, stories, and reels encourage families to return every day"
     },
     {
       "aspect": "\"AI\"",
-      "typical": "Generic chatbot",
-      "sawaed": "Sawaed AI answers with the student's real data"
+      "typical": "A generic chatbot",
+      "sawaed": "Sawaed AI answers using real student data"
     },
     {
       "aspect": "Communication",
       "typical": "One-way announcements",
-      "sawaed": "Two-way: reactions, comments, polls, targeted posts"
+      "sawaed": "Two-way: interactions, comments, polls, and targeted posts"
     },
     {
       "aspect": "Media",
       "typical": "Basic attachments",
-      "sawaed": "Fast, secure photos & video via global CDN"
+      "sawaed": "Fast, secure photos and videos delivered through a global CDN"
     },
     {
       "aspect": "Branding",
-      "typical": "Generic app under vendor's name",
-      "sawaed": "Your school's own branded app on App Store & Google Play"
+      "typical": "A generic vendor-branded app",
+      "sawaed": "Your school's own app with your identity on the App Store and Google Play"
     },
     {
-      "aspect": "Data ownership",
-      "typical": "Vendor owns and controls your data",
-      "sawaed": "Your school owns its data — no backdoors, full audit trail"
+      "aspect": "Data Ownership",
+      "typical": "The vendor owns and controls your data",
+      "sawaed": "Your school owns its data — no hidden access and a complete audit trail"
     },
     {
-      "aspect": "Module control",
-      "typical": "All-or-nothing bundle",
-      "sawaed": "Feature Flags — enable or disable any module per school"
+      "aspect": "Module Control",
+      "typical": "All-or-nothing package",
+      "sawaed": "Feature controls — enable or disable modules for each school"
     },
     {
       "aspect": "Languages",
-      "typical": "Often English-only",
-      "sawaed": "Full Arabic, English & French — plus any language on request"
+      "typical": "Often English only",
+      "sawaed": "Fully supports Arabic, English, and French — plus any language on request"
     }
   ],
 
   "School.CTA.Title": "Ready to See It in Action?",
-  "School.CTA.Text": "For a live demo of the school social network and Sawaed AI, please get in touch.",
+  "School.CTA.Text": "To get a live demonstration of the school's social network and Sawaed AI, contact us.",
   "School.CTA.Btn": "Contact Us",
   "School.CTA.Back": "Back to Home",
 
   "Header.Item4": "School Platform",
 
-  "Contact.Pretitle": "And... Now?",
-  "Contact.Title": "Say Hi!",
-  "Contact.Content": "Have a project in mind or a question for us? We'd love to hear from you.",
+  "Contact.Pretitle": "What's Next?",
+  "Contact.Title": "Get in Touch!",
+  "Contact.Content": "Have a project in mind or a question you'd like to ask? We'd love to hear from you.",
   "Contact.Btn": "Contact Us"
-
 }
