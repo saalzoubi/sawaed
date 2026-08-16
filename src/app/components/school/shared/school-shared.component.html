@@ -34,31 +34,122 @@
     </div>
   </section>
 
-  <!-- Intro -->
+  <!-- Common Problems Carousel -->
+  <section class="section school-common-problems" id="common-problems">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">★</span> {{ "School.CommonProblems.Title" | translate }}
+          </h3>
+          <p class="school-feature-lead">{{ "School.CommonProblems.Description" | translate }}</p>
+        </div>
+
+        <div class="school-problems-carousel" data-aos="fade-up" data-aos-duration="1000">
+          <button class="school-carousel-btn school-carousel-prev"
+                  [disabled]="isRtl() ? !canNextProblem() : !canPrevProblem()"
+                  (click)="isRtl() ? nextProblemSlide() : prevProblemSlide()"
+                  aria-label="Previous">
+            <i class="fas fa-chevron-left school-carousel-icon"></i>
+          </button>
+
+          <div class="school-carousel-viewport">
+            <div class="school-carousel-track"
+                 [style.transform]="'translateX(' + (isRtl() ? '' : '-') + (currentProblemSlide * (100 / problemsPerView)) + '%)'">
+              <div *ngFor="let p of problems"
+                   class="school-carousel-slide"
+                   [style.flex]="'0 0 ' + (100 / problemsPerView) + '%'">
+                <div class="school-problem-card">
+                  <h5 class="school-problem-card-title">{{ p.title }}</h5>
+                  <p class="school-problem-card-desc">{{ p.problem }}</p>
+                  <button class="main-btn school-problem-solve-btn"
+                          (click)="openProblemModal(p)">
+                    {{ "School.CommonProblems.HowWeSolve" | translate }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="school-carousel-btn school-carousel-next"
+                  [disabled]="isRtl() ? !canPrevProblem() : !canNextProblem()"
+                  (click)="isRtl() ? prevProblemSlide() : nextProblemSlide()"
+                  aria-label="Next">
+            <i class="fas fa-chevron-right school-carousel-icon"></i>
+          </button>
+        </div>
+
+        <div class="school-carousel-dots">
+          <span *ngFor="let p of problems; let i = index"
+                class="school-carousel-dot"
+                [class.active]="i === currentProblemSlide"
+                (click)="goToProblemSlide(i)">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Solution Modal -->
+  <div class="school-modal-overlay" *ngIf="isModalOpen" (click)="closeProblemModal()">
+    <div class="school-modal" (click)="$event.stopPropagation()" data-aos="zoom-in" data-aos-duration="300">
+      <button class="school-modal-close" (click)="closeProblemModal()" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div *ngIf="selectedProblem">
+        <h4 class="school-modal-title">{{ selectedProblem.title }}</h4>
+        <div class="school-modal-section">
+          <span class="school-modal-label">{{ "School.CommonProblems.ProblemLabel" | translate }}</span>
+          <p class="school-modal-text">{{ selectedProblem.problem }}</p>
+        </div>
+        <div class="school-modal-section school-modal-solution">
+          <span class="school-modal-label">{{ "School.CommonProblems.SolutionLabel" | translate }}</span>
+          <p class="school-modal-text">{{ selectedProblem.solution }}</p>
+        </div>
+      </div>
+      <button class="main-btn school-modal-close-btn" (click)="closeProblemModal()">
+        {{ "School.CommonProblems.Close" | translate }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Merging Powers -->
   <section class="section school-intro" id="overview">
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">01.</span> {{ "School.Intro.Title" | translate }}
+            {{ "School.Intro.Title" | translate }}
           </h3>
         </div>
         <div class="row mt-4">
-          <div class="col-12 col-md-8">
+          <div class="col-12">
             <p class="school-intro-text" data-aos="fade-up" data-aos-duration="1000">
               {{ "School.Intro.Description" | translate }}
             </p>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="school-highlight-box" data-aos="fade-up" data-aos-duration="1000">
-              <h5 class="school-highlight-title">{{ "School.Intro.HighlightTitle" | translate }}</h5>
-              <ol class="school-highlight-list">
-                <li>{{ "School.Intro.Highlight1" | translate }}</li>
-                <li>{{ "School.Intro.Highlight2" | translate }}</li>
-                <li>{{ "School.Intro.Highlight3" | translate }}</li>
-              </ol>
-              <p class="school-highlight-note">{{ "School.Intro.HighlightNote" | translate }}</p>
-            </div>
+        </div>
+
+        <div class="school-merging-logos" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="school-merging-logo" *ngIf="logoPath">
+            <img [src]="logoPath" [alt]="schoolNameKey ? (schoolNameKey | translate) : ''" />
+            <span class="school-merging-label" *ngIf="schoolNameKey">{{ schoolNameKey | translate }}</span>
+          </div>
+
+          <div class="school-merging-arrows">
+            <i class="fas fa-chevron-right school-merging-arrow school-merging-arrow-left"></i>
+            <i class="fas fa-plus school-merging-plus"></i>
+            <i class="fas fa-chevron-left school-merging-arrow school-merging-arrow-right"></i>
+          </div>
+
+          <div class="school-merging-logo">
+            <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
+            <span class="school-merging-label">{{ companyNameKey | translate }}</span>
+          </div>
+
+          <div class="school-merging-result">
+            <i class="fas fa-equals school-merging-equals"></i>
+            <span class="school-merging-result-text">{{ "School.Intro.Title" | translate }}</span>
           </div>
         </div>
       </div>
@@ -72,7 +163,7 @@
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.Branding.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">02.</span> {{ "School.Branding.Title" | translate }}
+            {{ "School.Branding.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -154,7 +245,7 @@
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.Social.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">03.</span> {{ "School.Social.Title" | translate }}
+            {{ "School.Social.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -228,7 +319,7 @@
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.AI.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">04.</span> {{ "School.AI.Title" | translate }}
+            {{ "School.AI.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -303,7 +394,7 @@
         <div data-aos="fade-up" data-aos-duration="1000">
           <span class="school-feature-badge">{{ "School.FeatureFlags.Badge" | translate }}</span>
           <h3 class="section-title">
-            <span class="n-section-title">05.</span> {{ "School.FeatureFlags.Title" | translate }}
+            {{ "School.FeatureFlags.Title" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -372,7 +463,7 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">06.</span> {{ "School.CatalogTitle" | translate }}
+            {{ "School.CatalogTitle" | translate }}
           </h3>
         </div>
         <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
@@ -398,43 +489,13 @@
     </div>
   </section>
 
-  <!-- Problems Solved -->
-  <section class="section school-problems" id="problems">
-    <div class="container">
-      <div class="section-box">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <h3 class="section-title">
-            <span class="n-section-title">07.</span> {{ "School.ProblemsTitle" | translate }}
-          </h3>
-        </div>
-
-        <div class="school-table-wrap" data-aos="fade-up" data-aos-duration="1000">
-          <table class="school-table">
-            <thead>
-              <tr>
-                <th>{{ "School.ProblemsHeader1" | translate }}</th>
-                <th>{{ "School.ProblemsHeader2" | translate }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let row of problems">
-                <td class="school-table-problem">{{ row.problem }}</td>
-                <td class="school-table-solution">{{ row.solution }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Benefits -->
   <section class="section school-benefits" id="benefits">
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">08.</span> {{ "School.BenefitsTitle" | translate }}
+            {{ "School.BenefitsTitle" | translate }}
           </h3>
         </div>
 
@@ -461,7 +522,7 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">09.</span> {{ "School.ComparisonTitle" | translate }}
+            {{ "School.ComparisonTitle" | translate }}
           </h3>
         </div>
 
@@ -482,20 +543,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section school-cta" id="contact-school">
-    <div class="container">
-      <div class="section-box school-cta-box" data-aos="fade-up" data-aos-duration="1000">
-        <h3 class="school-cta-title">{{ "School.CTA.Title" | translate }}</h3>
-        <p class="school-cta-text">{{ "School.CTA.Text" | translate }}</p>
-        <div class="school-cta-actions">
-          <a href="mailto:info@sawaedelm.com" target="_blank" class="main-btn">{{ "School.CTA.Btn" | translate }}</a>
-          <a (click)="goHome()" class="main-btn main-btn-outline">{{ "School.CTA.Back" | translate }}</a>
         </div>
       </div>
     </div>

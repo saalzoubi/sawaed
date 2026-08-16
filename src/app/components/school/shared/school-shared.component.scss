@@ -133,7 +133,110 @@
     font-size: 19px;
     color: $LightSlate;
     line-height: 1.7;
-    max-width: 640px;
+    max-width: 100%;
+  }
+
+  .school-merging-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .school-merging-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 16px;
+      padding: 10px;
+      box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .school-merging-label {
+    color: $LightestSlate;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $MainFont;
+    text-align: center;
+    max-width: 160px;
+  }
+
+  .school-merging-arrows {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .school-merging-arrow {
+    color: $Green;
+    font-size: 22px;
+    animation: mergingPulse 2s ease-in-out infinite;
+
+    &.school-merging-arrow-left {
+      animation-delay: 0s;
+    }
+
+    &.school-merging-arrow-right {
+      animation-delay: 0.3s;
+    }
+  }
+
+  .school-merging-plus {
+    color: $Green;
+    font-size: 26px;
+    background: $GreenOpacity;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(27, 206, 223, 0.3);
+  }
+
+  .school-merging-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .school-merging-equals {
+    color: $Green;
+    font-size: 24px;
+  }
+
+  .school-merging-result-text {
+    color: $White;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: $MainFont;
+    text-align: center;
+    max-width: 200px;
+    background: linear-gradient(120deg, $White 30%, $Green 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes mergingPulse {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
   }
 
   .school-highlight-box {
@@ -695,6 +798,35 @@
     font-size: 16.5px !important;
   }
 
+  .school-merging-logos {
+    gap: 16px;
+  }
+
+  .school-merging-logo img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .school-merging-label {
+    font-size: 12px;
+    max-width: 120px;
+  }
+
+  .school-merging-arrow {
+    font-size: 18px;
+  }
+
+  .school-merging-plus {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .school-merging-result-text {
+    font-size: 13px;
+    max-width: 150px;
+  }
+
   .school-feature-result {
     font-size: 16px !important;
   }
@@ -715,5 +847,243 @@
   .school-table tbody td {
     font-size: 14px;
     padding: 12px 10px;
+  }
+}
+
+/* Common Problems Carousel */
+.school-common-problems {
+  background: $LightNavy;
+
+  .school-problems-carousel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .school-carousel-viewport {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .school-carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .school-carousel-slide {
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .school-problem-card {
+    background: $Navy;
+    border: 1px solid $LightestNavy;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 240px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      border-color: $Green;
+      transform: translateY(-4px);
+    }
+  }
+
+  .school-problem-card-title {
+    color: $White;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $MainFont;
+    margin: 0 0 12px;
+  }
+
+  .school-problem-card-desc {
+    color: $LightSlate;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: $MainFont;
+    margin: 0 0 20px;
+    flex: 1;
+  }
+
+  .school-problem-solve-btn {
+    font-size: 14px;
+    padding: 10px 24px;
+    white-space: nowrap;
+  }
+
+  .school-carousel-btn {
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid $LightestNavy;
+    background: $Navy;
+    color: $LightestSlate;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+    .school-carousel-icon {
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    &:hover:not(:disabled) {
+      background: $Green;
+      color: $Navy;
+      border-color: $Green;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  .school-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+  }
+
+  .school-carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $LightestNavy;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+      background: $Green;
+      width: 28px;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* Problem Modal */
+.school-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.school-modal {
+  background: $LightNavy;
+  border: 1px solid $LightestNavy;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px -10px rgba(0, 0, 0, 0.5);
+}
+
+.school-modal-close {
+  position: absolute;
+  top: 16px;
+  inset-inline-end: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: $LightestNavy;
+  color: $LightestSlate;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $Green;
+    color: $Navy;
+  }
+}
+
+.school-modal-title {
+  color: $White;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $MainFont;
+  margin: 0 0 24px;
+}
+
+.school-modal-section {
+  margin-bottom: 20px;
+
+  &.school-modal-solution {
+    background: $GreenOpacity;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(27, 206, 223, 0.2);
+  }
+}
+
+.school-modal-label {
+  display: block;
+  color: $Green;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: $CodeFont;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.school-modal-text {
+  color: $LightSlate;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $MainFont;
+  margin: 0;
+}
+
+.school-modal-close-btn {
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* Responsive: carousel */
+@media (max-width: 768px) {
+  .school-modal {
+    padding: 28px 20px;
+  }
+
+  .school-modal-title {
+    font-size: 20px;
+  }
+
+  .school-problem-card {
+    min-height: 200px;
+    padding: 24px 16px;
+  }
+
+  .school-problem-card-title {
+    font-size: 17px;
+  }
+
+  .school-problem-card-desc {
+    font-size: 14px;
   }
 }
