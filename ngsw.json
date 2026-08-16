@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1786760443551,
+  "timestamp": 1786907628245,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.c34f823d8978cc52.js",
+        "/main.2b97eefe49867c22.js",
         "/manifest.webmanifest",
         "/polyfills.f0501f27b840d1d7.js",
         "/runtime.4899bbbf33da58ed.js",
@@ -293,8 +293,8 @@
     "/assets/fonts/Tajawal/Tajawal-Light.ttf": "1875a702b74328d0315f3081bbdb4a4f41be183e",
     "/assets/fonts/Tajawal/Tajawal-Medium.ttf": "e3207b83aa9221d91ba732d5057c24d70eeb3efe",
     "/assets/fonts/Tajawal/Tajawal-Regular.ttf": "1139e55d7b8909acda1b9f3f90e30f7774e93fef",
-    "/assets/i18n/ar.json": "97c2348651d9a0df16f29c16817681d1afd5f312",
-    "/assets/i18n/en.json": "6d0ba159ea5bc132e2b5cbc8829146f28bf68c77",
+    "/assets/i18n/ar.json": "feaa229e291c57c0a95447fa338363e8a0be6f4c",
+    "/assets/i18n/en.json": "d4aafa84a35d584f573e2bb1b0889fa9a06e7412",
     "/assets/icons/folder.svg": "9b70ce8877c8a727520999b7f6f4756cae8f13b1",
     "/assets/images/agrourbana/agrourbana1.png": "b7be14ee55d169023b4549cd286a723777299bdf",
     "/assets/images/agrourbana/agrourbana2.png": "cfa3b1d8f1150283231f0b823e2f297c6c41e675",
@@ -386,8 +386,8 @@
     "/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/index.html": "7557d14426c2c6b57f7aba81d6c0f92e8d3cb450",
-    "/main.c34f823d8978cc52.js": "0969ee22651af8bb850b0e3a257e7614ef2fd283",
+    "/index.html": "1f7f839c30887e5fb6c99a7c89393a55b522c96c",
+    "/main.2b97eefe49867c22.js": "20833ddc0a16f0ea3f8f89fb49845f0959cec76b",
     "/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",

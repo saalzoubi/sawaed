@@ -96,13 +96,16 @@
   ],
 
   "School.Hero.Tag": "Smart School Platform",
-  "School.Hero.Title": "Sawaed Elm — One App for Your Whole School",
-  "School.Hero.Subtitle": "Connects students, parents, teachers, and administrators — learning, communication, attendance, fees, transport, and school life, all in one place. Secured and available in Arabic, English, and French — with support for any language the school requests.",
+  "School.Hero.Title": "Ramtha International Academy",
+  "School.Hero.Subtitle": "A distinguished academic institution with a modern educational vision, offering quality education that keeps pace with development and international standards.\nRamtha International Academy strives to build an aware generation, capable of creativity and excellence, through a safe educational environment, advanced curricula, and a professional academic staff.",
   "School.Hero.CTA": "Explore Features",
   "School.Hero.CTA2": "Request a Demo",
 
-  "School.Intro.Title": "One Platform, Every Part of School Life",
-  "School.Intro.Description": "Sawaed Elm brings every part of school life into a single, easy-to-use mobile and web experience: learning, communication, attendance, fees, transport, and school life — all in one place, secured and available in Arabic, English, and French — with support for any language the school requests.",
+  "Sawaed.Hero.Title": "Sawaed Al Elm Technologies",
+  "Sawaed.Hero.Subtitle": "A company specialized in software development, hardware integration, and mobile app design. We transform ideas into advanced digital solutions that empower businesses to thrive in the modern technology landscape.",
+
+  "School.Intro.Title": "Merging Powers — Two Visions, One Platform",
+  "School.Intro.Description": "When a school's deep educational expertise meets Sawaed Al Elm's advanced technology, something powerful happens. Together, we bring every part of school life into a single, seamless experience: learning, communication, attendance, fees, transport, and school life — all in one place, secured and available in Arabic, English, and French — with support for any language the school requests. This is not just a product — it is the merging of two powers into one unified platform.",
   "School.Intro.HighlightTitle": "What No One Else Offers",
   "School.Intro.Highlight1": "A private, school-only social network — the engagement of Instagram, TikTok, Facebook, and WhatsApp, all combined in one safe educational space inside your school. No strangers, no ads, no unethical or illegal content — just a protected environment where children benefit from social media without the risks.",
   "School.Intro.Highlight2": "Sawaed AI — a personal AI assistant that actually knows each student's real school data and answers accordingly.",
@@ -321,46 +324,53 @@
   "School.ProblemsHeader2": "How Sawaed Elm Solves It",
   "School.Problems": [
     {
+      "title": "Blind Spot on Student Progress",
       "problem": "Parents are in the dark about attendance, grades, homework, and fees until a problem is already big.",
       "solution": "One app gives every parent a live, honest view of their own child — and Sawaed AI answers their questions instantly."
     },
     {
+      "title": "Scattered Communication",
       "problem": "Communication is scattered across WhatsApp groups, Facebook pages, paper slips, and phone calls — messages get lost, and there's no privacy.",
       "solution": "One secure, school-only channel: targeted posts, private messaging, and push notifications that actually reach people."
     },
     {
+      "title": "Drowning in Calls",
       "problem": "The front office drowns in repetitive calls — \"was my son absent?\", \"what fees are due?\", \"when is the exam?\"",
       "solution": "Self-service answers plus a data-aware AI assistant handle these 24/7, freeing staff for real work."
     },
     {
+      "title": "Low Engagement",
       "problem": "Low parent engagement — traditional school apps get opened only when there's a problem.",
       "solution": "A safe, school-only social feed with stories and reels makes families want to open the app every day."
     },
     {
+      "title": "Slow Paper Attendance",
       "problem": "Attendance is paper-based and slow, and parents find out about absences far too late.",
       "solution": "Digital attendance in seconds, with instant absence alerts to parents."
     },
     {
+      "title": "Chaotic Fee Collection",
       "problem": "Fee collection is chaotic — lost invoices, awkward reminders, unclear balances, and no record of who approved what.",
       "solution": "Clear digital fee plans, one payment covering several months, an approval step before money counts, auto-generated invoices, transparent balances, and a permanent audit trail."
     },
     {
+      "title": "Bus Safety Anxiety",
       "problem": "Bus safety causes daily anxiety — parents don't know where the bus is or whether their child got on.",
       "solution": "Live GPS tracking and per-child pickup/drop-off confirmation."
     },
     {
-      "problem": "Schools pay for 4+ separate tools (LMS, messaging, payments, transport) that don't talk to each other.",
-      "solution": "One unified platform replaces the stack — one login, one source of truth."
-    },
-    {
-      "problem": "Language barriers exclude part of the community.",
-      "solution": "Fully trilingual Arabic, English, and French — and any language the school requests, everywhere."
-    },
-    {
+      "title": "Unsafe Social Media",
       "problem": "Public social media is unsafe for a school community — strangers, ads, and no control.",
       "solution": "A closed, moderated, school-only network with no outside exposure."
     }
   ],
+
+  "School.CommonProblems.Title": "Common Problems Schools Face",
+  "School.CommonProblems.Description": "The real problems schools suffer from today — and how Sawaed Elm solves them",
+  "School.CommonProblems.HowWeSolve": "How do we solve it?",
+  "School.CommonProblems.ProblemLabel": "The Problem",
+  "School.CommonProblems.SolutionLabel": "The Solution",
+  "School.CommonProblems.Close": "Close",
 
   "School.BenefitsTitle": "The Benefits — for Everyone in the School",
   "School.Benefits": [
