@@ -448,6 +448,119 @@
   opacity: 0.8;
 }
 
+/* Screenshot Strips */
+.school-screenshots {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $LightNavy;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $LightestNavy;
+    border-radius: 3px;
+
+    &:hover {
+      background: $Green;
+    }
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: $LightestNavy $LightNavy;
+}
+
+.school-screenshot-item {
+  flex: 0 0 auto;
+  width: 280px;
+  max-width: 82vw;
+  scroll-snap-align: start;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(26, 51, 86, 0.8);
+    border-top: 2px solid rgba(27, 206, 223, 0.4);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: block;
+  }
+
+  &:hover img {
+    transform: translateY(-5px);
+    border-top-color: $Green;
+    box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.9), 0 0 25px rgba(27, 206, 223, 0.08);
+  }
+}
+
+.school-feature-alt .school-screenshot-item img {
+  background: $Navy;
+}
+
+/* Screenshot Lightbox Modal */
+.school-screenshot-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.school-screenshot-modal {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+
+  img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px -10px rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+}
+
+.school-screenshot-close {
+  position: absolute;
+  top: -48px;
+  inset-inline-end: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: $LightNavy;
+  color: $LightestSlate;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $Green;
+    color: $Navy;
+  }
+}
+
 /* Cards */
 .school-card {
   background: linear-gradient(160deg, $LightNavy 0%, rgba(13, 31, 60, 0.6) 100%);
@@ -838,6 +951,10 @@
 
   .school-slide-item {
     width: 300px;
+  }
+
+  .school-screenshot-item {
+    width: 240px;
   }
 
   .school-cta-title {

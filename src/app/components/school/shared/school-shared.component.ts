@@ -23,6 +23,9 @@ export class SchoolSharedComponent implements OnInit {
   problemsPerView = 3;
   selectedProblem: any = null;
   isModalOpen = false;
+  isScreenshotModalOpen = false;
+  selectedScreenshotSrc: string | null = null;
+  selectedScreenshotAlt: string = '';
 
   constructor(
     private router: Router,
@@ -108,10 +111,30 @@ export class SchoolSharedComponent implements OnInit {
     document.body.style.overflow = '';
   }
 
+  openScreenshotModal(src: string, alt: string): void {
+    this.selectedScreenshotSrc = src;
+    this.selectedScreenshotAlt = alt;
+    this.isScreenshotModalOpen = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeScreenshotModal(): void {
+    this.isScreenshotModalOpen = false;
+    this.selectedScreenshotSrc = null;
+    this.selectedScreenshotAlt = '';
+    if (!this.isModalOpen) {
+      document.body.style.overflow = '';
+    }
+  }
+
   @HostListener('document:keydown', ['$event'])
   onKeydown(event: KeyboardEvent): void {
-    if (event.key === 'Escape' && this.isModalOpen) {
-      this.closeProblemModal();
+    if (event.key === 'Escape') {
+      if (this.isScreenshotModalOpen) {
+        this.closeScreenshotModal();
+      } else if (this.isModalOpen) {
+        this.closeProblemModal();
+      }
     }
   }
 
