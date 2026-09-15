@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/services/language/language.service';
 
 @Component({
   selector: 'app-ramtha',
   templateUrl: './ramtha.component.html',
   styleUrls: ['./ramtha.component.scss']
 })
-export class RamthaComponent {
+export class RamthaComponent implements OnInit {
   logoPath = 'assets/images/ramtha-logo.jpg';
   nameKey = 'School.Branding.SchoolName.Ramtha';
 
-  constructor(private translateService: TranslateService) { }
+  constructor(private languageService: LanguageService) { }
+
+  ngOnInit(): void {
+    this.languageService.switchLang('ar');
+  }
 }

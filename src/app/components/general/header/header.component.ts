@@ -4,6 +4,7 @@ import {trigger, style, query, transition, stagger, animate } from '@angular/ani
 import { UntypedFormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -37,7 +38,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router,
     public languageService: LanguageService,
-    private analytics: AnalyticsService
+    private analytics: AnalyticsService,
+    private translateService: TranslateService
   ) { }
 
   ngOnInit(): void {
@@ -46,6 +48,11 @@ export class HeaderComponent implements OnInit {
       this.languageService.switchLang(val);
     });
     this.languageFormControl.setValue(this.languageService.language);
+    this.translateService.onLangChange.subscribe((event) => {
+      if (this.languageFormControl.value !== event.lang) {
+        this.languageFormControl.setValue(event.lang, { emitEvent: false });
+      }
+    });
   }
   // tslint:disable-next-line:typedef
   scroll(el) {
