@@ -1,0 +1,162 @@
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/services/language/language.service';
+
+@Component({
+  selector: 'app-ministry',
+  templateUrl: './ministry.component.html',
+  styleUrls: ['./ministry.component.scss']
+})
+export class MinistryComponent implements OnInit {
+
+  logoPath = 'assets/images/ministry-logo.jpg';
+  companyLogoPath = 'assets/images/logo.png';
+  companyNameKey = 'Banner.name';
+
+  catalog: any[] = [];
+  problems: any[] = [];
+  benefits: any[] = [];
+  rolloutPhases: any[] = [];
+
+  currentProblemSlide = 0;
+  problemsPerView = 3;
+  selectedProblem: any = null;
+  isModalOpen = false;
+  isScreenshotModalOpen = false;
+  selectedScreenshotSrc: string | null = null;
+  selectedScreenshotAlt: string = '';
+
+  constructor(
+    private router: Router,
+    private translateService: TranslateService,
+    private languageService: LanguageService
+  ) { }
+
+  ngOnInit(): void {
+    this.languageService.switchLang('ar');
+
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+
+    this.updateProblemsPerView();
+    this.loadData();
+    this.translateService.onLangChange.subscribe(() => {
+      this.loadData();
+    });
+  }
+
+  loadData(): void {
+    this.translateService.get('School.Catalog').subscribe((data: any[]) => {
+      this.catalog = data;
+    });
+    this.translateService.get('Ministry.Problems').subscribe((data: any[]) => {
+      this.problems = data;
+    });
+    this.translateService.get('Ministry.Benefits').subscribe((data: any[]) => {
+      this.benefits = data;
+    });
+    this.translateService.get('Ministry.Rollout.Phases').subscribe((data: any[]) => {
+      this.rolloutPhases = data;
+    });
+  }
+
+  goHome(): void {
+    this.router.navigate(['/']);
+  }
+
+  scroll(el: string): void {
+    const element = document.getElementById(el);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  nextProblemSlide(): void {
+    const maxIndex = this.problems.length - this.problemsPerView;
+    if (this.currentProblemSlide < maxIndex) {
+      this.currentProblemSlide++;
+    }
+  }
+
+  prevProblemSlide(): void {
+    if (this.currentProblemSlide > 0) {
+      this.currentProblemSlide--;
+    }
+  }
+
+  canNextProblem(): boolean {
+    return this.currentProblemSlide < this.problems.length - this.problemsPerView;
+  }
+
+  canPrevProblem(): boolean {
+    return this.currentProblemSlide > 0;
+  }
+
+  goToProblemSlide(index: number): void {
+    const maxIndex = this.problems.length - this.problemsPerView;
+    this.currentProblemSlide = Math.min(index, Math.max(0, maxIndex));
+  }
+
+  openProblemModal(problem: any): void {
+    this.selectedProblem = problem;
+    this.isModalOpen = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeProblemModal(): void {
+    this.isModalOpen = false;
+    this.selectedProblem = null;
+    document.body.style.overflow = '';
+  }
+
+  openScreenshotModal(src: string, alt: string): void {
+    this.selectedScreenshotSrc = src;
+    this.selectedScreenshotAlt = alt;
+    this.isScreenshotModalOpen = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeScreenshotModal(): void {
+    this.isScreenshotModalOpen = false;
+    this.selectedScreenshotSrc = null;
+    this.selectedScreenshotAlt = '';
+    if (!this.isModalOpen) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      if (this.isScreenshotModalOpen) {
+        this.closeScreenshotModal();
+      } else if (this.isModalOpen) {
+        this.closeProblemModal();
+      }
+    }
+  }
+
+  isRtl(): boolean {
+    return this.translateService.currentLang === 'ar' || this.translateService.getDefaultLang() === 'ar';
+  }
+
+  updateProblemsPerView(): void {
+    if (typeof window !== 'undefined') {
+      this.problemsPerView = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 992 ? 2 : 3);
+      const maxIndex = this.problems.length - this.problemsPerView;
+      if (this.currentProblemSlide > maxIndex) {
+        this.currentProblemSlide = Math.max(0, maxIndex);
+      }
+    }
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.updateProblemsPerView();
+  }
+}

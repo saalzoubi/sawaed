@@ -1,0 +1,497 @@
+<main class="school-page">
+
+  <!-- Ministry Hero -->
+  <section class="section school-hero">
+    <div class="container">
+      <div class="school-hero-inner">
+        <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-hero-tag">{{ "Ministry.Hero.Tag" | translate }}</span>
+          <h1 class="school-hero-title">{{ "Ministry.Hero.Title" | translate }}</h1>
+          <p class="school-hero-subtitle">{{ "Ministry.Hero.Subtitle" | translate }}</p>
+        </div>
+        <div class="school-hero-logo" data-aos="fade-left" data-aos-duration="1000">
+          <img [src]="logoPath" [alt]="'Ministry.Hero.Name' | translate" />
+          <h2 class="school-hero-school-name">{{ "Ministry.Hero.Name" | translate }}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sawaed Hero -->
+  <section class="section school-hero">
+    <div class="container">
+      <div class="school-hero-inner">
+        <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="school-hero-title">{{ "Sawaed.Hero.Title" | translate }}</h1>
+          <p class="school-hero-subtitle">{{ "Sawaed.Hero.Subtitle" | translate }}</p>
+        </div>
+        <div class="school-hero-logo" data-aos="fade-left" data-aos-duration="1000">
+          <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
+          <h2 class="school-hero-school-name">{{ companyNameKey | translate }}</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- National Challenges Carousel -->
+  <section class="section school-common-problems" id="common-problems">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">★</span> {{ "Ministry.CommonProblems.Title" | translate }}
+          </h3>
+          <p class="school-feature-lead">{{ "Ministry.CommonProblems.Description" | translate }}</p>
+        </div>
+
+        <div class="school-problems-carousel" data-aos="fade-up" data-aos-duration="1000">
+          <button class="school-carousel-btn school-carousel-prev"
+                  [disabled]="isRtl() ? !canNextProblem() : !canPrevProblem()"
+                  (click)="isRtl() ? nextProblemSlide() : prevProblemSlide()"
+                  aria-label="Previous">
+            <i class="fas fa-chevron-left school-carousel-icon"></i>
+          </button>
+
+          <div class="school-carousel-viewport">
+            <div class="school-carousel-track"
+                 [style.transform]="'translateX(' + (isRtl() ? '' : '-') + (currentProblemSlide * (100 / problemsPerView)) + '%)'">
+              <div *ngFor="let p of problems"
+                   class="school-carousel-slide"
+                   [style.flex]="'0 0 ' + (100 / problemsPerView) + '%'">
+                <div class="school-problem-card">
+                  <h5 class="school-problem-card-title">{{ p.title }}</h5>
+                  <p class="school-problem-card-desc">{{ p.problem }}</p>
+                  <button class="main-btn school-problem-solve-btn"
+                          (click)="openProblemModal(p)">
+                    {{ "School.CommonProblems.HowWeSolve" | translate }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="school-carousel-btn school-carousel-next"
+                  [disabled]="isRtl() ? !canPrevProblem() : !canNextProblem()"
+                  (click)="isRtl() ? prevProblemSlide() : nextProblemSlide()"
+                  aria-label="Next">
+            <i class="fas fa-chevron-right school-carousel-icon"></i>
+          </button>
+        </div>
+
+        <div class="school-carousel-dots">
+          <span *ngFor="let p of problems; let i = index"
+                class="school-carousel-dot"
+                [class.active]="i === currentProblemSlide"
+                (click)="goToProblemSlide(i)">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Solution Modal -->
+  <div class="school-modal-overlay" *ngIf="isModalOpen" (click)="closeProblemModal()">
+    <div class="school-modal" (click)="$event.stopPropagation()" data-aos="zoom-in" data-aos-duration="300">
+      <button class="school-modal-close" (click)="closeProblemModal()" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div *ngIf="selectedProblem">
+        <h4 class="school-modal-title">{{ selectedProblem.title }}</h4>
+        <div class="school-modal-section">
+          <span class="school-modal-label">{{ "School.CommonProblems.ProblemLabel" | translate }}</span>
+          <p class="school-modal-text">{{ selectedProblem.problem }}</p>
+        </div>
+        <div class="school-modal-section school-modal-solution">
+          <span class="school-modal-label">{{ "School.CommonProblems.SolutionLabel" | translate }}</span>
+          <p class="school-modal-text">{{ selectedProblem.solution }}</p>
+        </div>
+      </div>
+      <button class="main-btn school-modal-close-btn" (click)="closeProblemModal()">
+        {{ "School.CommonProblems.Close" | translate }}
+      </button>
+    </div>
+  </div>
+
+  <!-- National Partnership -->
+  <section class="section school-intro" id="overview">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            {{ "Ministry.Intro.Title" | translate }}
+          </h3>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <p class="school-intro-text" data-aos="fade-up" data-aos-duration="1000">
+              {{ "Ministry.Intro.Description" | translate }}
+            </p>
+          </div>
+        </div>
+
+        <div class="school-merging-logos" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="school-merging-logo">
+            <img [src]="logoPath" [alt]="'Ministry.Hero.Name' | translate" />
+            <span class="school-merging-label">{{ "Ministry.Hero.Name" | translate }}</span>
+          </div>
+
+          <div class="school-merging-arrows">
+            <i class="fas fa-chevron-right school-merging-arrow school-merging-arrow-left"></i>
+            <i class="fas fa-plus school-merging-plus"></i>
+            <i class="fas fa-chevron-left school-merging-arrow school-merging-arrow-right"></i>
+          </div>
+
+          <div class="school-merging-logo">
+            <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
+            <span class="school-merging-label">{{ companyNameKey | translate }}</span>
+          </div>
+
+          <div class="school-merging-result">
+            <i class="fas fa-equals school-merging-equals"></i>
+            <span class="school-merging-result-text">{{ "Ministry.Intro.ResultText" | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 1: One Platform, Every School Its Own App -->
+  <section class="section school-feature" id="branding">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "Ministry.Branding.Badge" | translate }}</span>
+          <h3 class="section-title">
+            {{ "Ministry.Branding.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Branding.Lead" | translate }}
+        </p>
+
+        <div class="school-slides mt-4">
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Branding.Unified.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Branding.Unified.Item1" | translate }}</li>
+                <li>{{ "Ministry.Branding.Unified.Item2" | translate }}</li>
+                <li>{{ "Ministry.Branding.Unified.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Branding.PerSchool.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Branding.PerSchool.Item1" | translate }}</li>
+                <li>{{ "Ministry.Branding.PerSchool.Item2" | translate }}</li>
+                <li>{{ "Ministry.Branding.PerSchool.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="school-slide-item" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Branding.Enforcement.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Branding.Enforcement.Item1" | translate }}</li>
+                <li>{{ "Ministry.Branding.Enforcement.Item2" | translate }}</li>
+                <li>{{ "Ministry.Branding.Enforcement.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+
+        <div class="school-screenshots" data-aos="fade-up" data-aos-duration="1000">
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/homePage.jpg', 'App Home Page')">
+            <img src="assets/images/schoolAppScreenshots/homePage.jpg" alt="App Home Page" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/languages.jpg', 'Multi-language Support')">
+            <img src="assets/images/schoolAppScreenshots/languages.jpg" alt="Multi-language Support" loading="lazy" />
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Branding.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: National Oversight & Analytics -->
+  <section class="section school-feature school-feature-alt" id="oversight">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "Ministry.Oversight.Badge" | translate }}</span>
+          <h3 class="section-title">
+            {{ "Ministry.Oversight.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Oversight.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Oversight.Dashboard.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Oversight.Dashboard.Item1" | translate }}</li>
+                <li>{{ "Ministry.Oversight.Dashboard.Item2" | translate }}</li>
+                <li>{{ "Ministry.Oversight.Dashboard.Item3" | translate }}</li>
+                <li>{{ "Ministry.Oversight.Dashboard.Item4" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Oversight.Decisions.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Oversight.Decisions.Item1" | translate }}</li>
+                <li>{{ "Ministry.Oversight.Decisions.Item2" | translate }}</li>
+                <li>{{ "Ministry.Oversight.Decisions.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Oversight.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: Sawaed AI at National Scale -->
+  <section class="section school-feature" id="ai">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "Ministry.AI.Badge" | translate }}</span>
+          <h3 class="section-title">
+            {{ "Ministry.AI.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.AI.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.AI.Students.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.AI.Students.Item1" | translate }}</li>
+                <li>{{ "Ministry.AI.Students.Item2" | translate }}</li>
+                <li>{{ "Ministry.AI.Students.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.AI.Privacy.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.AI.Privacy.Item1" | translate }}</li>
+                <li>{{ "Ministry.AI.Privacy.Item2" | translate }}</li>
+                <li>{{ "Ministry.AI.Privacy.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="school-screenshots" data-aos="fade-up" data-aos-duration="1000">
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/sawaedAI.jpg', 'Sawaed AI Assistant')">
+            <img src="assets/images/schoolAppScreenshots/sawaedAI.jpg" alt="Sawaed AI Assistant" loading="lazy" />
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.AI.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: Governance & Central Control -->
+  <section class="section school-feature school-feature-alt" id="governance">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "Ministry.Governance.Badge" | translate }}</span>
+          <h3 class="section-title">
+            {{ "Ministry.Governance.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Governance.Lead" | translate }}
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Governance.Control.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Governance.Control.Item1" | translate }}</li>
+                <li>{{ "Ministry.Governance.Control.Item2" | translate }}</li>
+                <li>{{ "Ministry.Governance.Control.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="school-card">
+              <h5 class="school-card-title">{{ "Ministry.Governance.Data.Title" | translate }}</h5>
+              <ul class="school-card-list">
+                <li>{{ "Ministry.Governance.Data.Item1" | translate }}</li>
+                <li>{{ "Ministry.Governance.Data.Item2" | translate }}</li>
+                <li>{{ "Ministry.Governance.Data.Item3" | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="school-screenshots" data-aos="fade-up" data-aos-duration="1000">
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/featureFlag.jpg', 'Feature Flag Controls')">
+            <img src="assets/images/schoolAppScreenshots/featureFlag.jpg" alt="Feature Flag Controls" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/settings.jpg', 'Admin Settings')">
+            <img src="assets/images/schoolAppScreenshots/settings.jpg" alt="Admin Settings" loading="lazy" />
+          </div>
+        </div>
+
+        <p class="school-feature-result" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Governance.Result" | translate }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rollout Plan -->
+  <section class="section school-feature" id="rollout">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <span class="school-feature-badge">{{ "Ministry.Rollout.Badge" | translate }}</span>
+          <h3 class="section-title">
+            {{ "Ministry.Rollout.Title" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.Rollout.Lead" | translate }}
+        </p>
+
+        <div class="school-slides mt-4">
+          <div *ngFor="let phase of rolloutPhases; let i = index"
+               class="school-slide-item"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="school-card ministry-rollout-card">
+              <span class="ministry-rollout-step">{{ i + 1 }}</span>
+              <h5 class="school-card-title">{{ phase.title }}</h5>
+              <p class="school-benefit-text">{{ phase.text }}</p>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Feature Catalog -->
+  <section class="section school-catalog school-feature-alt" id="features">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            {{ "Ministry.CatalogTitle" | translate }}
+          </h3>
+        </div>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">
+          {{ "Ministry.CatalogLead" | translate }}
+        </p>
+
+        <div class="school-slides mt-4">
+          <div *ngFor="let cat of catalog; let i = index"
+               class="school-slide-item school-catalog-col"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="school-card school-catalog-card">
+              <span class="school-catalog-icon">{{ cat.icon }}</span>
+              <h5 class="school-card-title">{{ cat.title }}</h5>
+              <ul class="school-card-list">
+                <li *ngFor="let item of cat.items">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+
+        <div class="school-screenshots" data-aos="fade-up" data-aos-duration="1000">
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/courseManagment.jpg', 'Course Management')">
+            <img src="assets/images/schoolAppScreenshots/courseManagment.jpg" alt="Course Management" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/calendar.jpg', 'School Calendar')">
+            <img src="assets/images/schoolAppScreenshots/calendar.jpg" alt="School Calendar" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/messages.jpg', 'Messages')">
+            <img src="assets/images/schoolAppScreenshots/messages.jpg" alt="Messages" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/notifications.jpg', 'Notifications')">
+            <img src="assets/images/schoolAppScreenshots/notifications.jpg" alt="Notifications" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/busManagement.jpg', 'Bus Management')">
+            <img src="assets/images/schoolAppScreenshots/busManagement.jpg" alt="Bus Management" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/busTrachking.jpg', 'Bus Tracking')">
+            <img src="assets/images/schoolAppScreenshots/busTrachking.jpg" alt="Bus Tracking" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/paymentsLatencyManagment.jpg', 'Payments Management')">
+            <img src="assets/images/schoolAppScreenshots/paymentsLatencyManagment.jpg" alt="Payments Management" loading="lazy" />
+          </div>
+          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/userProfile.jpg', 'User Profile')">
+            <img src="assets/images/schoolAppScreenshots/userProfile.jpg" alt="User Profile" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section school-benefits" id="benefits">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            {{ "Ministry.BenefitsTitle" | translate }}
+          </h3>
+        </div>
+
+        <div class="school-slides mt-4">
+          <div *ngFor="let b of benefits; let i = index"
+               class="school-slide-item school-benefit-col"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="school-benefit">
+              <span class="school-benefit-icon">{{ b.icon }}</span>
+              <h5 class="school-benefit-title">{{ b.title }}</h5>
+              <p class="school-benefit-text">{{ b.text }}</p>
+            </div>
+          </div>
+        </div>
+        <span class="school-slides-hint">{{ "School.SlidesHint" | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot Lightbox Modal -->
+  <div class="school-screenshot-overlay" *ngIf="isScreenshotModalOpen" (click)="closeScreenshotModal()">
+    <div class="school-screenshot-modal" (click)="$event.stopPropagation()" data-aos="zoom-in" data-aos-duration="300">
+      <button class="school-screenshot-close" (click)="closeScreenshotModal()" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <img *ngIf="selectedScreenshotSrc" [src]="selectedScreenshotSrc" [alt]="selectedScreenshotAlt" />
+    </div>
+  </div>
+
+</main>

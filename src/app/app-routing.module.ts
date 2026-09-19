@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { RamthaComponent } from './components/school/ramtha/ramtha.component';
 import { AssfComponent } from './components/school/assf/assf.component';
+import { MinistryComponent } from './components/school/ministry/ministry.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'product/school',   pathMatch: 'full', redirectTo: '/'},
   {path: 'product/school/ramtha',   component: RamthaComponent},
   {path: 'product/school/assf',   component: AssfComponent},
+  {path: 'product/school/ministry',   component: MinistryComponent},
 
   // {path: 'profile'        ,   component: ProfileComponent         , canActivate: [AuthGuard]},
   // {path: 'users'          ,   component: UsersComponent           , canActivate: [AuthGuard]},

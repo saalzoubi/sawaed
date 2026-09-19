@@ -5,13 +5,15 @@ import { SchoolComponent } from './school.component';
 import { SchoolSharedModule } from './shared/school-shared.module';
 import { RamthaComponent } from './ramtha/ramtha.component';
 import { AssfComponent } from './assf/assf.component';
+import { MinistryComponent } from './ministry/ministry.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
     SchoolComponent,
     RamthaComponent,
-    AssfComponent
+    AssfComponent,
+    MinistryComponent
   ],
   imports: [
     CommonModule,

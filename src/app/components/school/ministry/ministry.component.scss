@@ -1,0 +1,23 @@
+@import "../shared/school-shared.component.scss";
+
+/* Ministry-specific additions */
+.ministry-rollout-card {
+  position: relative;
+  text-align: center;
+
+  .ministry-rollout-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(27, 206, 223, 0.1);
+    border: 1px solid rgba(27, 206, 223, 0.3);
+    color: $Green;
+    font-family: $CodeFont;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
