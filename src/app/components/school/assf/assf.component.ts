@@ -9,6 +9,7 @@ import { LanguageService } from 'src/app/services/language/language.service';
 export class AssfComponent implements OnInit {
   logoPath = 'assets/images/assf-logo.jpg';
   nameKey = 'School.Branding.SchoolName.Assf';
+  subtitleKey = 'School.Hero.Subtitle.Assf';
 
   constructor(private languageService: LanguageService) { }
 

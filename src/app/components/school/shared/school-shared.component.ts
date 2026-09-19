@@ -11,6 +11,7 @@ export class SchoolSharedComponent implements OnInit {
 
   @Input() logoPath: string | null = null;
   @Input() schoolNameKey: string | null = null;
+  @Input() schoolSubtitleKey: string | null = null;
   companyLogoPath = 'assets/images/logo.png';
   companyNameKey = 'Banner.name';
 

@@ -9,6 +9,7 @@ import { LanguageService } from 'src/app/services/language/language.service';
 export class RamthaComponent implements OnInit {
   logoPath = 'assets/images/ramtha-logo.jpg';
   nameKey = 'School.Branding.SchoolName.Ramtha';
+  subtitleKey = 'School.Hero.Subtitle.Ramtha';
 
   constructor(private languageService: LanguageService) { }
 

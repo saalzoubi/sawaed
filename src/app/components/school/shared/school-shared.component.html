@@ -6,7 +6,7 @@
       <div class="school-hero-inner">
         <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="school-hero-title">{{ (schoolNameKey || 'School.Hero.Title') | translate }}</h1>
-          <p class="school-hero-subtitle">{{ "School.Hero.Subtitle" | translate }}</p>
+          <p class="school-hero-subtitle">{{ (schoolSubtitleKey || 'School.Hero.Subtitle') | translate }}</p>
 
         </div>
         <div class="school-hero-logo" *ngIf="logoPath" data-aos="fade-left" data-aos-duration="1000">
@@ -234,9 +234,6 @@
         <div class="school-screenshots" data-aos="fade-up" data-aos-duration="1000">
           <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/homePage.jpg', 'App Home Page')">
             <img src="assets/images/schoolAppScreenshots/homePage.jpg" alt="App Home Page" loading="lazy" />
-          </div>
-          <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/loginPage.jpg', 'Login Page')">
-            <img src="assets/images/schoolAppScreenshots/loginPage.jpg" alt="Login Page" loading="lazy" />
           </div>
           <div class="school-screenshot-item" (click)="openScreenshotModal('assets/images/schoolAppScreenshots/languages.jpg', 'Multi-language Support')">
             <img src="assets/images/schoolAppScreenshots/languages.jpg" alt="Multi-language Support" loading="lazy" />
