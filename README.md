@@ -1,10 +1,10 @@
-# Sawaed Al Elm Technologies
+# Sawaed Elm Technologies
 
 ## About Us
 
-**Sawaed Al Elm Technologies** is a cutting-edge technology company passionate about transforming ideas into innovative digital solutions. We specialize in software development, hardware integration, and mobile application design, empowering businesses to thrive in the modern technological landscape.
+**Sawaed Elm Technologies** is a cutting-edge technology company passionate about transforming ideas into innovative digital solutions. We specialize in software development, hardware integration, and mobile application design, empowering businesses to thrive in the modern technological landscape.
 
-Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Al Elm is your trusted technology partner.
+Our team combines innovation, precision, and technical expertise to deliver customized, scalable solutions that drive efficiency and success. Whether you're looking to build robust enterprise software, intelligent hardware systems, or intuitive mobile experiences, Sawaed Elm is your trusted technology partner.
 
 **Our Vision:** Together, We Build the Future
 
@@ -138,4 +138,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**© 2024 Sawaed Al Elm Technologies. All rights reserved.**
+**© 2024 Sawaed Elm Technologies. All rights reserved.**
