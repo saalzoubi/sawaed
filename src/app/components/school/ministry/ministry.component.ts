@@ -14,15 +14,52 @@ export class MinistryComponent implements OnInit {
   companyLogoPath = 'assets/images/logo.png';
   companyNameKey = 'Banner.name';
 
-  catalog: any[] = [];
-  problems: any[] = [];
-  benefits: any[] = [];
-  rolloutPhases: any[] = [];
+  sections: any[] = [];
+  visionChain: string[] = [];
+  visionPillars: string[] = [];
 
-  currentProblemSlide = 0;
-  problemsPerView = 3;
-  selectedProblem: any = null;
-  isModalOpen = false;
+  // App screenshots shown under each section, keyed by section id (language-independent).
+  readonly screenshots: { [sectionId: string]: { src: string, alt: string }[] } = {
+    'identity': [
+      { src: 'assets/images/schoolAppScreenshots/userProfile.jpg', alt: 'User Profile' }
+    ],
+    'permissions': [
+      { src: 'assets/images/schoolAppScreenshots/settings.jpg', alt: 'Admin Settings' }
+    ],
+    'social': [
+      { src: 'assets/images/schoolAppScreenshots/posts.jpg', alt: 'Posts' },
+      { src: 'assets/images/schoolAppScreenshots/reels.jpg', alt: 'Reels' },
+      { src: 'assets/images/schoolAppScreenshots/comments.jpg', alt: 'Comments' },
+      { src: 'assets/images/schoolAppScreenshots/socialMediaAudianceType.jpg', alt: 'Content Targeting' }
+    ],
+    'branding': [
+      { src: 'assets/images/schoolAppScreenshots/homePage.jpg', alt: 'App Home Page' },
+      { src: 'assets/images/schoolAppScreenshots/languages.jpg', alt: 'Multi-language Support' }
+    ],
+    'ai': [
+      { src: 'assets/images/schoolAppScreenshots/sawaedAI.jpg', alt: 'Sawaed AI Assistant' }
+    ],
+    'transportation': [
+      { src: 'assets/images/schoolAppScreenshots/busManagement.jpg', alt: 'Bus Management' },
+      { src: 'assets/images/schoolAppScreenshots/busTrachking.jpg', alt: 'Bus Tracking' }
+    ],
+    'attendance': [
+      { src: 'assets/images/schoolAppScreenshots/notifications.jpg', alt: 'Notifications' }
+    ],
+    'assignments': [
+      { src: 'assets/images/schoolAppScreenshots/courseManagment.jpg', alt: 'Course Management' }
+    ],
+    'calendar': [
+      { src: 'assets/images/schoolAppScreenshots/calendar.jpg', alt: 'School Calendar' }
+    ],
+    'fees': [
+      { src: 'assets/images/schoolAppScreenshots/paymentsLatencyManagment.jpg', alt: 'Payments Management' }
+    ],
+    'feature-flags': [
+      { src: 'assets/images/schoolAppScreenshots/featureFlag.jpg', alt: 'Feature Flag Controls' }
+    ]
+  };
+
   isScreenshotModalOpen = false;
   selectedScreenshotSrc: string | null = null;
   selectedScreenshotAlt: string = '';
@@ -43,7 +80,6 @@ export class MinistryComponent implements OnInit {
       window.scrollTo(0, 0);
     });
 
-    this.updateProblemsPerView();
     this.loadData();
     this.translateService.onLangChange.subscribe(() => {
       this.loadData();
@@ -51,18 +87,19 @@ export class MinistryComponent implements OnInit {
   }
 
   loadData(): void {
-    this.translateService.get('School.Catalog').subscribe((data: any[]) => {
-      this.catalog = data;
+    this.translateService.get('Ministry.Sections').subscribe((data: any[]) => {
+      this.sections = Array.isArray(data) ? data : [];
     });
-    this.translateService.get('Ministry.Problems').subscribe((data: any[]) => {
-      this.problems = data;
+    this.translateService.get('Ministry.Vision.Chain').subscribe((data: string[]) => {
+      this.visionChain = Array.isArray(data) ? data : [];
     });
-    this.translateService.get('Ministry.Benefits').subscribe((data: any[]) => {
-      this.benefits = data;
+    this.translateService.get('Ministry.Vision.Pillars').subscribe((data: string[]) => {
+      this.visionPillars = Array.isArray(data) ? data : [];
     });
-    this.translateService.get('Ministry.Rollout.Phases').subscribe((data: any[]) => {
-      this.rolloutPhases = data;
-    });
+  }
+
+  sectionNumber(index: number): string {
+    return (index + 1).toString().padStart(2, '0');
   }
 
   goHome(): void {
@@ -76,44 +113,6 @@ export class MinistryComponent implements OnInit {
     }
   }
 
-  nextProblemSlide(): void {
-    const maxIndex = this.problems.length - this.problemsPerView;
-    if (this.currentProblemSlide < maxIndex) {
-      this.currentProblemSlide++;
-    }
-  }
-
-  prevProblemSlide(): void {
-    if (this.currentProblemSlide > 0) {
-      this.currentProblemSlide--;
-    }
-  }
-
-  canNextProblem(): boolean {
-    return this.currentProblemSlide < this.problems.length - this.problemsPerView;
-  }
-
-  canPrevProblem(): boolean {
-    return this.currentProblemSlide > 0;
-  }
-
-  goToProblemSlide(index: number): void {
-    const maxIndex = this.problems.length - this.problemsPerView;
-    this.currentProblemSlide = Math.min(index, Math.max(0, maxIndex));
-  }
-
-  openProblemModal(problem: any): void {
-    this.selectedProblem = problem;
-    this.isModalOpen = true;
-    document.body.style.overflow = 'hidden';
-  }
-
-  closeProblemModal(): void {
-    this.isModalOpen = false;
-    this.selectedProblem = null;
-    document.body.style.overflow = '';
-  }
-
   openScreenshotModal(src: string, alt: string): void {
     this.selectedScreenshotSrc = src;
     this.selectedScreenshotAlt = alt;
@@ -125,38 +124,17 @@ export class MinistryComponent implements OnInit {
     this.isScreenshotModalOpen = false;
     this.selectedScreenshotSrc = null;
     this.selectedScreenshotAlt = '';
-    if (!this.isModalOpen) {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = '';
   }
 
   @HostListener('document:keydown', ['$event'])
   onKeydown(event: KeyboardEvent): void {
-    if (event.key === 'Escape') {
-      if (this.isScreenshotModalOpen) {
-        this.closeScreenshotModal();
-      } else if (this.isModalOpen) {
-        this.closeProblemModal();
-      }
+    if (event.key === 'Escape' && this.isScreenshotModalOpen) {
+      this.closeScreenshotModal();
     }
   }
 
   isRtl(): boolean {
     return this.translateService.currentLang === 'ar' || this.translateService.getDefaultLang() === 'ar';
-  }
-
-  updateProblemsPerView(): void {
-    if (typeof window !== 'undefined') {
-      this.problemsPerView = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 992 ? 2 : 3);
-      const maxIndex = this.problems.length - this.problemsPerView;
-      if (this.currentProblemSlide > maxIndex) {
-        this.currentProblemSlide = Math.max(0, maxIndex);
-      }
-    }
-  }
-
-  @HostListener('window:resize')
-  onResize(): void {
-    this.updateProblemsPerView();
   }
 }

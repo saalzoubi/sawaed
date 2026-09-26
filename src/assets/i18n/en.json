@@ -472,165 +472,557 @@
     }
   ],
 
-  "Ministry.Hero.Tag": "A National Education Platform",
+  "Ministry.Hero.Tag": "A Smart, Secure, and Integrated Digital Education Ecosystem",
   "Ministry.Hero.Name": "Ministry of Education",
-  "Ministry.Hero.Title": "One Platform for Every School in the Nation",
-  "Ministry.Hero.Subtitle": "A unified digital education platform adopted by the Ministry of Education and deployed across all schools — bringing education, communication, attendance, fees, transportation, and school life together under one national standard, while giving every school its own branded app and identity.",
+  "Ministry.Hero.Title": "Sawaed Elm Educational Platform",
+  "Ministry.Hero.Subtitle": "An integrated educational platform that connects students, parents, teachers, schools, and the Ministry of Education within one intelligent, secure, and flexible digital ecosystem powered by AI, automation, and data analytics.",
 
-  "Ministry.CommonProblems.Title": "National Challenges in School Digitization",
-  "Ministry.CommonProblems.Description": "The real challenges ministries and education directorates face today — and how Sawaed solves them at national scale",
-  "Ministry.Problems": [
+  "Ministry.Intro.Title": "One Ecosystem for the Entire Education Community",
+  "Ministry.Intro.ResultText": "A National Digital Education Ecosystem",
+
+  "Ministry.Toc.Title": "What the Platform Offers",
+
+  "Ministry.Sections": [
     {
-      "title": "Fragmented Systems Across Schools",
-      "problem": "Every school uses different tools — or none at all. Some rely on WhatsApp groups, others on paper, and others on isolated systems that cannot exchange data, making unified oversight nearly impossible.",
-      "solution": "One national platform deployed across all schools with a unified data model and standards, while preserving each school's identity and its own branded app. The ministry gets consistency; schools keep their individuality."
+      "id": "identity",
+      "icon": "🪪",
+      "title": "Digital Identity for the Entire Education Community",
+      "lead": [
+        "The platform provides every user with an individual account based on their role, including:"
+      ],
+      "tags": [
+        "Students",
+        "Parents",
+        "Teachers and Assistant Teachers",
+        "School Principals and Supervisors",
+        "Class Teachers and Coordinators",
+        "Transportation Drivers",
+        "Directorate of Education staff",
+        "Education Department Managers",
+        "Ministry officials and leadership"
+      ],
+      "result": "Roles are fully configurable, allowing each school or educational authority to create, modify, or remove roles according to its needs."
     },
     {
-      "title": "No Centralized Visibility",
-      "problem": "The ministry lacks timely, reliable data on attendance, academic performance, fees, and transportation across schools and regions. Reports arrive late, are inconsistent, and cannot be compared across schools.",
-      "solution": "A central ministry dashboard with real-time, standardized indicators across all schools — attendance, performance, engagement, and operations — filterable by region, directorate, and school."
+      "id": "permissions",
+      "icon": "🔐",
+      "title": "Dynamic Permissions & Access Control",
+      "lead": [
+        "A flexible permission management system allows authorized administrators to:"
+      ],
+      "groups": [
+        {
+          "items": [
+            "Grant or revoke permissions instantly.",
+            "Assign permissions to specific users or roles.",
+            "Control access to screens, functions, and data.",
+            "Customize access according to the structure of each school, directorate, or Ministry department."
+          ]
+        }
+      ],
+      "result": "Every function and screen can be protected by a specific permission."
     },
     {
-      "title": "Inconsistent Parent Communication",
-      "problem": "Communication quality varies dramatically between schools. Some parents are well informed while others receive almost no information about their children, creating inequality in the educational experience.",
-      "solution": "A guaranteed national baseline: every parent in every school gets the same core experience — instant notifications, attendance alerts, grades, assignments, and direct communication — regardless of which school their children attend."
+      "id": "social",
+      "icon": "💬",
+      "title": "A Safe Educational Social Network",
+      "lead": [
+        "A dedicated social environment that brings together modern communication concepts in a platform specifically designed for the educational community."
+      ],
+      "groups": [
+        {
+          "title": "It supports",
+          "items": [
+            "Posts",
+            "Images and videos",
+            "Short-form content and Reels",
+            "Stories",
+            "Comments and interactions",
+            "School communities",
+            "Targeted content distribution"
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Content can be targeted to",
+          "steps": [
+            "A Class Section",
+            "Grade",
+            "Selected Students",
+            "School",
+            "Multiple Schools"
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "A Safer Digital Environment for Students",
+          "text": "Unlike open social networks, students are not exposed to uncontrolled content from unknown users or unrelated advertising. The platform creates a closed and controlled social environment where content and advertisements can be targeted according to the user's role, age group, school, and permissions."
+        },
+        {
+          "title": "Understanding Learning Interests",
+          "text": "User interactions with educational content can also provide valuable data that may help identify students' educational interests and learning preferences."
+        }
+      ],
+      "result": "AI-assisted moderation and specialized oversight can help maintain safe, meaningful, and education-focused content."
     },
     {
-      "title": "Slow, Costly National Rollouts",
-      "problem": "Deploying a new system to hundreds or thousands of schools typically takes years, with heavy training requirements and high failure rates when schools resist unfamiliar tools.",
-      "solution": "Central provisioning with per-school configuration: schools are onboarded in batches through a phased rollout plan, with multilingual training materials, and Sawaed AI guiding every user through the platform — dramatically reducing training costs."
-    },
-    {
-      "title": "Data Sovereignty & Compliance",
-      "problem": "Student data spread across unregulated third-party tools poses privacy, security, and sovereignty risks that ministries cannot audit or control.",
-      "solution": "A single governed platform where data residency, access permissions, and audit trails follow ministry policy. The ministry defines the rules; the platform enforces them across every school."
-    },
-    {
-      "title": "Enforcing Standards Without Resistance",
-      "problem": "When ministries mandate a system, schools often resist because the tool ignores their identity and specific needs, leading to poor adoption and abandoned initiatives.",
-      "solution": "Every school keeps its own name, logo, and branded app while operating on the ministry's unified platform. Feature flags let each school enable only the modules it needs — enforcement of the standard, without erasing the school's identity."
-    }
-  ],
-
-  "Ministry.Intro.Title": "A National Partnership for Digital Education",
-  "Ministry.Intro.Description": "When the Ministry of Education's mandate and educational vision come together with Sawaed's technology, the result is a unified national platform serving every school, student, parent, teacher, and administrator in the country. One standard, one data model, and one quality of experience — with the flexibility for every school to keep its identity and choose the services it needs. A secure, multilingual platform supporting Arabic, English, and French, designed to scale from a single school to an entire nation.",
-  "Ministry.Intro.ResultText": "A Unified National School Platform",
-
-  "Ministry.Branding.Badge": "Pillar One",
-  "Ministry.Branding.Title": "One National Platform — Every School Keeps Its Own App and Identity",
-  "Ministry.Branding.Lead": "The ministry adopts one platform and one standard, but families do not see a generic government app. Every school gets its own branded application carrying its name, logo, and identity on the App Store and Google Play — all provisioned, governed, and supervised centrally by the ministry.",
-  "Ministry.Branding.Unified.Title": "One Standard for All",
-  "Ministry.Branding.Unified.Item1": "A unified data model, permissions system, and user experience across all schools in the country.",
-  "Ministry.Branding.Unified.Item2": "Consistent quality of digital services for every family, in every region.",
-  "Ministry.Branding.Unified.Item3": "Central updates and improvements reach all schools at once, without individual rollouts.",
-  "Ministry.Branding.PerSchool.Title": "Every School, Its Own Identity",
-  "Ministry.Branding.PerSchool.Item1": "Each school's app carries its own name, logo, and visual identity on the app stores.",
-  "Ministry.Branding.PerSchool.Item2": "Parents search for their school's name and find its dedicated app.",
-  "Ministry.Branding.PerSchool.Item3": "Schools adopt the mandate willingly because the platform strengthens their identity instead of erasing it.",
-  "Ministry.Branding.Enforcement.Title": "Central Provisioning & Governance",
-  "Ministry.Branding.Enforcement.Item1": "New schools are onboarded centrally with standardized setup and configuration.",
-  "Ministry.Branding.Enforcement.Item2": "The ministry defines mandatory modules and policies enforced across all schools.",
-  "Ministry.Branding.Enforcement.Item3": "Compliance is visible: the ministry can monitor adoption and usage in every school.",
-  "Ministry.Branding.Result": "The ministry enforces one national standard while every school keeps a branded experience its community is proud of — the key to nationwide adoption without resistance.",
-
-  "Ministry.Oversight.Badge": "Pillar Two",
-  "Ministry.Oversight.Title": "National Oversight — Real-Time Visibility Across Every School",
-  "Ministry.Oversight.Lead": "For the first time, the ministry can see the state of education across the country in real time: attendance, academic performance, fees, transportation, and engagement — standardized, comparable, and always up to date.",
-  "Ministry.Oversight.Dashboard.Title": "A Central Ministry Dashboard",
-  "Ministry.Oversight.Dashboard.Item1": "Nationwide indicators for attendance, absence, academic performance, and platform engagement.",
-  "Ministry.Oversight.Dashboard.Item2": "Filter and compare by region, directorate, school, grade, and time period.",
-  "Ministry.Oversight.Dashboard.Item3": "Standardized data collected the same way in every school — reports that are finally comparable.",
-  "Ministry.Oversight.Dashboard.Item4": "Early-warning signals such as rising absence rates or declining engagement in specific schools or regions.",
-  "Ministry.Oversight.Decisions.Title": "From Data to Policy",
-  "Ministry.Oversight.Decisions.Item1": "Evidence-based decisions built on real, current data instead of delayed manual reports.",
-  "Ministry.Oversight.Decisions.Item2": "Measure the impact of national initiatives and interventions across schools and regions.",
-  "Ministry.Oversight.Decisions.Item3": "Identify schools that need support and schools whose practices should be replicated.",
-  "Ministry.Oversight.Result": "The ministry moves from collecting reports to observing reality — a live national picture of education that supports faster, better-informed policy decisions.",
-
-  "Ministry.AI.Badge": "Pillar Three",
-  "Ministry.AI.Title": "Sawaed AI — A Personal Assistant for Every Student in the Nation",
-  "Ministry.AI.Lead": "With one decision, the ministry gives every student, parent, and teacher in the country an intelligent assistant that understands their real school data, answers in their language, and guides them through the platform — 24/7, at national scale.",
-  "Ministry.AI.Students.Title": "Equal Access to Intelligent Support",
-  "Ministry.AI.Students.Item1": "Every student — in every school and region — gets the same intelligent assistant, closing the support gap between schools.",
-  "Ministry.AI.Students.Item2": "Parents ask about their children's attendance, grades, assignments, and fees and get instant, personalized answers.",
-  "Ministry.AI.Students.Item3": "Supports Arabic, English, and French, with the ability to add languages according to national needs.",
-  "Ministry.AI.Privacy.Title": "Intelligence Under Ministry Governance",
-  "Ministry.AI.Privacy.Item1": "Sawaed AI operates strictly within each user's role and permissions — it only reveals what the user is authorized to see.",
-  "Ministry.AI.Privacy.Item2": "Every query is processed within the context of the school and the signed-in user, according to ministry policy.",
-  "Ministry.AI.Privacy.Item3": "The ministry defines the boundaries; the AI operates within them across all schools.",
-  "Ministry.AI.Result": "A nationwide leap in educational support: intelligent, personalized assistance for millions of users, governed by the ministry's policies and delivered through every school's own app.",
-
-  "Ministry.Governance.Badge": "Pillar Four",
-  "Ministry.Governance.Title": "Governance & Central Control — The Ministry Sets the Rules",
-  "Ministry.Governance.Lead": "A national deployment needs national control. The ministry defines mandatory modules, policies, and standards; each school configures optional services within those boundaries. Everything is auditable and enforced by the platform itself.",
-  "Ministry.Governance.Control.Title": "Layered Control",
-  "Ministry.Governance.Control.Item1": "Ministry level: mandatory modules, national policies, and standards enforced across all schools.",
-  "Ministry.Governance.Control.Item2": "School level: optional modules such as transportation or payments enabled per school as needed.",
-  "Ministry.Governance.Control.Item3": "Changes apply directly from administration panels without new app releases.",
-  "Ministry.Governance.Data.Title": "Data Sovereignty & Auditability",
-  "Ministry.Governance.Data.Item1": "Student and school data governed under ministry policy, with hosting and residency options that meet national requirements.",
-  "Ministry.Governance.Data.Item2": "Role-based permissions across every level — ministry, directorate, school, and user.",
-  "Ministry.Governance.Data.Item3": "Complete audit trails for important operations and administrative changes across the entire system.",
-  "Ministry.Governance.Result": "One platform, clear rules, and full visibility — the ministry governs the national digital education infrastructure the way it governs the education system itself.",
-
-  "Ministry.Rollout.Badge": "Deployment",
-  "Ministry.Rollout.Title": "A Phased National Rollout Plan",
-  "Ministry.Rollout.Lead": "Nationwide deployment succeeds when it is gradual, measured, and supported. We propose a phased rollout that proves value early, builds capacity, and scales with confidence.",
-  "Ministry.Rollout.Phases": [
-    {
-      "title": "Pilot Phase",
-      "text": "Launch in a selected group of schools across different regions and sizes. Measure adoption, gather feedback, and tune the platform to national requirements."
-    },
-    {
-      "title": "Regional Expansion",
-      "text": "Expand directorate by directorate with structured onboarding, local training programs, and dedicated support teams for each region."
-    },
-    {
-      "title": "Nationwide Deployment",
-      "text": "Roll out to all remaining schools using the proven onboarding playbook, with central provisioning and per-school configuration."
-    },
-    {
-      "title": "Continuous Improvement",
-      "text": "Ongoing monitoring through the ministry dashboard, regular feature updates for all schools at once, and data-driven improvement of the national platform."
-    }
-  ],
-
-  "Ministry.CatalogTitle": "Everything Every School Needs, in One National Platform",
-  "Ministry.CatalogLead": "Beyond the national pillars, the platform delivers a complete school ecosystem to every school in the country — serving students, parents, teachers, administrators, and drivers with a tailored experience for every role.",
-
-  "Ministry.BenefitsTitle": "Value at Every Level of the Education System",
-  "Ministry.Benefits": [
-    {
-      "icon": "🏛️",
-      "title": "The Ministry",
-      "text": "Unified national standards, real-time visibility across all schools, enforceable governance, data sovereignty, and evidence-based policy making."
-    },
-    {
+      "id": "branding",
       "icon": "🏫",
-      "title": "Schools",
-      "text": "A complete platform with their own branded app and identity, reduced administrative burden, and modules they can enable according to their needs."
+      "title": "Digital Identity for Every School",
+      "lead": [
+        "Every school can have its own digital identity, including:"
+      ],
+      "groups": [
+        {
+          "items": [
+            "A dedicated branded mobile application.",
+            "Its own name and identity on the App Store and Google Play.",
+            "A dedicated web experience.",
+            "Configurable school settings and services."
+          ]
+        },
+        {
+          "title": "The platform currently supports",
+          "items": [
+            "Arabic",
+            "English",
+            "French",
+            "With the ability to support additional languages when required."
+          ]
+        }
+      ],
+      "result": "At the Ministry level, a separate Ministry application and platform can provide a different experience, with dashboards, reports, and capabilities designed specifically for Ministry needs."
     },
     {
-      "icon": "👨‍👩‍👧",
-      "title": "Parents",
-      "text": "The same high-quality experience in every school: instant visibility into their children's attendance, grades, fees, and transportation — in their preferred language."
+      "id": "ai",
+      "icon": "🤖",
+      "title": "Sawaed AI — The Intelligent Educational Assistant",
+      "lead": [
+        "The intelligence layer at the heart of the platform.",
+        "Sawaed AI allows users to interact with the platform through natural conversation instead of navigating through multiple screens."
+      ],
+      "highlight": "Ask Sawaed AI — and get the information or action you are authorized to access.",
+      "groups": [
+        {
+          "title": "For Students",
+          "items": [
+            "Answer educational and scientific questions.",
+            "Explain concepts, equations, and experiments.",
+            "Check attendance and absence.",
+            "View assignments and submission status.",
+            "Discover upcoming activities and events.",
+            "Check transportation schedules.",
+            "Track the school bus.",
+            "Access educational information according to their permissions."
+          ]
+        },
+        {
+          "title": "For Teachers",
+          "items": [
+            "Monitor student attendance.",
+            "Check their own attendance and leave balance.",
+            "Submit leave requests.",
+            "Create, edit, and publish assignments.",
+            "Target assignments to specific classes or students.",
+            "Assist with assignment correction and AI-based assessment."
+          ]
+        },
+        {
+          "title": "For Parents",
+          "items": [
+            "Check attendance and absence for all their children.",
+            "View assignments and activities.",
+            "Follow school events.",
+            "Check transportation schedules.",
+            "Track the school bus.",
+            "See the expected arrival time.",
+            "Review financial and fee information where enabled."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "For Schools & Ministry — authorized users can ask questions across organizational levels",
+          "steps": [
+            "Student",
+            "Class",
+            "School",
+            "Directorate",
+            "Governorate",
+            "Kingdom"
+          ]
+        }
+      ],
+      "result": "Providing decision-makers with immediate access to relevant educational and administrative insights."
     },
     {
-      "icon": "🎓",
-      "title": "Students",
-      "text": "A modern digital school experience with equal access to learning tools and Sawaed AI, regardless of which school or region they belong to."
+      "id": "smart-teacher",
+      "icon": "👩‍🏫",
+      "title": "The Smart Teacher",
+      "lead": [
+        "The platform introduces an advanced concept of an interactive AI-powered Smart Teacher.",
+        "Instead of simply watching a recorded lesson, a student can interact with a virtual teacher through voice and visual interaction, creating an experience closer to a live lesson."
+      ],
+      "groups": [
+        {
+          "title": "The Smart Teacher can",
+          "items": [
+            "Explain lessons.",
+            "Interact with students.",
+            "Answer questions.",
+            "Ask students questions during the lesson.",
+            "Monitor engagement.",
+            "Assess understanding through interactive questioning.",
+            "Generate learning reports."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Reports can be analyzed at multiple levels",
+          "steps": [
+            "Student",
+            "Class",
+            "School",
+            "Directorate",
+            "Governorate",
+            "Kingdom"
+          ]
+        }
+      ],
+      "result": "Providing broader visibility into digital learning engagement."
     },
     {
-      "icon": "🧑‍🏫",
-      "title": "Teachers",
-      "text": "Unified tools for attendance, assignments, grading, and communication — with one system to learn even when moving between schools."
+      "id": "assessments",
+      "icon": "🏆",
+      "title": "AI-Powered Assessments & Educational Challenges",
+      "lead": [
+        "Sawaed AI can generate educational tests and exercises that are separate from the Ministry's official assessment system."
+      ],
+      "groups": [
+        {
+          "title": "These assessments can help",
+          "items": [
+            "Reinforce learning.",
+            "Measure understanding.",
+            "Provide additional educational indicators.",
+            "Encourage positive academic competition."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Results can be presented across different levels — top students in",
+          "steps": [
+            "Section",
+            "Class",
+            "School",
+            "Directorate",
+            "Kingdom"
+          ]
+        }
+      ],
+      "result": "Creating an engaging environment that encourages students to learn, practice, and improve."
     },
     {
+      "id": "transportation",
+      "icon": "🚌",
+      "title": "Smart School Transportation",
+      "lead": [
+        "An integrated transportation management system for schools using:"
+      ],
+      "tags": [
+        "School buses",
+        "Cars",
+        "Taxis",
+        "Other approved transportation providers"
+      ],
+      "groups": [
+        {
+          "title": "The system can provide",
+          "items": [
+            "Real-time vehicle tracking.",
+            "Estimated arrival times.",
+            "Student trip tracking.",
+            "Parent notifications.",
+            "School notifications.",
+            "Trip completion notifications.",
+            "Student-specific transportation status."
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "Parent-Controlled Transportation Attendance",
+          "text": "Parents can notify the school in advance that their child will not use the school bus on a particular day. The student's name can then be automatically removed from that day's trip, while the driver receives an appropriate notification."
+        },
+        {
+          "title": "Ministry Transportation Dashboard",
+          "text": "Authorized Ministry users can monitor transportation activity through real-time maps and aggregated transportation analytics, including visual representations of vehicle activity."
+        }
+      ]
+    },
+    {
+      "id": "attendance",
+      "icon": "✅",
+      "title": "Attendance & Absence Management",
+      "lead": [
+        "A complete attendance management system for:"
+      ],
+      "tags": [
+        "Students",
+        "Teachers",
+        "School employees"
+      ],
+      "groups": [
+        {
+          "title": "Including",
+          "items": [
+            "Attendance recording.",
+            "Absence management.",
+            "Notifications.",
+            "Daily monitoring.",
+            "School reports.",
+            "Administrative reports.",
+            "Higher-level analytics."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Information can be viewed across",
+          "steps": [
+            "Student",
+            "Class",
+            "School",
+            "Directorate",
+            "Governorate",
+            "Kingdom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assignments",
+      "icon": "📝",
+      "title": "Digital Assignments & Learning Activities",
+      "lead": [
+        "Teachers can create and publish assignments with different submission formats, including:"
+      ],
+      "groups": [
+        {
+          "title": "Submission formats",
+          "items": [
+            "Written answers.",
+            "Paper-based solutions with uploaded images.",
+            "Documents and files.",
+            "Video submissions.",
+            "Audio submissions."
+          ]
+        },
+        {
+          "title": "For example",
+          "items": [
+            "Quran recitation.",
+            "Poetry recitation.",
+            "Song or anthem performance.",
+            "Video-based educational activities."
+          ]
+        }
+      ],
+      "result": "Parents can receive notifications about assignments relevant to their children."
+    },
+    {
+      "id": "calendar",
+      "icon": "📅",
+      "title": "Smart Educational Calendar",
+      "lead": [
+        "A unified calendar brings the student's educational life into one place."
+      ],
+      "groups": [
+        {
+          "title": "It can display",
+          "items": [
+            "Assignments.",
+            "Exams.",
+            "Activities.",
+            "School events.",
+            "Important dates.",
+            "Educational events."
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "Personalized by permissions",
+          "text": "When a user selects a specific date, the platform displays the information they are authorized to see."
+        }
+      ],
+      "result": "One calendar — personalized for every user."
+    },
+    {
+      "id": "fees",
+      "icon": "💳",
+      "title": "School Fees & Payments",
+      "lead": [
+        "For private and international schools, the platform can support school fee management."
+      ],
+      "groups": [
+        {
+          "title": "Parents can",
+          "items": [
+            "View outstanding fees.",
+            "Track payments.",
+            "View remaining balances.",
+            "Follow payment schedules."
+          ]
+        }
+      ],
+      "questionsTitle": "Through Sawaed AI, users can simply ask:",
+      "questions": [
+        "How much has the school collected this month?",
+        "What payments are still outstanding?",
+        "Which students are overdue?"
+      ],
+      "result": "Schools and authorized educational authorities can access financial reports and analytics."
+    },
+    {
+      "id": "analytics",
       "icon": "📊",
-      "title": "Directorates",
-      "text": "Regional dashboards and comparable school-level data that help directorates supervise, support, and improve the schools in their regions."
+      "title": "Educational Analytics & Decision Intelligence",
+      "lead": [
+        "The platform brings together data generated across the ecosystem to provide a comprehensive view of educational performance and activity."
+      ],
+      "groups": [
+        {
+          "title": "Analytics can include",
+          "items": [
+            "Attendance and absence.",
+            "Assignments.",
+            "Educational activities.",
+            "Social engagement.",
+            "Parent communication.",
+            "Platform usage.",
+            "Transportation.",
+            "Learning indicators."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Information can be analyzed across",
+          "steps": [
+            "Student",
+            "Class",
+            "School",
+            "Directorate",
+            "Governorate",
+            "Kingdom"
+          ],
+          "plain": true
+        }
+      ],
+      "shift": {
+        "from": "Managing Operations",
+        "to": "Data-Driven Educational Decision Making"
+      }
+    },
+    {
+      "id": "feature-flags",
+      "icon": "🎛️",
+      "title": "Fully Configurable Features",
+      "lead": [
+        "Not every school requires the same services.",
+        "Through Feature Flags, authorized administrators can activate or deactivate platform capabilities according to the school's needs."
+      ],
+      "tags": [
+        "Attendance & Absence",
+        "Transportation",
+        "Social Network",
+        "Assignments",
+        "School Fees",
+        "Sawaed AI",
+        "Other future services"
+      ],
+      "callouts": [
+        {
+          "title": "Disabled means invisible",
+          "text": "When a feature is disabled, it can automatically disappear from the relevant school interfaces."
+        }
+      ],
+      "result": "One Platform. Different Experiences for Every School."
+    },
+    {
+      "id": "security",
+      "icon": "🛡️",
+      "title": "Data Security & Sovereignty",
+      "lead": [
+        "The platform can be deployed within a secure environment under the supervision of the relevant authorities."
+      ],
+      "groups": [
+        {
+          "title": "For the public education sector",
+          "items": [
+            "Infrastructure can be hosted inside Jordan.",
+            "Servers can be located within Ministry-designated facilities or data centers.",
+            "Infrastructure can remain under Ministry oversight.",
+            "Sawaed Elm can provide technical maintenance and support.",
+            "Educational data can remain within the environment designated by the Jordanian authorities and according to applicable government requirements."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "icon": "🤝",
+      "title": "A Sustainable Model for Public Education",
+      "lead": [],
+      "callouts": [
+        {
+          "title": "Free for Public Schools",
+          "text": "Sawaed Elm proposes providing the platform to public schools without software licensing fees. Under the proposed model, Sawaed Elm would provide the platform and technical services, while the infrastructure can be deployed in facilities designated by the Ministry. This approach allows the Ministry to maintain control over the hosting environment and data infrastructure while benefiting from the platform's capabilities."
+        },
+        {
+          "title": "Private & International Schools",
+          "figure": "1–2 JOD",
+          "figureNote": "per student",
+          "text": "The platform can also be offered to private and international schools through a symbolic subscription model, depending on the selected services and features."
+        }
+      ],
+      "result": "A sustainable model: public schools can benefit from the platform without licensing fees, while private and international schools contribute through a modest subscription model."
     }
   ],
+
+  "Ministry.Vision.Badge": "The Vision",
+  "Ministry.Vision.Title": "Sawaed Elm Is More Than a School Application",
+  "Ministry.Vision.Lead": "It is a national digital education ecosystem connecting:",
+  "Ministry.Vision.Chain": [
+    "Student",
+    "Parent",
+    "Teacher",
+    "School",
+    "Directorate",
+    "Ministry"
+  ],
+  "Ministry.Vision.PillarsLead": "Within one intelligent platform powered by:",
+  "Ministry.Vision.Pillars": [
+    "Artificial Intelligence",
+    "Data Analytics",
+    "Secure Communication",
+    "Smart Transportation",
+    "Digital Learning",
+    "Dynamic Permissions",
+    "Personalized Experiences"
+  ],
+  "Ministry.Vision.ShiftLead": "The vision is to move from:",
+  "Ministry.Vision.From": "A platform that manages schools",
+  "Ministry.Vision.To": "A smart ecosystem that helps manage, understand, and improve education.",
+  "Ministry.Vision.Tagline": "Smarter Learning. Safer Communication. Data-Driven Education.",
+
+  "Ministry.Labels.From": "From",
+  "Ministry.Labels.To": "To",
 
   "School.CTA.Title": "Ready to See It in Action?",
   "School.CTA.Text": "To get a live demonstration of the school's social network and Sawaed AI, contact us.",
