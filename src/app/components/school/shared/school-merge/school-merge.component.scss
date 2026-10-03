@@ -1,0 +1,362 @@
+@import "../../../../../variables.scss";
+
+:host {
+  display: block;
+  margin-top: 48px;
+}
+
+.merge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Logos row: partner | link | company */
+.merge-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px minmax(0, 1fr);
+  align-items: center;
+  width: 100%;
+}
+
+.merge-single .merge-stage {
+  grid-template-columns: minmax(0, 260px);
+  justify-content: center;
+}
+
+.merge-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 16px 20px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba($LightestNavy, 0.55), rgba($LightNavy, 0.85));
+  border: 1px solid rgba($Green, 0.18);
+  box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.7);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: rgba($Green, 0.45);
+    box-shadow: 0 18px 40px -16px rgba($Green, 0.25);
+  }
+}
+
+/* Float the logo, not the card: AOS owns the card's transform during its entrance */
+.merge-logo {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: mergeFloat 6s ease-in-out infinite;
+
+  img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+  }
+}
+
+.merge-card-delayed .merge-logo {
+  animation-delay: -3s;
+}
+
+/* Rotating gradient ring around each logo */
+.merge-ring {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, $Green, transparent 35%, $Purple 60%, transparent 85%, $Green);
+  animation: mergeSpin 6s linear infinite;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: $LightNavy;
+  }
+}
+
+.merge-name {
+  color: $LightestSlate;
+  font-family: $MainFont;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Connector between the two cards */
+.merge-link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.merge-line {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, rgba($Green, 0.15), rgba($Green, 0.5), rgba($Green, 0.15));
+  overflow: hidden;
+
+  /* Light particle travelling from the card towards the plus sign */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background: $Green;
+    box-shadow: 0 0 10px 2px $Green;
+  }
+}
+
+.merge-line-start::after {
+  animation: mergeFlowStart 1.8s ease-in infinite;
+}
+
+.merge-line-end::after {
+  animation: mergeFlowEnd 1.8s ease-in infinite;
+}
+
+.merge-plus {
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $Navy;
+  font-size: 18px;
+  background: linear-gradient(135deg, $Green, darken($Green, 12%));
+  box-shadow: 0 0 22px rgba($Green, 0.45);
+
+  i {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.merge-ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid $Green;
+  animation: mergeRipple 2.4s ease-out infinite;
+}
+
+.merge-ripple-late {
+  animation-delay: 1.2s;
+}
+
+/* Vertical connector into the result */
+.merge-join {
+  display: flex;
+  justify-content: center;
+  height: 44px;
+}
+
+.merge-join-line {
+  position: relative;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba($Green, 0.5), rgba($Green, 0.1));
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 14px;
+    border-radius: 2px;
+    background: $Green;
+    box-shadow: 0 0 10px 2px $Green;
+    animation: mergeFlowDown 1.8s ease-in infinite;
+  }
+}
+
+/* Result pill */
+.merge-result {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  padding-block: 14px;
+  padding-inline: 14px 26px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  background: linear-gradient($LightNavy, $LightNavy) padding-box,
+              linear-gradient(120deg, $Green, $Purple, $Green, $Purple) border-box;
+  background-size: 100% 100%, 300% 100%;
+  box-shadow: 0 12px 34px -14px rgba($Green, 0.45);
+  overflow: hidden;
+  animation: mergeBorder 6s linear infinite;
+
+  /* Shimmer sweep */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+    animation: mergeShimmer 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+.merge-result-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $Green;
+  background: $GreenOpacity;
+  border: 1px solid rgba($Green, 0.3);
+}
+
+.merge-result-text {
+  font-family: $MainFont;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  background: linear-gradient(120deg, $White 35%, $Green 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes mergeFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes mergeSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes mergeRipple {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+/* Logical insets so the particles flow toward the center in both LTR and RTL */
+@keyframes mergeFlowStart {
+  0% { inset-inline-start: -14px; opacity: 0; }
+  20% { opacity: 1; }
+  100% { inset-inline-start: 100%; opacity: 0.2; }
+}
+
+@keyframes mergeFlowEnd {
+  0% { inset-inline-end: -14px; opacity: 0; }
+  20% { opacity: 1; }
+  100% { inset-inline-end: 100%; opacity: 0.2; }
+}
+
+@keyframes mergeFlowDown {
+  0% { top: -14px; opacity: 0; }
+  20% { opacity: 1; }
+  100% { top: 100%; opacity: 0.2; }
+}
+
+@keyframes mergeShimmer {
+  0%, 40% { left: -60%; }
+  100% { left: 130%; }
+}
+
+@keyframes mergeBorder {
+  to { background-position: 0 0, 150% 0; }
+}
+
+/* Mobile: keep the two cards side by side, tighten everything */
+@media (max-width: 576px) {
+  :host {
+    margin-top: 32px;
+  }
+
+  .merge-stage {
+    grid-template-columns: minmax(0, 1fr) 52px minmax(0, 1fr);
+  }
+
+  .merge-card {
+    gap: 10px;
+    padding: 18px 8px 14px;
+    border-radius: 16px;
+  }
+
+  .merge-logo {
+    width: 64px;
+    height: 64px;
+
+    img {
+      padding: 7px;
+    }
+  }
+
+  .merge-ring {
+    inset: -4px;
+  }
+
+  .merge-name {
+    font-size: 12.5px;
+  }
+
+  .merge-plus {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .merge-join {
+    height: 32px;
+  }
+
+  .merge-result {
+    gap: 10px;
+    padding-block: 10px;
+    padding-inline: 10px 18px;
+  }
+
+  .merge-result-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .merge-result-text {
+    font-size: 14.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .merge-logo,
+  .merge-ring,
+  .merge-ripple,
+  .merge-line::after,
+  .merge-join-line::after,
+  .merge-result,
+  .merge-result::before {
+    animation: none;
+  }
+}

@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { LanguageService } from 'src/app/services/language/language.service';
+import { Component } from '@angular/core';
+import { MinistryComponent } from '../ministry/ministry.component';
 
 @Component({
   selector: 'app-assf',
-  templateUrl: './assf.component.html',
-  styleUrls: ['./assf.component.scss']
+  templateUrl: '../ministry/ministry.component.html',
+  styleUrls: ['../ministry/ministry.component.scss']
 })
-export class AssfComponent implements OnInit {
-  logoPath = 'assets/images/assf-logo.jpg';
-  nameKey = 'School.Branding.SchoolName.Assf';
-  subtitleKey = 'School.Hero.Subtitle.Assf';
-
-  constructor(private languageService: LanguageService) { }
-
-  ngOnInit(): void {
-    this.languageService.switchLang('ar');
-  }
+export class AssfComponent extends MinistryComponent {
+  override logoPath = 'assets/images/assf-logo.jpg';
+  override partnerNameKey = 'School.Branding.SchoolName.Assf';
+  override excludedSections = ['smart-teacher', 'security', 'model'];
 }

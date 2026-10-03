@@ -27,28 +27,9 @@
           </h3>
         </div>
 
-        <div class="school-merging-logos" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="school-merging-logo">
-            <img [src]="logoPath" [alt]="'Ministry.Hero.Name' | translate" />
-            <span class="school-merging-label">{{ "Ministry.Hero.Name" | translate }}</span>
-          </div>
-
-          <div class="school-merging-arrows">
-            <i class="fas fa-chevron-right school-merging-arrow school-merging-arrow-left"></i>
-            <i class="fas fa-plus school-merging-plus"></i>
-            <i class="fas fa-chevron-left school-merging-arrow school-merging-arrow-right"></i>
-          </div>
-
-          <div class="school-merging-logo">
-            <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
-            <span class="school-merging-label">{{ companyNameKey | translate }}</span>
-          </div>
-
-          <div class="school-merging-result">
-            <i class="fas fa-equals school-merging-equals"></i>
-            <span class="school-merging-result-text">{{ "Ministry.Intro.ResultText" | translate }}</span>
-          </div>
-        </div>
+        <app-school-merge [partnerLogo]="logoPath" [partnerNameKey]="partnerNameKey"
+                          [companyLogo]="companyLogoPath" [companyNameKey]="companyNameKey"
+                          resultKey="Ministry.Intro.ResultText"></app-school-merge>
 
         <!-- Table of contents -->
         <h5 class="ministry-toc-title" data-aos="fade-up" data-aos-duration="1000">{{ "Ministry.Toc.Title" | translate }}</h5>

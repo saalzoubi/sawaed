@@ -130,28 +130,9 @@
           </div>
         </div>
 
-        <div class="school-merging-logos" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="school-merging-logo" *ngIf="logoPath">
-            <img [src]="logoPath" [alt]="schoolNameKey ? (schoolNameKey | translate) : ''" />
-            <span class="school-merging-label" *ngIf="schoolNameKey">{{ schoolNameKey | translate }}</span>
-          </div>
-
-          <div class="school-merging-arrows">
-            <i class="fas fa-chevron-right school-merging-arrow school-merging-arrow-left"></i>
-            <i class="fas fa-plus school-merging-plus"></i>
-            <i class="fas fa-chevron-left school-merging-arrow school-merging-arrow-right"></i>
-          </div>
-
-          <div class="school-merging-logo">
-            <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
-            <span class="school-merging-label">{{ companyNameKey | translate }}</span>
-          </div>
-
-          <div class="school-merging-result">
-            <i class="fas fa-equals school-merging-equals"></i>
-            <span class="school-merging-result-text">{{ "School.Intro.Title" | translate }}</span>
-          </div>
-        </div>
+        <app-school-merge [partnerLogo]="logoPath" [partnerNameKey]="schoolNameKey"
+                          [companyLogo]="companyLogoPath" [companyNameKey]="companyNameKey"
+                          resultKey="School.Intro.Title"></app-school-merge>
       </div>
     </div>
   </section>

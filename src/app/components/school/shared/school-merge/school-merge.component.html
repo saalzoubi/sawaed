@@ -1,0 +1,38 @@
+<div class="merge" [class.merge-single]="!partnerLogo">
+  <div class="merge-stage">
+    <div class="merge-card" *ngIf="partnerLogo" data-aos="fade-up" data-aos-duration="800">
+      <div class="merge-logo">
+        <span class="merge-ring"></span>
+        <img [src]="partnerLogo" [alt]="partnerNameKey ? (partnerNameKey | translate) : ''" />
+      </div>
+      <span class="merge-name" *ngIf="partnerNameKey">{{ partnerNameKey | translate }}</span>
+    </div>
+
+    <div class="merge-link" *ngIf="partnerLogo" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+      <span class="merge-line merge-line-start"></span>
+      <span class="merge-plus">
+        <span class="merge-ripple"></span>
+        <span class="merge-ripple merge-ripple-late"></span>
+        <i class="fas fa-plus"></i>
+      </span>
+      <span class="merge-line merge-line-end"></span>
+    </div>
+
+    <div class="merge-card merge-card-delayed" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+      <div class="merge-logo">
+        <span class="merge-ring"></span>
+        <img [src]="companyLogo" [alt]="companyNameKey | translate" />
+      </div>
+      <span class="merge-name">{{ companyNameKey | translate }}</span>
+    </div>
+  </div>
+
+  <div class="merge-join" data-aos="fade-in" data-aos-duration="600" data-aos-delay="350">
+    <span class="merge-join-line"></span>
+  </div>
+
+  <div class="merge-result" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="450">
+    <span class="merge-result-icon"><i class="fas fa-layer-group"></i></span>
+    <span class="merge-result-text">{{ resultKey | translate }}</span>
+  </div>
+</div>

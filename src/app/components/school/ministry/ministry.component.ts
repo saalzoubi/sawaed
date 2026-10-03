@@ -11,6 +11,9 @@ import { LanguageService } from 'src/app/services/language/language.service';
 export class MinistryComponent implements OnInit {
 
   logoPath = 'assets/images/ministry-logo.jpg';
+  partnerNameKey = 'Ministry.Hero.Name';
+  // Section ids from Ministry.Sections to hide on this page.
+  excludedSections: string[] = [];
   companyLogoPath = 'assets/images/logo.png';
   companyNameKey = 'Banner.name';
 
@@ -88,7 +91,9 @@ export class MinistryComponent implements OnInit {
 
   loadData(): void {
     this.translateService.get('Ministry.Sections').subscribe((data: any[]) => {
-      this.sections = Array.isArray(data) ? data : [];
+      this.sections = Array.isArray(data)
+        ? data.filter(s => !this.excludedSections.includes(s.id))
+        : [];
     });
     this.translateService.get('Ministry.Vision.Chain').subscribe((data: string[]) => {
       this.visionChain = Array.isArray(data) ? data : [];

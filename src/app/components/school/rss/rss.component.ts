@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { MinistryComponent } from '../ministry/ministry.component';
 
 @Component({
-  selector: 'app-ramtha',
+  selector: 'app-rss',
   templateUrl: '../ministry/ministry.component.html',
   styleUrls: ['../ministry/ministry.component.scss']
 })
-export class RamthaComponent extends MinistryComponent {
-  override logoPath = 'assets/images/ramtha-logo.jpg';
-  override partnerNameKey = 'School.Branding.SchoolName.Ramtha';
+export class RssComponent extends MinistryComponent {
+  override logoPath = 'assets/images/rss-logo.jpg';
+  override partnerNameKey = 'School.Branding.SchoolName.Rss';
   override excludedSections = ['smart-teacher', 'security', 'model'];
 }

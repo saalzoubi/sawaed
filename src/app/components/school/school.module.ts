@@ -5,6 +5,8 @@ import { SchoolComponent } from './school.component';
 import { SchoolSharedModule } from './shared/school-shared.module';
 import { RamthaComponent } from './ramtha/ramtha.component';
 import { AssfComponent } from './assf/assf.component';
+import { AhlQuranComponent } from './ahlquran/ahlquran.component';
+import { RssComponent } from './rss/rss.component';
 import { MinistryComponent } from './ministry/ministry.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -13,6 +15,8 @@ import { TranslateModule } from '@ngx-translate/core';
     SchoolComponent,
     RamthaComponent,
     AssfComponent,
+    AhlQuranComponent,
+    RssComponent,
     MinistryComponent
   ],
   imports: [
