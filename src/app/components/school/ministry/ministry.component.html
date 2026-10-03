@@ -5,9 +5,9 @@
     <div class="container">
       <div class="school-hero-inner">
         <div class="school-hero-content" data-aos="fade-up" data-aos-duration="1000">
-          <span class="school-hero-tag">{{ "Ministry.Hero.Tag" | translate }}</span>
-          <h1 class="school-hero-title">{{ "Ministry.Hero.Title" | translate }}</h1>
-          <p class="school-hero-subtitle">{{ "Ministry.Hero.Subtitle" | translate }}</p>
+          <span class="school-hero-tag">{{ textKey + '.Hero.Tag' | translate: textParams }}</span>
+          <h1 class="school-hero-title">{{ textKey + '.Hero.Title' | translate: textParams }}</h1>
+          <p class="school-hero-subtitle">{{ textKey + '.Hero.Subtitle' | translate: textParams }}</p>
         </div>
         <div class="school-hero-logo" data-aos="fade-left" data-aos-duration="1000">
           <img [src]="companyLogoPath" [alt]="companyNameKey | translate" />
@@ -23,16 +23,16 @@
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
           <h3 class="section-title">
-            {{ "Ministry.Intro.Title" | translate }}
+            {{ textKey + '.Intro.Title' | translate: textParams }}
           </h3>
         </div>
 
         <app-school-merge [partnerLogo]="logoPath" [partnerNameKey]="partnerNameKey"
                           [companyLogo]="companyLogoPath" [companyNameKey]="companyNameKey"
-                          resultKey="Ministry.Intro.ResultText"></app-school-merge>
+                          [resultKey]="textKey + '.Intro.ResultText'"></app-school-merge>
 
         <!-- Table of contents -->
-        <h5 class="ministry-toc-title" data-aos="fade-up" data-aos-duration="1000">{{ "Ministry.Toc.Title" | translate }}</h5>
+        <h5 class="ministry-toc-title" data-aos="fade-up" data-aos-duration="1000">{{ textKey + '.Toc.Title' | translate: textParams }}</h5>
         <div class="ministry-toc" data-aos="fade-up" data-aos-duration="1000">
           <button *ngFor="let s of sections; let i = index"
                   type="button"
@@ -112,12 +112,12 @@
 
         <div *ngIf="s.shift" class="ministry-shift" data-aos="fade-up" data-aos-duration="1000">
           <div class="ministry-shift-from">
-            <small>{{ "Ministry.Labels.From" | translate }}</small>
+            <small>{{ textKey + '.Labels.From' | translate: textParams }}</small>
             {{ s.shift.from }}
           </div>
           <i class="fas ministry-shift-arrow" [class.fa-arrow-right]="!isRtl()" [class.fa-arrow-left]="isRtl()"></i>
           <div class="ministry-shift-to">
-            <small>{{ "Ministry.Labels.To" | translate }}</small>
+            <small>{{ textKey + '.Labels.To' | translate: textParams }}</small>
             {{ s.shift.to }}
           </div>
         </div>
@@ -142,13 +142,13 @@
     <div class="container">
       <div class="section-box">
         <div data-aos="fade-up" data-aos-duration="1000">
-          <span class="school-feature-badge">{{ "Ministry.Vision.Badge" | translate }}</span>
+          <span class="school-feature-badge">{{ textKey + '.Vision.Badge' | translate: textParams }}</span>
           <h3 class="section-title">
-            {{ "Ministry.Vision.Title" | translate }}
+            {{ textKey + '.Vision.Title' | translate: textParams }}
           </h3>
         </div>
 
-        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ "Ministry.Vision.Lead" | translate }}</p>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ textKey + '.Vision.Lead' | translate: textParams }}</p>
         <div class="ministry-flow-steps ministry-vision-chain" data-aos="fade-up" data-aos-duration="1000">
           <ng-container *ngFor="let c of visionChain; let last = last">
             <span class="ministry-flow-step">{{ c }}</span>
@@ -156,25 +156,25 @@
           </ng-container>
         </div>
 
-        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ "Ministry.Vision.PillarsLead" | translate }}</p>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ textKey + '.Vision.PillarsLead' | translate: textParams }}</p>
         <div class="ministry-tags" data-aos="fade-up" data-aos-duration="1000">
           <span *ngFor="let p of visionPillars" class="ministry-tag">{{ p }}</span>
         </div>
 
-        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ "Ministry.Vision.ShiftLead" | translate }}</p>
+        <p class="school-feature-lead" data-aos="fade-up" data-aos-duration="1000">{{ textKey + '.Vision.ShiftLead' | translate: textParams }}</p>
         <div class="ministry-shift" data-aos="fade-up" data-aos-duration="1000">
           <div class="ministry-shift-from">
-            <small>{{ "Ministry.Labels.From" | translate }}</small>
-            {{ "Ministry.Vision.From" | translate }}
+            <small>{{ textKey + '.Labels.From' | translate: textParams }}</small>
+            {{ textKey + '.Vision.From' | translate: textParams }}
           </div>
           <i class="fas ministry-shift-arrow" [class.fa-arrow-right]="!isRtl()" [class.fa-arrow-left]="isRtl()"></i>
           <div class="ministry-shift-to">
-            <small>{{ "Ministry.Labels.To" | translate }}</small>
-            {{ "Ministry.Vision.To" | translate }}
+            <small>{{ textKey + '.Labels.To' | translate: textParams }}</small>
+            {{ textKey + '.Vision.To' | translate: textParams }}
           </div>
         </div>
 
-        <p class="ministry-tagline" data-aos="zoom-in" data-aos-duration="1000">{{ "Ministry.Vision.Tagline" | translate }}</p>
+        <p class="ministry-tagline" data-aos="zoom-in" data-aos-duration="1000">{{ textKey + '.Vision.Tagline' | translate: textParams }}</p>
       </div>
     </div>
   </section>

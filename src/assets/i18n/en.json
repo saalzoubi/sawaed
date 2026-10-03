@@ -1025,6 +1025,468 @@
 
   "Ministry.Labels.From": "From",
   "Ministry.Labels.To": "To",
+  "SchoolPage.Hero.Tag": "A Smart, Secure, and Integrated Digital School Ecosystem",
+  "SchoolPage.Hero.Title": "The {{school}} Smart Platform",
+  "SchoolPage.Hero.Subtitle": "An integrated school platform that connects the students, parents, teachers, and administration of {{school}} within one intelligent, secure, and flexible digital ecosystem powered by AI, automation, and data analytics.",
+  "SchoolPage.Intro.Title": "One Ecosystem for the Entire School Community",
+  "SchoolPage.Intro.ResultText": "A Smart Digital School",
+  "SchoolPage.Toc.Title": "What the Platform Offers",
+  "SchoolPage.Sections": [
+    {
+      "id": "identity",
+      "icon": "🪪",
+      "title": "Digital Identity for the Entire Education Community",
+      "lead": [
+        "The platform provides every user with an individual account based on their role, including:"
+      ],
+      "tags": [
+        "Students",
+        "Parents",
+        "Teachers and Assistant Teachers",
+        "School Principals and Supervisors",
+        "Class Teachers and Coordinators",
+        "Transportation Drivers",
+        "School administrative staff"
+      ],
+      "result": "Roles are fully configurable, allowing each school or educational authority to create, modify, or remove roles according to its needs."
+    },
+    {
+      "id": "permissions",
+      "icon": "🔐",
+      "title": "Dynamic Permissions & Access Control",
+      "lead": [
+        "A flexible permission management system allows authorized administrators to:"
+      ],
+      "groups": [
+        {
+          "items": [
+            "Grant or revoke permissions instantly.",
+            "Assign permissions to specific users or roles.",
+            "Control access to screens, functions, and data.",
+            "Customize access according to the school's structure, departments, and roles."
+          ]
+        }
+      ],
+      "result": "Every function and screen can be protected by a specific permission."
+    },
+    {
+      "id": "social",
+      "icon": "💬",
+      "title": "A Safe Educational Social Network",
+      "lead": [
+        "A dedicated social environment that brings together modern communication concepts in a platform specifically designed for the educational community."
+      ],
+      "groups": [
+        {
+          "title": "It supports",
+          "items": [
+            "Posts",
+            "Images and videos",
+            "Short-form content and Reels",
+            "Stories",
+            "Comments and interactions",
+            "School communities",
+            "Targeted content distribution"
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Content can be targeted to",
+          "steps": [
+            "A Class Section",
+            "Grade",
+            "Selected Students",
+            "School",
+            "Multiple Schools"
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "A Safer Digital Environment for Students",
+          "text": "Unlike open social networks, students are not exposed to uncontrolled content from unknown users or unrelated advertising. The platform creates a closed and controlled social environment where content and advertisements can be targeted according to the user's role, age group, school, and permissions."
+        },
+        {
+          "title": "Understanding Learning Interests",
+          "text": "User interactions with educational content can also provide valuable data that may help identify students' educational interests and learning preferences."
+        }
+      ],
+      "result": "AI-assisted moderation and specialized oversight can help maintain safe, meaningful, and education-focused content."
+    },
+    {
+      "id": "branding",
+      "icon": "🏫",
+      "title": "{{school}}'s Own Digital Identity",
+      "lead": [
+        "{{school}} gets its own digital identity, including:"
+      ],
+      "groups": [
+        {
+          "items": [
+            "A dedicated branded mobile application.",
+            "Its own name and identity on the App Store and Google Play.",
+            "A dedicated web experience.",
+            "Configurable school settings and services."
+          ]
+        },
+        {
+          "title": "The platform currently supports",
+          "items": [
+            "Arabic",
+            "English",
+            "French",
+            "With the ability to support additional languages when required."
+          ]
+        }
+      ],
+      "result": "An independent app carrying the name and logo of {{school}} on the App Store and Google Play."
+    },
+    {
+      "id": "ai",
+      "icon": "🤖",
+      "title": "Sawaed AI — The Intelligent Educational Assistant",
+      "lead": [
+        "The intelligence layer at the heart of the platform.",
+        "Sawaed AI allows users to interact with the platform through natural conversation instead of navigating through multiple screens."
+      ],
+      "highlight": "Ask Sawaed AI — and get the information or action you are authorized to access.",
+      "groups": [
+        {
+          "title": "For Students",
+          "items": [
+            "Answer educational and scientific questions.",
+            "Explain concepts, equations, and experiments.",
+            "Check attendance and absence.",
+            "View assignments and submission status.",
+            "Discover upcoming activities and events.",
+            "Check transportation schedules.",
+            "Track the school bus.",
+            "Access educational information according to their permissions."
+          ]
+        },
+        {
+          "title": "For Teachers",
+          "items": [
+            "Monitor student attendance.",
+            "Check their own attendance and leave balance.",
+            "Submit leave requests.",
+            "Create, edit, and publish assignments.",
+            "Target assignments to specific classes or students.",
+            "Assist with assignment correction and AI-based assessment."
+          ]
+        },
+        {
+          "title": "For Parents",
+          "items": [
+            "Check attendance and absence for all their children.",
+            "View assignments and activities.",
+            "Follow school events.",
+            "Check transportation schedules.",
+            "Track the school bus.",
+            "See the expected arrival time.",
+            "Review financial and fee information where enabled."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "For school leadership — authorized users can ask questions across every level of the school",
+          "steps": [
+            "Student",
+            "Section",
+            "Class",
+            "Grade",
+            "School"
+          ]
+        }
+      ],
+      "result": "Giving the school leadership immediate access to relevant educational and administrative insights."
+    },
+    {
+      "id": "assessments",
+      "icon": "🏆",
+      "title": "AI-Powered Assessments & Educational Challenges",
+      "lead": [
+        "Sawaed AI can generate educational tests and exercises for students, separate from the official assessment system."
+      ],
+      "groups": [
+        {
+          "title": "These assessments can help",
+          "items": [
+            "Reinforce learning.",
+            "Measure understanding.",
+            "Provide additional educational indicators.",
+            "Encourage positive academic competition."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Results can be presented across different levels — top students in",
+          "steps": [
+            "Section",
+            "Class",
+            "Grade",
+            "School"
+          ]
+        }
+      ],
+      "result": "Creating an engaging environment that encourages students to learn, practice, and improve."
+    },
+    {
+      "id": "transportation",
+      "icon": "🚌",
+      "title": "Smart School Transportation",
+      "lead": [
+        "An integrated transportation management system for schools using:"
+      ],
+      "tags": [
+        "School buses",
+        "Cars",
+        "Taxis",
+        "Other approved transportation providers"
+      ],
+      "groups": [
+        {
+          "title": "The system can provide",
+          "items": [
+            "Real-time vehicle tracking.",
+            "Estimated arrival times.",
+            "Student trip tracking.",
+            "Parent notifications.",
+            "School notifications.",
+            "Trip completion notifications.",
+            "Student-specific transportation status."
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "Parent-Controlled Transportation Attendance",
+          "text": "Parents can notify the school in advance that their child will not use the school bus on a particular day. The student's name can then be automatically removed from that day's trip, while the driver receives an appropriate notification."
+        },
+        {
+          "title": "School Transportation Dashboard",
+          "text": "Authorized school administrators can monitor transportation activity through real-time maps and aggregated transportation analytics, including visual representations of vehicle activity."
+        }
+      ]
+    },
+    {
+      "id": "attendance",
+      "icon": "✅",
+      "title": "Attendance & Absence Management",
+      "lead": [
+        "A complete attendance management system for:"
+      ],
+      "tags": [
+        "Students",
+        "Teachers",
+        "School employees"
+      ],
+      "groups": [
+        {
+          "title": "Including",
+          "items": [
+            "Attendance recording.",
+            "Absence management.",
+            "Notifications.",
+            "Daily monitoring.",
+            "School reports.",
+            "Administrative reports.",
+            "Higher-level analytics."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Information can be viewed across",
+          "steps": [
+            "Student",
+            "Section",
+            "Class",
+            "Grade",
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assignments",
+      "icon": "📝",
+      "title": "Digital Assignments & Learning Activities",
+      "lead": [
+        "Teachers can create and publish assignments with different submission formats, including:"
+      ],
+      "groups": [
+        {
+          "title": "Submission formats",
+          "items": [
+            "Written answers.",
+            "Paper-based solutions with uploaded images.",
+            "Documents and files.",
+            "Video submissions.",
+            "Audio submissions."
+          ]
+        },
+        {
+          "title": "For example",
+          "items": [
+            "Quran recitation.",
+            "Poetry recitation.",
+            "Song or anthem performance.",
+            "Video-based educational activities."
+          ]
+        }
+      ],
+      "result": "Parents can receive notifications about assignments relevant to their children."
+    },
+    {
+      "id": "calendar",
+      "icon": "📅",
+      "title": "Smart Educational Calendar",
+      "lead": [
+        "A unified calendar brings the student's educational life into one place."
+      ],
+      "groups": [
+        {
+          "title": "It can display",
+          "items": [
+            "Assignments.",
+            "Exams.",
+            "Activities.",
+            "School events.",
+            "Important dates.",
+            "Educational events."
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "title": "Personalized by permissions",
+          "text": "When a user selects a specific date, the platform displays the information they are authorized to see."
+        }
+      ],
+      "result": "One calendar — personalized for every user."
+    },
+    {
+      "id": "fees",
+      "icon": "💳",
+      "title": "School Fees & Payments",
+      "lead": [
+        "The platform supports complete school fee management."
+      ],
+      "groups": [
+        {
+          "title": "Parents can",
+          "items": [
+            "View outstanding fees.",
+            "Track payments.",
+            "View remaining balances.",
+            "Follow payment schedules."
+          ]
+        }
+      ],
+      "questionsTitle": "Through Sawaed AI, users can simply ask:",
+      "questions": [
+        "How much has the school collected this month?",
+        "What payments are still outstanding?",
+        "Which students are overdue?"
+      ],
+      "result": "The school administration can access financial reports and analytics."
+    },
+    {
+      "id": "analytics",
+      "icon": "📊",
+      "title": "Educational Analytics & Decision Intelligence",
+      "lead": [
+        "The platform brings together data generated across the ecosystem to provide a comprehensive view of educational performance and activity."
+      ],
+      "groups": [
+        {
+          "title": "Analytics can include",
+          "items": [
+            "Attendance and absence.",
+            "Assignments.",
+            "Educational activities.",
+            "Social engagement.",
+            "Parent communication.",
+            "Platform usage.",
+            "Transportation.",
+            "Learning indicators."
+          ]
+        }
+      ],
+      "flows": [
+        {
+          "label": "Information can be analyzed across",
+          "steps": [
+            "Student",
+            "Section",
+            "Class",
+            "Grade",
+            "School"
+          ],
+          "plain": true
+        }
+      ],
+      "shift": {
+        "from": "Managing Operations",
+        "to": "Data-Driven Educational Decision Making"
+      }
+    },
+    {
+      "id": "feature-flags",
+      "icon": "🎛️",
+      "title": "Fully Configurable Features",
+      "lead": [
+        "Not every school requires the same services.",
+        "Through Feature Flags, authorized school administrators can activate or deactivate platform capabilities according to the school's needs."
+      ],
+      "tags": [
+        "Attendance & Absence",
+        "Transportation",
+        "Social Network",
+        "Assignments",
+        "School Fees",
+        "Sawaed AI",
+        "Other future services"
+      ],
+      "callouts": [
+        {
+          "title": "Disabled means invisible",
+          "text": "When a feature is disabled, it can automatically disappear from the relevant school interfaces."
+        }
+      ],
+      "result": "One Platform. An Experience Tailored to {{school}}."
+    }
+  ],
+  "SchoolPage.Vision.Badge": "The Vision",
+  "SchoolPage.Vision.Title": "Sawaed Elm Is More Than a School Application",
+  "SchoolPage.Vision.Lead": "It is a complete digital ecosystem for {{school}}, connecting:",
+  "SchoolPage.Vision.Chain": [
+    "Student",
+    "Parent",
+    "Teacher",
+    "Supervisor",
+    "School Administration"
+  ],
+  "SchoolPage.Vision.PillarsLead": "Within one intelligent platform powered by:",
+  "SchoolPage.Vision.Pillars": [
+    "Artificial Intelligence",
+    "Data Analytics",
+    "Secure Communication",
+    "Smart Transportation",
+    "Digital Learning",
+    "Dynamic Permissions",
+    "Personalized Experiences"
+  ],
+  "SchoolPage.Vision.ShiftLead": "The vision is to move from:",
+  "SchoolPage.Vision.From": "A platform that manages the school",
+  "SchoolPage.Vision.To": "A smart ecosystem that helps {{school}} manage, understand, and improve learning.",
+  "SchoolPage.Vision.Tagline": "Smarter Learning. Safer Communication. Data-Driven Education.",
+  "SchoolPage.Labels.From": "From",
+  "SchoolPage.Labels.To": "To",
 
   "School.CTA.Title": "Ready to See It in Action?",
   "School.CTA.Text": "To get a live demonstration of the school's social network and Sawaed AI, contact us.",

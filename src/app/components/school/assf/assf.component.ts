@@ -9,5 +9,5 @@ import { MinistryComponent } from '../ministry/ministry.component';
 export class AssfComponent extends MinistryComponent {
   override logoPath = 'assets/images/assf-logo.jpg';
   override partnerNameKey = 'School.Branding.SchoolName.Assf';
-  override excludedSections = ['smart-teacher', 'security', 'model'];
+  override textKey = 'SchoolPage';
 }

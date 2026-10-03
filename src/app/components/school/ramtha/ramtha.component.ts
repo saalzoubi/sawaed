@@ -9,5 +9,5 @@ import { MinistryComponent } from '../ministry/ministry.component';
 export class RamthaComponent extends MinistryComponent {
   override logoPath = 'assets/images/ramtha-logo.jpg';
   override partnerNameKey = 'School.Branding.SchoolName.Ramtha';
-  override excludedSections = ['smart-teacher', 'security', 'model'];
+  override textKey = 'SchoolPage';
 }

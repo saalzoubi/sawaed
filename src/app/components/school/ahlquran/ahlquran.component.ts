@@ -9,5 +9,5 @@ import { MinistryComponent } from '../ministry/ministry.component';
 export class AhlQuranComponent extends MinistryComponent {
   override logoPath = 'assets/images/ahlquran-logo.jpg';
   override partnerNameKey = 'School.Branding.SchoolName.AhlQuran';
-  override excludedSections = ['smart-teacher', 'security', 'model'];
+  override textKey = 'SchoolPage';
 }

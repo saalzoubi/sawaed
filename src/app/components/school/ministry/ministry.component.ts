@@ -12,8 +12,10 @@ export class MinistryComponent implements OnInit {
 
   logoPath = 'assets/images/ministry-logo.jpg';
   partnerNameKey = 'Ministry.Hero.Name';
-  // Section ids from Ministry.Sections to hide on this page.
-  excludedSections: string[] = [];
+  // Translation key prefix for the page text: 'Ministry' for the ministry, 'SchoolPage' for single schools.
+  textKey = 'Ministry';
+  // Values for {{school}} placeholders in the page text.
+  textParams: { school: string } = { school: '' };
   companyLogoPath = 'assets/images/logo.png';
   companyNameKey = 'Banner.name';
 
@@ -90,17 +92,35 @@ export class MinistryComponent implements OnInit {
   }
 
   loadData(): void {
-    this.translateService.get('Ministry.Sections').subscribe((data: any[]) => {
-      this.sections = Array.isArray(data)
-        ? data.filter(s => !this.excludedSections.includes(s.id))
-        : [];
+    const keys = [
+      this.partnerNameKey,
+      `${this.textKey}.Sections`,
+      `${this.textKey}.Vision.Chain`,
+      `${this.textKey}.Vision.Pillars`
+    ];
+    this.translateService.get(keys).subscribe((t: any) => {
+      this.textParams = { school: t[keys[0]] };
+      const list = (v: any) => Array.isArray(v) ? this.fillSchool(v) : [];
+      this.sections = list(t[keys[1]]);
+      this.visionChain = list(t[keys[2]]);
+      this.visionPillars = list(t[keys[3]]);
     });
-    this.translateService.get('Ministry.Vision.Chain').subscribe((data: string[]) => {
-      this.visionChain = Array.isArray(data) ? data : [];
-    });
-    this.translateService.get('Ministry.Vision.Pillars').subscribe((data: string[]) => {
-      this.visionPillars = Array.isArray(data) ? data : [];
-    });
+  }
+
+  // ngx-translate only interpolates plain strings, so fill {{school}} inside arrays/objects here.
+  private fillSchool(value: any): any {
+    if (typeof value === 'string') {
+      return value.replace(/{{\s*school\s*}}/g, this.textParams.school);
+    }
+    if (Array.isArray(value)) {
+      return value.map(v => this.fillSchool(v));
+    }
+    if (value && typeof value === 'object') {
+      const out: any = {};
+      Object.keys(value).forEach(k => out[k] = this.fillSchool(value[k]));
+      return out;
+    }
+    return value;
   }
 
   sectionNumber(index: number): string {

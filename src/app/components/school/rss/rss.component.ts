@@ -9,5 +9,5 @@ import { MinistryComponent } from '../ministry/ministry.component';
 export class RssComponent extends MinistryComponent {
   override logoPath = 'assets/images/rss-logo.jpg';
   override partnerNameKey = 'School.Branding.SchoolName.Rss';
-  override excludedSections = ['smart-teacher', 'security', 'model'];
+  override textKey = 'SchoolPage';
 }
