@@ -7,6 +7,7 @@ import { RamthaComponent } from './ramtha/ramtha.component';
 import { AssfComponent } from './assf/assf.component';
 import { AhlQuranComponent } from './ahlquran/ahlquran.component';
 import { RssComponent } from './rss/rss.component';
+import { IgaComponent } from './iga/iga.component';
 import { MinistryComponent } from './ministry/ministry.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -17,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
     AssfComponent,
     AhlQuranComponent,
     RssComponent,
+    IgaComponent,
     MinistryComponent
   ],
   imports: [

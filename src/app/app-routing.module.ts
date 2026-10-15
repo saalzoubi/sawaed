@@ -5,6 +5,7 @@ import { RamthaComponent } from './components/school/ramtha/ramtha.component';
 import { AssfComponent } from './components/school/assf/assf.component';
 import { AhlQuranComponent } from './components/school/ahlquran/ahlquran.component';
 import { RssComponent } from './components/school/rss/rss.component';
+import { IgaComponent } from './components/school/iga/iga.component';
 import { MinistryComponent } from './components/school/ministry/ministry.component';
 
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   {matcher: caseInsensitive('product/school/assf'), component: AssfComponent},
   {matcher: caseInsensitive('product/school/ahlquran'), component: AhlQuranComponent},
   {matcher: caseInsensitive('product/school/RSS'), component: RssComponent},
+  {matcher: caseInsensitive('product/school/iga'), component: IgaComponent},
   {matcher: caseInsensitive('product/school/ministry'), component: MinistryComponent},
 
   // {path: 'profile'        ,   component: ProfileComponent         , canActivate: [AuthGuard]},
