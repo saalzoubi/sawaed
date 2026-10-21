@@ -7,6 +7,7 @@ import { AhlQuranComponent } from './components/school/ahlquran/ahlquran.compone
 import { RssComponent } from './components/school/rss/rss.component';
 import { IgaComponent } from './components/school/iga/iga.component';
 import { MinistryComponent } from './components/school/ministry/ministry.component';
+import { SchoolOverviewComponent } from './components/school/overview/school-overview.component';
 
 
 // Matches the given path ignoring case, e.g. /product/school/rss and /product/school/RSS.
@@ -18,16 +19,27 @@ export function caseInsensitive(path: string): UrlMatcher {
       : null;
 }
 
+// Every page exists twice: at its plain path (English) and under /ar (Arabic), so search
+// engines can index each language at its own URL. LanguageService reads the prefix.
+function pageRoutes(): Routes {
+  return [
+    {path: '',      component: HomeComponent},
+    // data.defaultLang: opens in that language unless the visitor picked another one.
+    // data.lang: page only exists in that language. data.seo: key of the page's head tags.
+    {matcher: caseInsensitive('product/school'), component: SchoolOverviewComponent, data: {defaultLang: 'ar', seo: 'school'}},
+    {matcher: caseInsensitive('product/school/ramtha'), component: RamthaComponent, data: {lang: 'ar'}},
+    {matcher: caseInsensitive('product/school/assf'), component: AssfComponent, data: {lang: 'ar'}},
+    {matcher: caseInsensitive('product/school/ahlquran'), component: AhlQuranComponent, data: {lang: 'ar'}},
+    {matcher: caseInsensitive('product/school/RSS'), component: RssComponent, data: {lang: 'ar'}},
+    {matcher: caseInsensitive('product/school/iga'), component: IgaComponent, data: {lang: 'ar'}},
+    {matcher: caseInsensitive('product/school/ministry'), component: MinistryComponent, data: {lang: 'ar'}},
+  ];
+}
+
 const routes: Routes = [
 
-  {path: '',      component: HomeComponent},
-  {path: 'product/school',   pathMatch: 'full', redirectTo: '/'},
-  {matcher: caseInsensitive('product/school/ramtha'), component: RamthaComponent},
-  {matcher: caseInsensitive('product/school/assf'), component: AssfComponent},
-  {matcher: caseInsensitive('product/school/ahlquran'), component: AhlQuranComponent},
-  {matcher: caseInsensitive('product/school/RSS'), component: RssComponent},
-  {matcher: caseInsensitive('product/school/iga'), component: IgaComponent},
-  {matcher: caseInsensitive('product/school/ministry'), component: MinistryComponent},
+  {path: 'ar', children: pageRoutes()},
+  ...pageRoutes(),
 
   // {path: 'profile'        ,   component: ProfileComponent         , canActivate: [AuthGuard]},
   // {path: 'users'          ,   component: UsersComponent           , canActivate: [AuthGuard]},

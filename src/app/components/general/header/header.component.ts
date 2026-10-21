@@ -43,11 +43,7 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.languageFormControl.valueChanges.subscribe(val => {
-      if (!val) { val = 'en'; }
-      this.languageService.switchLang(val);
-    });
-    this.languageFormControl.setValue(this.languageService.language);
+    this.languageFormControl.setValue(this.languageService.language || 'en');
     this.translateService.onLangChange.subscribe((event) => {
       if (this.languageFormControl.value !== event.lang) {
         this.languageFormControl.setValue(event.lang, { emitEvent: false });
@@ -60,7 +56,7 @@ export class HeaderComponent implements OnInit {
     if (document.getElementById(el)) {
       document.getElementById(el).scrollIntoView({behavior: 'smooth'});
     } else{
-      this.router.navigate(['/home']).then(() => document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
+      this.router.navigateByUrl(this.languageService.homeUrl()).then(() => document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
     }
     this.responsiveMenuVisible = false;
   }
@@ -70,8 +66,7 @@ export class HeaderComponent implements OnInit {
     }
 
     changeLanguage(language: string): void {
-      console.log(language);
-      this.languageFormControl.setValue(language);
+      this.languageService.changeLanguage(language);
 
     }
 

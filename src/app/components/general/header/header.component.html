@@ -1,6 +1,6 @@
 <nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='this.pageYPosition>0'>
   <div class="container">
-    <a class="navbar-brand text-light" [routerLink]="'inicio'">
+    <a class="navbar-brand text-light" [routerLink]="languageService.homeUrl()">
       <img src='assets/images/logo.png' width='100'/>
     </a>
     <ul ngbNav #nav="ngbNav" class="menu-ul">
@@ -19,6 +19,10 @@
         <a ngbNavLink (click)='scroll("contact")'> <span
           class="underline nav-text"> {{ "Header.Item3" | translate }}</span></a>
         <ng-template ngbNavContent>Third content</ng-template>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink [routerLink]="languageService.localize('/product/school')"> <span
+          class="underline nav-text"> {{ "Header.Item4" | translate }}</span></a>
       </li>
       <li>
         <a class="language-toggle" (click)="toggleLanguage()">
@@ -50,6 +54,11 @@
             <li>
               <a (click)='scroll("contact")'>
                 {{ "Header.Item3" | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="languageService.localize('/product/school')" (click)="responsiveMenuVisible = false">
+                {{ "Header.Item4" | translate }}
               </a>
             </li>
             <li>

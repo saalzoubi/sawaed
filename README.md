@@ -85,9 +85,9 @@ ng build --configuration production
 
 ### GitHub Pages Deployment
 
-1. Build the project with base-href:
+1. Build the project (also generates `ar/index.html`, the Arabic page Google indexes at `/ar/`):
 ```bash
-ng build --configuration production --base-href "/"
+npm run build-portfolio
 ```
 
 2. Deploy to GitHub Pages:
@@ -102,7 +102,7 @@ npx angular-cli-ghpages --dir=dist/sawaed-website --cname=sawaedelm.com --no-sil
 Have a project in mind or a question for us? We'd love to hear from you!
 
 - **Website:** [sawaedelm.com](https://sawaedelm.com)
-- **Email:** info@sawaedelm.com
+- **Email:** sawaedelm@sawaedelm.com
 - **Location:** [Your Location]
 
 ## Project Structure

@@ -1,0 +1,19 @@
+<section class="section promo-section" id="school-platform">
+  <div class="container">
+    <a class="promo" [routerLink]="languageService.localize('/product/school')" data-aos="fade-up" data-aos-duration="800">
+      <div class="promo-copy">
+        <span class="promo-tag"><i class="fas fa-graduation-cap"></i> {{ "Home.SchoolPromo.Tag" | translate }}</span>
+        <h3 class="promo-title">{{ "Home.SchoolPromo.Title" | translate }}</h3>
+        <p class="promo-text">{{ "Home.SchoolPromo.Text" | translate }}</p>
+        <span class="promo-btn">
+          {{ "Home.SchoolPromo.Button" | translate }}
+          <i class="fas" [class.fa-arrow-right]="languageService.textDirection !== 'rtl'" [class.fa-arrow-left]="languageService.textDirection === 'rtl'"></i>
+        </span>
+      </div>
+      <div class="promo-visual">
+        <img src="assets/images/schoolAppScreenshots/homePage.jpg" alt="" loading="lazy" />
+        <img src="assets/images/schoolAppScreenshots/sawaedAI.jpg" alt="" loading="lazy" />
+      </div>
+    </a>
+  </div>
+</section>

@@ -9,6 +9,7 @@ import { AhlQuranComponent } from './ahlquran/ahlquran.component';
 import { RssComponent } from './rss/rss.component';
 import { IgaComponent } from './iga/iga.component';
 import { MinistryComponent } from './ministry/ministry.component';
+import { SchoolOverviewComponent } from './overview/school-overview.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TranslateModule } from '@ngx-translate/core';
     AhlQuranComponent,
     RssComponent,
     IgaComponent,
-    MinistryComponent
+    MinistryComponent,
+    SchoolOverviewComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/services/language/language.service';
 
 @Component({
   selector: 'app-school-shared',
@@ -30,7 +31,8 @@ export class SchoolSharedComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private languageService: LanguageService
   ) { }
 
   ngOnInit(): void {
@@ -64,7 +66,7 @@ export class SchoolSharedComponent implements OnInit {
   }
 
   goHome(): void {
-    this.router.navigate(['/']);
+    this.router.navigateByUrl(this.languageService.homeUrl());
   }
 
   scroll(el: string): void {

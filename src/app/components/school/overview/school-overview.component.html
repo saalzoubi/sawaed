@@ -1,0 +1,136 @@
+<main class="ov">
+
+  <!-- Hero -->
+  <section class="ov-hero">
+    <div class="ov-glow ov-glow-a"></div>
+    <div class="ov-glow ov-glow-b"></div>
+    <div class="container ov-hero-inner">
+      <div class="ov-hero-copy" data-aos="fade-up" data-aos-duration="900">
+        <span class="ov-tag"><i class="fas fa-graduation-cap"></i> {{ 'SchoolOverview.Hero.Tag' | translate }}</span>
+        <h1 class="ov-hero-title">{{ 'SchoolOverview.Hero.Title' | translate }}</h1>
+        <p class="ov-hero-sub">{{ 'SchoolOverview.Hero.Subtitle' | translate }}</p>
+        <div class="ov-hero-actions">
+          <a class="ov-btn ov-btn-primary" [href]="'mailto:' + contactEmail">
+            <i class="fas fa-paper-plane"></i> {{ 'SchoolOverview.Hero.Primary' | translate }}
+          </a>
+          <button type="button" class="ov-btn ov-btn-ghost" (click)="scroll('features')">
+            {{ 'SchoolOverview.Hero.Secondary' | translate }} <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+        <ul class="ov-chips">
+          <li *ngFor="let c of chips"><i class="fas fa-check-circle"></i> {{ c }}</li>
+        </ul>
+      </div>
+      <div class="ov-hero-visual" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="ov-phone">
+          <img [src]="heroShot" alt="Sawaed Elm school app" />
+        </div>
+        <div class="ov-float ov-float-a"><i class="fas fa-robot"></i> Sawaed AI</div>
+        <div class="ov-float ov-float-b"><i class="fas fa-bell"></i> <span>{{ personas[1]?.items[0] }}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it serves -->
+  <section class="ov-section">
+    <div class="container">
+      <h2 class="ov-title" data-aos="fade-up">{{ 'SchoolOverview.Audience.Title' | translate }}</h2>
+      <div class="ov-personas">
+        <div *ngFor="let p of personas; let i = index" class="ov-persona"
+             data-aos="fade-up" data-aos-duration="700" [attr.data-aos-delay]="i * 80">
+          <div class="ov-persona-icon"><i [class]="p.icon"></i></div>
+          <h3>{{ p.title }}</h3>
+          <ul>
+            <li *ngFor="let item of p.items">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spotlights: AI + social -->
+  <section *ngFor="let s of spotlights; let odd = odd" class="ov-section ov-spot" [class.ov-spot-flip]="odd" [id]="s.id">
+    <div class="container ov-spot-inner">
+      <div class="ov-spot-copy" data-aos="fade-up" data-aos-duration="900">
+        <span class="ov-tag"><i class="fas fa-star"></i> {{ 'SchoolOverview.Spotlight.Tag' | translate }}</span>
+        <h2 class="ov-spot-title"><i [class]="s.icon"></i> {{ s.title }}</h2>
+        <p class="ov-lead">{{ s.text }}</p>
+        <ul class="ov-spot-points">
+          <li *ngFor="let pt of s.points">{{ pt }}</li>
+        </ul>
+      </div>
+      <div class="ov-spot-visual" data-aos="fade-up" data-aos-duration="900">
+        <div class="ov-phone ov-phone-sm" (click)="openShot(spotlightShots[s.id])">
+          <img [src]="spotlightShots[s.id]" [alt]="s.title" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section class="ov-section" id="features">
+    <div class="container">
+      <h2 class="ov-title" data-aos="fade-up">{{ 'SchoolOverview.Features.Title' | translate }}</h2>
+      <p class="ov-subtitle" data-aos="fade-up">{{ 'SchoolOverview.Features.Lead' | translate }}</p>
+      <div class="ov-features">
+        <div *ngFor="let f of features; let i = index" class="ov-feature"
+             data-aos="fade-up" data-aos-duration="700" [attr.data-aos-delay]="(i % 4) * 80">
+          <div class="ov-feature-icon"><i [class]="f.icon"></i></div>
+          <h3>{{ f.title }}</h3>
+          <p>{{ f.text }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurable modules -->
+  <section class="ov-section">
+    <div class="container">
+      <div class="ov-control" data-aos="fade-up" data-aos-duration="900">
+        <div class="ov-control-copy">
+          <h2 class="ov-spot-title"><i class="fas fa-sliders-h"></i> {{ 'SchoolOverview.Control.Title' | translate }}</h2>
+          <p class="ov-lead">{{ 'SchoolOverview.Control.Text' | translate }}</p>
+          <ul class="ov-chips">
+            <li *ngFor="let pt of controlPoints"><i class="fas fa-toggle-on"></i> {{ pt }}</li>
+          </ul>
+        </div>
+        <div class="ov-phone ov-phone-sm" (click)="openShot(controlShot)">
+          <img [src]="controlShot" alt="Feature flags" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="ov-section">
+    <div class="container">
+      <h2 class="ov-title" data-aos="fade-up">{{ 'SchoolOverview.Gallery.Title' | translate }}</h2>
+    </div>
+    <div class="ov-gallery" data-aos="fade-up" data-aos-duration="900">
+      <button *ngFor="let shot of gallery" type="button" class="ov-gallery-item" (click)="openShot(shot)">
+        <img [src]="shot" alt="" loading="lazy" />
+      </button>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="ov-section">
+    <div class="container">
+      <div class="ov-cta" data-aos="zoom-in" data-aos-duration="800">
+        <h2>{{ 'SchoolOverview.Cta.Title' | translate }}</h2>
+        <p>{{ 'SchoolOverview.Cta.Text' | translate }}</p>
+        <a class="ov-btn ov-btn-primary" [href]="'mailto:' + contactEmail">
+          <i class="fas fa-envelope"></i> {{ 'SchoolOverview.Cta.Button' | translate }}
+        </a>
+        <a class="ov-cta-email" [href]="'mailto:' + contactEmail">{{ contactEmail }}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot lightbox -->
+  <div class="ov-lightbox" *ngIf="selectedShot" (click)="closeShot()">
+    <button type="button" class="ov-lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <img [src]="selectedShot" alt="" (click)="$event.stopPropagation()" />
+  </div>
+
+</main>

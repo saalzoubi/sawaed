@@ -76,8 +76,6 @@ export class MinistryComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.languageService.switchLang('ar');
-
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;
@@ -128,7 +126,7 @@ export class MinistryComponent implements OnInit {
   }
 
   goHome(): void {
-    this.router.navigate(['/']);
+    this.router.navigateByUrl(this.languageService.homeUrl());
   }
 
   scroll(el: string): void {

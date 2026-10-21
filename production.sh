@@ -1,5 +1,5 @@
 #!/bin/bash
-ng build --configuration production
+npm run build-portfolio
 git checkout production
 find . -maxdepth 1 -type f -not \( -name ".git" -or -name ".gitignore" -or -name "production.sh" \) -delete
 rm -rf assets

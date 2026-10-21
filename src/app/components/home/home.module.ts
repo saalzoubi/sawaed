@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MoreProyectsComponent } from './more-proyects/more-proyects.component';
 import { ProductComponent } from './product/product.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { RouterModule } from '@angular/router';
+import { SchoolPromoComponent } from './school-promo/school-promo.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,9 +24,11 @@ export function HttpLoaderFactory(http: HttpClient){
     MoreProyectsComponent,
     ProductComponent,
     ContactComponent,
+    SchoolPromoComponent,
   ],
   imports: [
     CommonModule,
+    RouterModule,
     TranslateModule.forChild({
       loader: {
           provide: TranslateLoader,

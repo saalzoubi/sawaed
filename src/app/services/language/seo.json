@@ -1,0 +1,28 @@
+{
+  "home": {
+    "path": "/",
+    "en": {
+      "title": "Sawaed Elm Technologies | Software, Mobile Apps & School Platform",
+      "description": "Sawaed Elm Technologies builds custom software, mobile apps, hardware and cloud solutions, and the Sawaed Elm school management platform. Together, we build the future.",
+      "locale": "en_US"
+    },
+    "ar": {
+      "title": "سواعد العلم للتقنيات | تطوير البرمجيات وتطبيقات الهواتف ومنصة المدارس",
+      "description": "سواعد العلم للتقنيات: تطوير البرمجيات وتطبيقات الهواتف المحمولة والأجهزة والحلول السحابية، ومنصة سواعد العلم لإدارة المدارس. معاً نبني المستقبل.",
+      "locale": "ar_JO"
+    }
+  },
+  "school": {
+    "path": "/product/school",
+    "en": {
+      "title": "Sawaed Elm School Platform | Smart School App with AI",
+      "description": "One smart, AI-powered app with your school's name for students, parents, teachers and administration: attendance, assignments, transportation, fees, calendar and a safe school social network.",
+      "locale": "en_US"
+    },
+    "ar": {
+      "title": "منصة سواعد العلم المدرسية | تطبيق مدرسي ذكي مدعوم بالذكاء الاصطناعي",
+      "description": "تطبيق مدرسي ذكي باسم مدرستك يجمع الطالب وولي الأمر والمعلم والإدارة: الحضور والغياب، الواجبات، النقل المدرسي، الأقساط، الرزنامة، وشبكة اجتماعية تعليمية آمنة.",
+      "locale": "ar_JO"
+    }
+  }
+}
