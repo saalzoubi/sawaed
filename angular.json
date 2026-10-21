@@ -21,7 +21,7 @@
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets",
+                            { "glob": "**/*", "input": "src/assets", "output": "assets", "ignore": ["**/*.mp4"] },
                             "src/sitemap.xml",
                             "src/robots.txt",
                             "src/manifest.webmanifest",
