@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1792590658321,
+  "timestamp": 1792592134102,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.2aca0274d2d57b28.js",
+        "/main.05b5ab09bbea416a.js",
         "/manifest.webmanifest",
         "/polyfills.f0501f27b840d1d7.js",
         "/runtime.4899bbbf33da58ed.js",
         "/scripts.68ed26d13e2edc19.js",
-        "/styles.7811e567243b8406.css"
+        "/styles.476d44d99bdb478d.css"
       ],
       "patterns": []
     },
@@ -129,7 +129,6 @@
         "/assets/images/globaljobs/capture5.png",
         "/assets/images/globaljobs/capture6.png",
         "/assets/images/iga-logo.jpg",
-        "/assets/images/introduction_2.mp4",
         "/assets/images/logo-with-name.png",
         "/assets/images/logo.png",
         "/assets/images/ministry-logo.jpg",
@@ -332,7 +331,6 @@
     "/assets/images/globaljobs/capture5.png": "4790226718d75052544cbf04d60a11b316749aa4",
     "/assets/images/globaljobs/capture6.png": "302410d9467309356f66576ac4b1f7294e422f6d",
     "/assets/images/iga-logo.jpg": "1558d616d909048207213bfa765ab7d05aa82ee4",
-    "/assets/images/introduction_2.mp4": "0cb07517b9d4ae5d92d19da61be19accd891d066",
     "/assets/images/logo-with-name.png": "2b66bf8111d339859cb69a17ed528b765183b6ac",
     "/assets/images/logo.png": "1d53c72c6caa3a1e42325982e87d55c95b743728",
     "/assets/images/ministry-logo.jpg": "0b0032fbf9e27f404495fbe42b2cf309ddcdfbbd",
@@ -430,14 +428,14 @@
     "/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/favicon.ico": "1d53c72c6caa3a1e42325982e87d55c95b743728",
-    "/index.html": "d5b4747993dfbee85728dd7f23bf4aca710d25d6",
-    "/main.2aca0274d2d57b28.js": "cd8f53f97939b69d28c90639bf334662911e0022",
+    "/index.html": "6d8513fe2f026d66beb855cac10f306b4a8840fa",
+    "/main.05b5ab09bbea416a.js": "1f9c18344603b2c3a9a3d2884706bc5d0483b25e",
     "/manifest.webmanifest": "99c604f91595b890592fba76e3eef1cc74d8ff28",
     "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/polyfills.f0501f27b840d1d7.js": "e451985f641ad02f19a61182bd1d574b977311a5",
     "/runtime.4899bbbf33da58ed.js": "880a29f9869423d0c39cab4aeaebdc374935fab5",
     "/scripts.68ed26d13e2edc19.js": "cffb6dcf1e317b2859024c20248dd0c50ce6b885",
-    "/styles.7811e567243b8406.css": "ee472de0f63eb7f7e7057ca093ab135046048b71"
+    "/styles.476d44d99bdb478d.css": "eb8cff09d57c0b4f8bc4e4ecb22bb46a313ff66e"
   },
   "navigationUrls": [
     {
